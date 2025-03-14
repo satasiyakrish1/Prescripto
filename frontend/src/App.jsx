@@ -16,6 +16,10 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Verify from './pages/Verify'
 import ApiMarketplace from './pages/ApiMarketplace'
+import Medicines from './pages/Medicines'
+import MedicineDetails from './pages/MedicineDetails'
+import NotFound from './pages/NotFound'
+import GoogleFitDashboard from './pages/GoogleFitDashboard'
 
 const App = () => {
   return (
@@ -36,6 +40,10 @@ const App = () => {
         <Route path='/my-profile' element={<MyProfile />} />
         <Route path='/verify' element={<Verify />} />
         <Route path='/api-marketplace' element={<ApiMarketplace />} />
+        <Route path='/medicines' element={<Medicines />} />
+        <Route path='/medicine/:id' element={<MedicineDetails />} />
+        <Route path='/google-fit' element={<GoogleFitDashboard />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
     </div>

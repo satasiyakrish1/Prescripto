@@ -5,6 +5,7 @@ import axios from 'axios'
 import { toast } from 'react-toastify'
 import { assets } from '../assets/assets'
 import jsPDF from 'jspdf'
+import GoogleFitData from '../components/GoogleFitData'
 
 const MyAppointments = () => {
 
@@ -249,6 +250,7 @@ const MyAppointments = () => {
                     </div>
                 ))}
             </div>
+            <GoogleFitData />
         </div>
     )
 }
