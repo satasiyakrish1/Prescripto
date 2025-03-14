@@ -5,6 +5,7 @@ import bcrypt from "bcrypt";
 import validator from "validator";
 import { v2 as cloudinary } from "cloudinary";
 import userModel from "../models/userModel.js";
+import { generateAppointmentsCSV } from "../utils/csvGenerator.js";
 
 // API for admin login
 const loginAdmin = async (req, res) => {
@@ -148,11 +149,34 @@ const adminDashboard = async (req, res) => {
     }
 }
 
+// API to download all appointments as CSV
+const downloadAppointmentsCSV = async (req, res) => {
+    try {
+        // Fetch all appointments from database
+        const appointments = await appointmentModel.find({})
+        
+        // Generate CSV content using the utility function
+        const csvContent = generateAppointmentsCSV(appointments)
+        
+        // Set response headers for file download
+        res.setHeader('Content-Type', 'text/csv')
+        res.setHeader('Content-Disposition', 'attachment; filename=appointments.csv')
+        
+        // Send CSV content as response
+        res.send(csvContent)
+        
+    } catch (error) {
+        console.log(error)
+        res.json({ success: false, message: error.message })
+    }
+}
+
 export {
     loginAdmin,
     appointmentsAdmin,
     appointmentCancel,
     addDoctor,
     allDoctors,
-    adminDashboard
+    adminDashboard,
+    downloadAppointmentsCSV
 }
