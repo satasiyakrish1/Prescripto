@@ -141,6 +141,65 @@ const adminDashboard = async (req, res) => {
             latestAppointments: appointments.reverse()
         }
 
+        // Get best doctor of the month
+        const getBestDoctor = async () => {
+          const currentDate = new Date();
+          const firstDayOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
+        
+          const doctors = await doctorModel.find({});
+          const appointments = await appointmentModel.find({
+            slotDate: { $gte: firstDayOfMonth },
+            isCompleted: true
+          });
+        
+          const doctorStats = {};
+        
+          appointments.forEach(appointment => {
+            const docId = appointment.docId;
+            if (!doctorStats[docId]) {
+              doctorStats[docId] = {
+                completedAppointments: 0,
+                totalRevenue: 0
+              };
+            }
+            doctorStats[docId].completedAppointments++;
+            doctorStats[docId].totalRevenue += appointment.amount;
+          });
+        
+          let bestDoctor = null;
+          let maxScore = -1;
+        
+          doctors.forEach(doctor => {
+            const stats = doctorStats[doctor._id] || { completedAppointments: 0, totalRevenue: 0 };
+            const score = stats.completedAppointments * 0.7 + (stats.totalRevenue / 1000) * 0.3;
+            if (score > maxScore) {
+              maxScore = score;
+              bestDoctor = {
+                ...doctor.toObject(),
+                stats: stats
+              };
+            }
+          });
+        
+          return bestDoctor;
+        };
+
+        const getDashboardData = async (req, res) => {
+            try {
+                const appointments = await appointmentModel.find({}).count()
+                const patients = await userModel.find({}).count()
+                const doctors = await doctorModel.find({}).count()
+                const latestAppointments = await appointmentModel.find({}).sort({ date: -1 })
+                const bestDoctor = await getBestDoctor();
+        
+                res.json({ success: true, appointments, patients, doctors, latestAppointments, bestDoctor })
+        
+            } catch (error) {
+                console.log(error)
+                res.json({ success: false, message: error.message })
+            }
+        }
+
         res.json({ success: true, dashData })
 
     } catch (error) {
@@ -171,6 +230,25 @@ const downloadAppointmentsCSV = async (req, res) => {
     }
 }
 
+// API to remove doctor and related appointments
+const removeDoctor = async (req, res) => {
+    try {
+        const { doctorId } = req.body
+
+        // Remove all appointments related to this doctor
+        await appointmentModel.deleteMany({ docId: doctorId })
+
+        // Remove the doctor
+        await doctorModel.findByIdAndDelete(doctorId)
+
+        res.json({ success: true, message: 'Doctor and related appointments removed successfully' })
+
+    } catch (error) {
+        console.log(error)
+        res.json({ success: false, message: error.message })
+    }
+}
+
 export {
     loginAdmin,
     appointmentsAdmin,
@@ -178,5 +256,6 @@ export {
     addDoctor,
     allDoctors,
     adminDashboard,
-    downloadAppointmentsCSV
+    downloadAppointmentsCSV,
+    removeDoctor
 }

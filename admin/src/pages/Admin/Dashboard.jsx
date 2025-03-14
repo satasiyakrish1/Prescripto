@@ -2,11 +2,22 @@ import React, { useContext, useEffect } from 'react'
 import { assets } from '../../assets/assets'
 import { AdminContext } from '../../context/AdminContext'
 import { AppContext } from '../../context/AppContext'
+import IncomeChart from '../../components/IncomeChart'
 
 const Dashboard = () => {
 
   const { aToken, getDashData, cancelAppointment, dashData } = useContext(AdminContext)
   const { slotDateFormat } = useContext(AppContext)
+
+  // Mock data for income chart
+  const incomeData = [
+    { month: 'Jan', income: 4000 },
+    { month: 'Feb', income: 3000 },
+    { month: 'Mar', income: 5000 },
+    { month: 'Apr', income: 4500 },
+    { month: 'May', income: 6000 },
+    { month: 'Jun', income: 5500 },
+  ]
 
   useEffect(() => {
     if (aToken) {
@@ -38,7 +49,24 @@ const Dashboard = () => {
             <p className='text-xl font-semibold text-gray-600'>{dashData.patients}</p>
             <p className='text-gray-400'>Patients</p></div>
         </div>
+        {dashData.bestDoctor && (
+          <div className='flex-1 bg-white p-4 rounded border-2 border-gray-100'>
+            <div className='flex items-center gap-4'>
+              <img className='w-16 h-16 rounded-full object-cover' src={dashData.bestDoctor.image || assets.doctor_icon} alt="" />
+              <div>
+                <h3 className='text-lg font-semibold text-gray-800'>Best Doctor of the Month</h3>
+                <p className='text-primary font-medium'>{dashData.bestDoctor.name}</p>
+                <div className='flex gap-4 mt-2 text-sm text-gray-600'>
+                  <p>✨ {dashData.bestDoctor.stats.completedAppointments} Appointments</p>
+                  <p>💰 ₹{dashData.bestDoctor.stats.totalRevenue} Revenue</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
+
+      <IncomeChart data={incomeData} />
 
       <div className='bg-white'>
         <div className='flex items-center gap-2.5 px-4 py-4 mt-10 rounded-t border'>
