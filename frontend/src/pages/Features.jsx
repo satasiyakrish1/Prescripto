@@ -38,7 +38,7 @@ const Features = () => {
                 </div>
                 <div className='border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-primary hover:text-white transition-all duration-300 text-gray-600 cursor-pointer'>
                     <b><a href="http://cloud-prescripto.vercel.app">HEALTH RECORD VAULT:</a></b>
-                    <p><a href="http://cloud-prescripto.vercel.app">Securely store and access prescriptions, reports, and health records in one place for easy sharing with doctors.</p>
+                    <p><a href="http://cloud-prescripto.vercel.app">Securely store and access prescriptions, reports, and health records in one place for easy sharing with doctors.</a></p>
                 </div>
                 <div className='border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-primary hover:text-white transition-all duration-300 text-gray-600 cursor-pointer'>
                     <b>CLOUDFLARE SHIELD:</b>
