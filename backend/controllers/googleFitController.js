@@ -1,5 +1,6 @@
 import { google } from 'googleapis';
 import dotenv from 'dotenv';
+import userModel from '../models/userModel.js';
 
 dotenv.config();
 
@@ -13,6 +14,13 @@ const fitness = google.fitness('v1');
 
 export const getAuthUrl = async (req, res) => {
     try {
+        const { userId } = req.body;
+        const user = await userModel.findById(userId);
+        
+        if (!user) {
+            return res.status(404).json({ success: false, message: 'User not found' });
+        }
+
         const scopes = [
             'https://www.googleapis.com/auth/fitness.activity.read',
             'https://www.googleapis.com/auth/fitness.body.read',
@@ -22,7 +30,7 @@ export const getAuthUrl = async (req, res) => {
         const authUrl = oauth2Client.generateAuthUrl({
             access_type: 'offline',
             scope: scopes,
-            state: req.user._id.toString()
+            state: user._id.toString()
         });
 
         res.json({ success: true, authUrl });
@@ -34,9 +42,19 @@ export const getAuthUrl = async (req, res) => {
 
 export const handleCallback = async (req, res) => {
     try {
-        const { code } = req.query;
+        const { code, state } = req.query;
         if (!code) {
             throw new Error('Authorization code is missing');
+        }
+
+        if (!state) {
+            throw new Error('User state is missing');
+        }
+
+        // Find user by ID from state parameter
+        const user = await userModel.findById(state);
+        if (!user) {
+            throw new Error('User not found');
         }
 
         const { tokens } = await oauth2Client.getToken(code);
@@ -45,8 +63,8 @@ export const handleCallback = async (req, res) => {
         }
         
         // Store tokens in user's database record
-        req.user.googleFitTokens = tokens;
-        await req.user.save();
+        user.googleFitTokens = tokens;
+        await user.save();
 
         res.redirect('/google-fit?status=success');
     } catch (error) {
@@ -58,7 +76,14 @@ export const handleCallback = async (req, res) => {
 
 export const getConnectionStatus = async (req, res) => {
     try {
-        const isConnected = Boolean(req.user.googleFitTokens);
+        const { userId } = req.body;
+        const user = await userModel.findById(userId);
+        
+        if (!user) {
+            return res.status(404).json({ success: false, message: 'User not found' });
+        }
+
+        const isConnected = Boolean(user.googleFitTokens);
         res.json({ success: true, isConnected });
     } catch (error) {
         console.error('Error checking connection status:', error);
@@ -68,23 +93,30 @@ export const getConnectionStatus = async (req, res) => {
 
 export const getFitnessData = async (req, res) => {
     try {
-        if (!req.user.googleFitTokens) {
+        const { userId } = req.body;
+        const user = await userModel.findById(userId);
+        
+        if (!user) {
+            return res.status(404).json({ success: false, message: 'User not found' });
+        }
+
+        if (!user.googleFitTokens) {
             return res.status(400).json({ success: false, message: 'Not connected to Google Fit' });
         }
 
         // Check if token needs refresh
-        if (req.user.googleFitTokens.expiry_date && Date.now() >= req.user.googleFitTokens.expiry_date) {
+        if (user.googleFitTokens.expiry_date && Date.now() >= user.googleFitTokens.expiry_date) {
             try {
-                const { credentials } = await oauth2Client.refreshToken(req.user.googleFitTokens.refresh_token);
-                req.user.googleFitTokens = credentials;
-                await req.user.save();
+                const { credentials } = await oauth2Client.refreshToken(user.googleFitTokens.refresh_token);
+                user.googleFitTokens = credentials;
+                await user.save();
             } catch (refreshError) {
                 console.error('Token refresh failed:', refreshError);
                 return res.status(401).json({ success: false, message: 'Authentication expired. Please reconnect to Google Fit.' });
             }
         }
 
-        oauth2Client.setCredentials(req.user.googleFitTokens);
+        oauth2Client.setCredentials(user.googleFitTokens);
 
         const now = Date.now();
         const startTime = new Date(now - 24 * 60 * 60 * 1000).getTime();

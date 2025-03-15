@@ -1,9 +1,16 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import SEO from '../components/SEO'
 
 const Contact = () => {
   return (
     <div>
+      <SEO 
+        title="Contact Prescripto - Get in Touch With Our Team"
+        description="Have questions or need assistance? Contact the Prescripto team for support with appointments, medicines, or any other healthcare needs."
+        keywords="contact prescripto, healthcare support, customer service, help, contact us, healthcare assistance"
+        canonicalUrl="/contact"
+      />
 
       <div className='text-center text-2xl pt-10 text-[#707070]'>
         <p>CONTACT <span className='text-gray-700 font-semibold'>US</span></p>

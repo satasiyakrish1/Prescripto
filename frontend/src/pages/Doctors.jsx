@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { AppContext } from '../context/AppContext'
 import { useNavigate, useParams } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 const Doctors = () => {
 
@@ -24,8 +25,24 @@ const Doctors = () => {
     applyFilter()
   }, [doctors, speciality])
 
+  // Customize SEO title based on speciality
+  const seoTitle = speciality 
+    ? `${speciality} Specialists - Find and Book Appointments | Prescripto`
+    : 'Find Doctors - Book Appointments with Specialists | Prescripto';
+  
+  // Customize SEO description based on speciality
+  const seoDescription = speciality
+    ? `Book appointments with trusted ${speciality} specialists. Find the best ${speciality} doctors near you with Prescripto.`
+    : 'Find and book appointments with trusted doctors and specialists. Browse by speciality and location with Prescripto.';
+
   return (
     <div>
+      <SEO 
+        title={seoTitle}
+        description={seoDescription}
+        keywords={`doctors, specialists, ${speciality || 'medical specialists'}, appointments, healthcare, book doctor`}
+        canonicalUrl={speciality ? `/doctors/${speciality}` : '/doctors'}
+      />
       <p className='text-gray-600'>Browse through the doctors specialist.</p>
       <div className='flex flex-col sm:flex-row items-start gap-5 mt-5'>
         <button onClick={() => setShowFilter(!showFilter)} className={`py-1 px-3 border rounded text-sm  transition-all sm:hidden ${showFilter ? 'bg-primary text-white' : ''}`}>Filters</button>

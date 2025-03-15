@@ -1,9 +1,16 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import SEO from '../components/SEO'
 
 const About = () => {
   return (
     <div>
+      <SEO 
+        title="About Prescripto - Your Healthcare Partner"
+        description="Learn about Prescripto's mission to provide convenient healthcare solutions, connecting patients with trusted doctors and simplifying appointment scheduling."
+        keywords="about prescripto, healthcare platform, medical appointments, doctor scheduling, healthcare technology"
+        canonicalUrl="/about"
+      />
 
       <div className='text-center text-2xl pt-10 text-[#707070]'>
         <p>ABOUT <span className='text-gray-700 font-semibold'>US</span></p>
