@@ -23,7 +23,8 @@ const connectDB = async () => {
             throw new Error("MONGODB_URI is not defined in environment variables.");
         }
 
-        await mongoose.connect(`${mongoURI}/prescripto`, options);
+        // Connect to MongoDB with the database name included in the URI
+        await mongoose.connect(mongoURI, options);
     } catch (error) {
         console.error('❌ Failed to connect to MongoDB:', error);
         process.exit(1);
