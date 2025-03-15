@@ -120,14 +120,21 @@ export const getFitnessData = async (req, res) => {
         }
 
         // Check if token needs refresh
-        if (user.googleFitTokens.expiry_date && Date.now() >= user.googleFitTokens.expiry_date) {
+        if (!user.googleFitTokens.access_token || 
+            (user.googleFitTokens.expiry_date && Date.now() >= user.googleFitTokens.expiry_date)) {
             try {
-                const { credentials } = await oauth2Client.refreshToken(user.googleFitTokens.refresh_token);
-                user.googleFitTokens = credentials;
+                if (!user.googleFitTokens.refresh_token) {
+                    return res.status(401).json({ success: false, message: 'Not Authorized Login Again' });
+                }
+                const { tokens } = await oauth2Client.refreshToken(user.googleFitTokens.refresh_token);
+                if (!tokens || !tokens.access_token) {
+                    return res.status(401).json({ success: false, message: 'Not Authorized Login Again' });
+                }
+                user.googleFitTokens = tokens;
                 await user.save();
             } catch (refreshError) {
                 console.error('Token refresh failed:', refreshError);
-                return res.status(401).json({ success: false, message: 'Authentication expired. Please reconnect to Google Fit.' });
+                return res.status(401).json({ success: false, message: 'Not Authorized Login Again' });
             }
         }
 

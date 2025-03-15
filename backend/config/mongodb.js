@@ -17,14 +17,23 @@ const connectDB = async () => {
         mongoose.connection.on('error', (err) => console.error('❌ MongoDB connection error:', err));
         mongoose.connection.on('disconnected', () => console.log('⚠️ MongoDB disconnected'));
 
-        // Ensure the connection string is properly formatted
-        const mongoURI = process.env.MONGODB_URI;
+        // Ensure the connection string is properly formatted and includes database name
+        let mongoURI = process.env.MONGODB_URI;
         if (!mongoURI) {
             throw new Error("MONGODB_URI is not defined in environment variables.");
         }
 
+        // Append database name if not present
+        if (!mongoURI.includes('?')) {
+            mongoURI = `${mongoURI}/prescripto?retryWrites=true&w=majority`;
+        } else if (!mongoURI.includes('/')) {
+            mongoURI = mongoURI.replace('?', '/prescripto?');
+        }
+
         // Connect to MongoDB with the database name included in the URI
         await mongoose.connect(mongoURI, options);
+        
+        console.log('✅ Connected to database:', mongoose.connection.name);
     } catch (error) {
         console.error('❌ Failed to connect to MongoDB:', error);
         process.exit(1);

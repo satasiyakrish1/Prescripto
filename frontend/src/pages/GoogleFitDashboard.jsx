@@ -8,23 +8,48 @@ const GoogleFitDashboard = () => {
   const { backendUrl, token } = useContext(AppContext);
   const [fitnessData, setFitnessData] = useState(null);
   const [isConnected, setIsConnected] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [selectedView, setSelectedView] = useState('daily'); // daily, weekly, monthly
 
   useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const status = urlParams.get('status');
+    const error = urlParams.get('error');
+
+    if (error) {
+      toast.error(decodeURIComponent(error));
+      window.history.replaceState({}, '', '/google-fit');
+    } else if (status === 'success') {
+      toast.success('Successfully connected to Google Fit');
+      window.history.replaceState({}, '', '/google-fit');
+    }
+
     checkGoogleFitConnection();
   }, []);
 
   const checkGoogleFitConnection = async () => {
     try {
+      setIsLoading(true);
       const { data } = await axios.get(`${backendUrl}/api/user/google-fit/status`, {
         headers: { token }
       });
       setIsConnected(data.isConnected);
       if (data.isConnected) {
-        getFitnessData();
+        await getFitnessData();
       }
     } catch (error) {
       console.error('Error checking Google Fit connection:', error);
+      if (error.response?.data?.message === 'Not Authorized Login Again' || 
+          error.response?.status === 401) {
+        setIsConnected(false);
+        setFitnessData(null);
+        toast.warning('Your Google Fit session has expired. Please reconnect to continue.');
+        window.history.replaceState({}, '', '/google-fit');
+      } else {
+        toast.error('Failed to check Google Fit connection status');
+      }
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -42,13 +67,25 @@ const GoogleFitDashboard = () => {
 
   const getFitnessData = async () => {
     try {
+      setIsLoading(true);
       const { data } = await axios.get(`${backendUrl}/api/user/google-fit/data`, {
         headers: { token }
       });
       setFitnessData(data.fitnessData);
     } catch (error) {
       console.error('Error fetching fitness data:', error);
-      toast.error('Failed to fetch fitness data');
+      if (error.response?.data?.message === 'Not Authorized Login Again' || 
+          error.response?.status === 401) {
+        setIsConnected(false);
+        setFitnessData(null);
+        toast.warning('Your Google Fit session has expired. Please reconnect to continue.');
+        window.history.replaceState({}, '', '/google-fit');
+      } else {
+        toast.error('Failed to fetch fitness data');
+        setFitnessData(null);
+      }
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -119,7 +156,11 @@ const GoogleFitDashboard = () => {
             </button>
           </div>
 
-          {fitnessData ? (
+          {isLoading ? (
+            <div className="text-center py-8 text-gray-500">
+              Loading your fitness data...
+            </div>
+          ) : fitnessData ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {renderMetricCard('Steps', fitnessData.steps, 'steps', '👣')}
               {renderMetricCard('Calories', fitnessData.calories, 'kcal', '🔥')}
@@ -127,7 +168,7 @@ const GoogleFitDashboard = () => {
             </div>
           ) : (
             <div className="text-center py-8 text-gray-500">
-              Loading your fitness data...
+              No fitness data available. Please try refreshing the data.
             </div>
           )}
         </div>

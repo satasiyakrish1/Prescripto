@@ -26,7 +26,7 @@ const CreatePost = () => {
         setError(null);
 
         try {
-            const response = await fetch('/api/community/posts', {
+            const response = await fetch('/api/community/create-post', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
