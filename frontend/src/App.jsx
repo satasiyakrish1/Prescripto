@@ -12,6 +12,8 @@ import Appointment from './pages/Appointment'
 import MyAppointments from './pages/MyAppointments'
 import MyProfile from './pages/MyProfile'
 import Footer from './components/Footer'
+import Community from './pages/Community'
+import CreatePost from './pages/CreatePost'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Verify from './pages/Verify'
@@ -45,6 +47,8 @@ const App = () => {
         <Route path='/medicine/:id' element={<MedicineDetails />} />
         <Route path='/google-fit' element={<GoogleFitDashboard />} />
         <Route path='/terms' element={<Terms />} />
+        <Route path='/community' element={<Community />} />
+        <Route path='/community/create' element={<CreatePost />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
