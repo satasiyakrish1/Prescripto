@@ -1,0 +1,341 @@
+Date : 2025-03-16 00:03:38
+Directory : d:\Websites\Prescripto
+Total : 248 files,  35584 codes, 232 comments, 1646 blanks, all 37462 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |         11 |     24,537 |          0 |          8 |     24,545 |
+| JavaScript JSX     |         49 |      3,629 |         77 |        604 |      4,310 |
+| TypeScript JSX     |         36 |      3,001 |          8 |        381 |      3,390 |
+| JavaScript         |         43 |      1,931 |        106 |        366 |      2,403 |
+| TypeScript         |         10 |      1,012 |         16 |        147 |      1,175 |
+| XML                |         86 |        853 |          0 |         65 |        918 |
+| CSS                |          3 |        433 |         23 |         42 |        498 |
+| Markdown           |          3 |        103 |          0 |         27 |        130 |
+| JSON with Comments |          2 |         33 |          0 |          2 |         35 |
+| Django HTML        |          2 |         27 |          0 |          1 |         28 |
+| Properties         |          3 |         25 |          2 |          3 |         30 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                              | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                 |        248 |     35,584 |        232 |      1,646 |     37,462 |
+| Cloud Storage                                                                     |        107 |     12,509 |         48 |        605 |     13,162 |
+| Cloud Storage (Files)                                                             |          8 |      7,707 |          1 |         11 |      7,719 |
+| Cloud Storage\.idea                                                               |          6 |         46 |          0 |          0 |         46 |
+| Cloud Storage\.idea (Files)                                                       |          4 |         34 |          0 |          0 |         34 |
+| Cloud Storage\.idea\inspectionProfiles                                            |          1 |          6 |          0 |          0 |          6 |
+| Cloud Storage\.idea\jsLinters                                                     |          1 |          6 |          0 |          0 |          6 |
+| Cloud Storage\app                                                                 |          8 |        634 |         28 |         79 |        741 |
+| Cloud Storage\app (Files)                                                         |          2 |        432 |         23 |         40 |        495 |
+| Cloud Storage\app\(auth)                                                          |          3 |         51 |          0 |         12 |         63 |
+| Cloud Storage\app\(auth) (Files)                                                  |          1 |         45 |          0 |          6 |         51 |
+| Cloud Storage\app\(auth)\sign-in                                                  |          1 |          3 |          0 |          3 |          6 |
+| Cloud Storage\app\(auth)\sign-up                                                  |          1 |          3 |          0 |          3 |          6 |
+| Cloud Storage\app\(root)                                                          |          3 |        151 |          5 |         27 |        183 |
+| Cloud Storage\app\(root) (Files)                                                  |          2 |        112 |          4 |         17 |        133 |
+| Cloud Storage\app\(root)\[type]                                                   |          1 |         39 |          1 |         10 |         50 |
+| Cloud Storage\components                                                          |         29 |      2,772 |          3 |        337 |      3,112 |
+| Cloud Storage\components (Files)                                                  |         14 |      1,193 |          1 |        139 |      1,333 |
+| Cloud Storage\components\ui                                                       |         15 |      1,579 |          2 |        198 |      1,779 |
+| Cloud Storage\constants                                                           |          1 |         83 |          0 |          5 |         88 |
+| Cloud Storage\hooks                                                               |          1 |        160 |          3 |         32 |        195 |
+| Cloud Storage\lib                                                                 |          5 |        568 |         12 |         96 |        676 |
+| Cloud Storage\lib (Files)                                                         |          1 |        204 |         10 |         22 |        236 |
+| Cloud Storage\lib\actions                                                         |          2 |        315 |          2 |         64 |        381 |
+| Cloud Storage\lib\appwrite                                                        |          2 |         49 |          0 |         10 |         59 |
+| Cloud Storage\public                                                              |         48 |        472 |          0 |         36 |        508 |
+| Cloud Storage\public (Files)                                                      |          5 |          5 |          0 |          0 |          5 |
+| Cloud Storage\public\assets                                                       |         43 |        467 |          0 |         36 |        503 |
+| Cloud Storage\public\assets\icons                                                 |         43 |        467 |          0 |         36 |        503 |
+| Cloud Storage\types                                                               |          1 |         67 |          1 |          9 |         77 |
+| admin                                                                             |         45 |      8,408 |         32 |        275 |      8,715 |
+| admin (Files)                                                                     |         10 |      7,045 |          2 |         10 |      7,057 |
+| admin\public                                                                      |          2 |          5 |          0 |          1 |          6 |
+| admin\src                                                                         |         33 |      1,358 |         30 |        264 |      1,652 |
+| admin\src (Files)                                                                 |          3 |         74 |          0 |          8 |         82 |
+| admin\src\assets                                                                  |         15 |        155 |          0 |         16 |        171 |
+| admin\src\components                                                              |          3 |        135 |          0 |         21 |        156 |
+| admin\src\context                                                                 |          3 |        301 |         27 |         94 |        422 |
+| admin\src\pages                                                                   |          9 |        693 |          3 |        125 |        821 |
+| admin\src\pages (Files)                                                           |          2 |         75 |          0 |         16 |         91 |
+| admin\src\pages\Admin                                                             |          4 |        410 |          1 |         67 |        478 |
+| admin\src\pages\Doctor                                                            |          3 |        208 |          2 |         42 |        252 |
+| backend                                                                           |         36 |      4,758 |        103 |        374 |      5,235 |
+| backend (Files)                                                                   |          4 |      3,206 |          6 |         11 |      3,223 |
+| backend\config                                                                    |          3 |         49 |          4 |         15 |         68 |
+| backend\controllers                                                               |          7 |        957 |         64 |        263 |      1,284 |
+| backend\docs                                                                      |          1 |         93 |          0 |         19 |        112 |
+| backend\middleware                                                                |          4 |         58 |          3 |          9 |         70 |
+| backend\models                                                                    |          7 |        220 |          0 |         17 |        237 |
+| backend\routes                                                                    |          6 |         75 |          3 |         18 |         96 |
+| backend\utils                                                                     |          4 |        100 |         23 |         22 |        145 |
+| frontend                                                                          |         60 |      9,909 |         49 |        392 |     10,350 |
+| frontend (Files)                                                                  |         10 |      6,957 |          2 |         11 |      6,970 |
+| frontend\public                                                                   |          3 |         56 |          0 |          1 |         57 |
+| frontend\src                                                                      |         47 |      2,896 |         47 |        380 |      3,323 |
+| frontend\src (Files)                                                              |          3 |         91 |          0 |          9 |        100 |
+| frontend\src\assets                                                               |         14 |        442 |          0 |         17 |        459 |
+| frontend\src\components                                                           |         10 |        495 |         13 |         70 |        578 |
+| frontend\src\context                                                              |          1 |         58 |          2 |         21 |         81 |
+| frontend\src\pages                                                                |         19 |      1,810 |         32 |        263 |      2,105 |
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                          | language           | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| d:\Websites\Prescripto\Cloud Storage\.eslintrc.json                               | JSON with Comments |          6 |          0 |          1 |          7 |
+| d:\Websites\Prescripto\Cloud Storage\.idea\inspectionProfiles\Project_Default.xml | XML                |          6 |          0 |          0 |          6 |
+| d:\Websites\Prescripto\Cloud Storage\.idea\jsLinters\eslint.xml                   | XML                |          6 |          0 |          0 |          6 |
+| d:\Websites\Prescripto\Cloud Storage\.idea\modules.xml                            | XML                |          8 |          0 |          0 |          8 |
+| d:\Websites\Prescripto\Cloud Storage\.idea\prettier.xml                           | XML                |          8 |          0 |          0 |          8 |
+| d:\Websites\Prescripto\Cloud Storage\.idea\store_it.iml                           | XML                |         12 |          0 |          0 |         12 |
+| d:\Websites\Prescripto\Cloud Storage\.idea\vcs.xml                                | XML                |          6 |          0 |          0 |          6 |
+| d:\Websites\Prescripto\Cloud Storage\app\(auth)\layout.tsx                        | TypeScript JSX     |         45 |          0 |          6 |         51 |
+| d:\Websites\Prescripto\Cloud Storage\app\(auth)\sign-in\page.tsx                  | TypeScript JSX     |          3 |          0 |          3 |          6 |
+| d:\Websites\Prescripto\Cloud Storage\app\(auth)\sign-up\page.tsx                  | TypeScript JSX     |          3 |          0 |          3 |          6 |
+| d:\Websites\Prescripto\Cloud Storage\app\(root)\[type]\page.tsx                   | TypeScript JSX     |         39 |          1 |         10 |         50 |
+| d:\Websites\Prescripto\Cloud Storage\app\(root)\layout.tsx                        | TypeScript JSX     |         24 |          0 |          7 |         31 |
+| d:\Websites\Prescripto\Cloud Storage\app\(root)\page.tsx                          | TypeScript JSX     |         88 |          4 |         10 |        102 |
+| d:\Websites\Prescripto\Cloud Storage\app\globals.css                              | CSS                |        405 |         23 |         35 |        463 |
+| d:\Websites\Prescripto\Cloud Storage\app\layout.tsx                               | TypeScript JSX     |         27 |          0 |          5 |         32 |
+| d:\Websites\Prescripto\Cloud Storage\components.json                              | JSON               |         20 |          0 |          0 |         20 |
+| d:\Websites\Prescripto\Cloud Storage\components\ActionDropdown.tsx                | TypeScript JSX     |        188 |          1 |         19 |        208 |
+| d:\Websites\Prescripto\Cloud Storage\components\ActionsModalContent.tsx           | TypeScript JSX     |         89 |          0 |          8 |         97 |
+| d:\Websites\Prescripto\Cloud Storage\components\AuthForm.tsx                      | TypeScript JSX     |        146 |          0 |         22 |        168 |
+| d:\Websites\Prescripto\Cloud Storage\components\Card.tsx                          | TypeScript JSX     |         36 |          0 |          4 |         40 |
+| d:\Websites\Prescripto\Cloud Storage\components\Chart.tsx                         | TypeScript JSX     |         95 |          0 |          6 |        101 |
+| d:\Websites\Prescripto\Cloud Storage\components\FileUploader.tsx                  | TypeScript JSX     |        114 |          0 |         18 |        132 |
+| d:\Websites\Prescripto\Cloud Storage\components\FormattedDateTime.tsx             | TypeScript JSX     |         16 |          0 |          2 |         18 |
+| d:\Websites\Prescripto\Cloud Storage\components\Header.tsx                        | TypeScript JSX     |         39 |          0 |          3 |         42 |
+| d:\Websites\Prescripto\Cloud Storage\components\MobileNavigation.tsx              | TypeScript JSX     |        117 |          0 |         10 |        127 |
+| d:\Websites\Prescripto\Cloud Storage\components\OTPModal.tsx                      | TypeScript JSX     |        113 |          0 |         16 |        129 |
+| d:\Websites\Prescripto\Cloud Storage\components\Search.tsx                        | TypeScript JSX     |         95 |          0 |         13 |        108 |
+| d:\Websites\Prescripto\Cloud Storage\components\Sidebar.tsx                       | TypeScript JSX     |         74 |          0 |          8 |         82 |
+| d:\Websites\Prescripto\Cloud Storage\components\Sort.tsx                          | TypeScript JSX     |         36 |          0 |          6 |         42 |
+| d:\Websites\Prescripto\Cloud Storage\components\Thumbnail.tsx                     | TypeScript JSX     |         35 |          0 |          4 |         39 |
+| d:\Websites\Prescripto\Cloud Storage\components\ui\alert-dialog.tsx               | TypeScript JSX     |        127 |          0 |         15 |        142 |
+| d:\Websites\Prescripto\Cloud Storage\components\ui\button.tsx                     | TypeScript JSX     |         52 |          0 |          6 |         58 |
+| d:\Websites\Prescripto\Cloud Storage\components\ui\card.tsx                       | TypeScript JSX     |         68 |          0 |          9 |         77 |
+| d:\Websites\Prescripto\Cloud Storage\components\ui\chart.tsx                      | TypeScript JSX     |        332 |          2 |         37 |        371 |
+| d:\Websites\Prescripto\Cloud Storage\components\ui\dialog.tsx                     | TypeScript JSX     |        109 |          0 |         14 |        123 |
+| d:\Websites\Prescripto\Cloud Storage\components\ui\dropdown-menu.tsx              | TypeScript JSX     |        187 |          0 |         19 |        206 |
+| d:\Websites\Prescripto\Cloud Storage\components\ui\form.tsx                       | TypeScript JSX     |        153 |          0 |         26 |        179 |
+| d:\Websites\Prescripto\Cloud Storage\components\ui\input-otp.tsx                  | TypeScript JSX     |         63 |          0 |          9 |         72 |
+| d:\Websites\Prescripto\Cloud Storage\components\ui\input.tsx                      | TypeScript JSX     |         21 |          0 |          5 |         26 |
+| d:\Websites\Prescripto\Cloud Storage\components\ui\label.tsx                      | TypeScript JSX     |         21 |          0 |          6 |         27 |
+| d:\Websites\Prescripto\Cloud Storage\components\ui\select.tsx                     | TypeScript JSX     |        146 |          0 |         13 |        159 |
+| d:\Websites\Prescripto\Cloud Storage\components\ui\separator.tsx                  | TypeScript JSX     |         27 |          0 |          5 |         32 |
+| d:\Websites\Prescripto\Cloud Storage\components\ui\sheet.tsx                      | TypeScript JSX     |        125 |          0 |         16 |        141 |
+| d:\Websites\Prescripto\Cloud Storage\components\ui\toast.tsx                      | TypeScript JSX     |        116 |          0 |         14 |        130 |
+| d:\Websites\Prescripto\Cloud Storage\components\ui\toaster.tsx                    | TypeScript JSX     |         32 |          0 |          4 |         36 |
+| d:\Websites\Prescripto\Cloud Storage\constants\index.ts                           | TypeScript         |         83 |          0 |          5 |         88 |
+| d:\Websites\Prescripto\Cloud Storage\hooks\use-toast.ts                           | TypeScript         |        160 |          3 |         32 |        195 |
+| d:\Websites\Prescripto\Cloud Storage\lib\actions\file.actions.ts                  | TypeScript         |        200 |          1 |         36 |        237 |
+| d:\Websites\Prescripto\Cloud Storage\lib\actions\user.actions.ts                  | TypeScript         |        115 |          1 |         28 |        144 |
+| d:\Websites\Prescripto\Cloud Storage\lib\appwrite\config.ts                       | TypeScript         |          9 |          0 |          1 |         10 |
+| d:\Websites\Prescripto\Cloud Storage\lib\appwrite\index.ts                        | TypeScript         |         40 |          0 |          9 |         49 |
+| d:\Websites\Prescripto\Cloud Storage\lib\utils.ts                                 | TypeScript         |        204 |         10 |         22 |        236 |
+| d:\Websites\Prescripto\Cloud Storage\next.config.ts                               | TypeScript         |         31 |          0 |          3 |         34 |
+| d:\Websites\Prescripto\Cloud Storage\package-lock.json                            | JSON               |      7,457 |          0 |          1 |      7,458 |
+| d:\Websites\Prescripto\Cloud Storage\package.json                                 | JSON               |         57 |          0 |          1 |         58 |
+| d:\Websites\Prescripto\Cloud Storage\postcss.config.mjs                           | JavaScript         |          6 |          1 |          2 |          9 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\arrow-up.svg             | XML                |          4 |          0 |          1 |          5 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\calendar.svg             | XML                |          3 |          0 |          1 |          4 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\close-dark.svg           | XML                |          3 |          0 |          1 |          4 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\close.svg                | XML                |          3 |          0 |          1 |          4 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\dashboard.svg            | XML                |          3 |          0 |          1 |          4 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\delete.svg               | XML                |          8 |          0 |          1 |          9 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\documents.svg            | XML                |          4 |          0 |          1 |          5 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\dots.svg                 | XML                |          5 |          0 |          1 |          6 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\download.svg             | XML                |          7 |          0 |          1 |          8 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\edit.svg                 | XML                |          6 |          0 |          1 |          7 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\file-audio.svg           | XML                |          3 |          0 |          1 |          4 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\file-csv.svg             | XML                |         37 |          0 |          0 |         37 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\file-doc.svg             | XML                |         37 |          0 |          0 |         37 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\file-document-light.svg  | XML                |         22 |          0 |          1 |         23 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\file-document.svg        | XML                |          4 |          0 |          1 |          5 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\file-docx.svg            | XML                |         37 |          0 |          0 |         37 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\file-image-light.svg     | XML                |         23 |          0 |          1 |         24 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\file-image.svg           | XML                |          4 |          0 |          1 |          5 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\file-other-light.svg     | XML                |         22 |          0 |          1 |         23 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\file-other.svg           | XML                |         14 |          0 |          1 |         15 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\file-pdf.svg             | XML                |         30 |          0 |          0 |         30 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\file-svg.svg             | XML                |          4 |          0 |          1 |          5 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\file-txt.svg             | XML                |         30 |          0 |          0 |         30 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\file-video-light.svg     | XML                |         21 |          0 |          1 |         22 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\file-video.svg           | XML                |          3 |          0 |          1 |          4 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\grid.svg                 | XML                |          6 |          0 |          1 |          7 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\images.svg               | XML                |          4 |          0 |          1 |          5 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\info.svg                 | XML                |         11 |          0 |          1 |         12 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\loader-brand.svg         | XML                |         16 |          0 |          0 |         16 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\loader.svg               | XML                |         16 |          0 |          0 |         16 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\logo-brand.svg           | XML                |          4 |          0 |          1 |          5 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\logo-full-brand.svg      | XML                |          6 |          0 |          1 |          7 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\logo-full.svg            | XML                |          6 |          0 |          1 |          7 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\logout.svg               | XML                |          3 |          0 |          1 |          4 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\menu.svg                 | XML                |          7 |          0 |          1 |          8 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\others.svg               | XML                |          4 |          0 |          1 |          5 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\remove.svg               | XML                |          5 |          0 |          1 |          6 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\search.svg               | XML                |          4 |          0 |          1 |          5 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\share.svg                | XML                |         15 |          0 |          1 |         16 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\thumb-other.svg          | XML                |         14 |          0 |          1 |         15 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\thumb-video.svg          | XML                |          3 |          0 |          1 |          4 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\upload.svg               | XML                |          3 |          0 |          1 |          4 |
+| d:\Websites\Prescripto\Cloud Storage\public\assets\icons\video.svg                | XML                |          3 |          0 |          1 |          4 |
+| d:\Websites\Prescripto\Cloud Storage\public\file.svg                              | XML                |          1 |          0 |          0 |          1 |
+| d:\Websites\Prescripto\Cloud Storage\public\globe.svg                             | XML                |          1 |          0 |          0 |          1 |
+| d:\Websites\Prescripto\Cloud Storage\public\next.svg                              | XML                |          1 |          0 |          0 |          1 |
+| d:\Websites\Prescripto\Cloud Storage\public\vercel.svg                            | XML                |          1 |          0 |          0 |          1 |
+| d:\Websites\Prescripto\Cloud Storage\public\window.svg                            | XML                |          1 |          0 |          0 |          1 |
+| d:\Websites\Prescripto\Cloud Storage\tailwind.config.ts                           | TypeScript         |        103 |          0 |          2 |        105 |
+| d:\Websites\Prescripto\Cloud Storage\tsconfig.json                                | JSON with Comments |         27 |          0 |          1 |         28 |
+| d:\Websites\Prescripto\Cloud Storage\types\index.d.ts                             | TypeScript         |         67 |          1 |          9 |         77 |
+| d:\Websites\Prescripto\admin\.env                                                 | Properties         |          4 |          0 |          0 |          4 |
+| d:\Websites\Prescripto\admin\.eslintrc.cjs                                        | JavaScript         |         21 |          0 |          1 |         22 |
+| d:\Websites\Prescripto\admin\README.md                                            | Markdown           |          5 |          0 |          4 |          9 |
+| d:\Websites\Prescripto\admin\index.html                                           | Django HTML        |         13 |          0 |          0 |         13 |
+| d:\Websites\Prescripto\admin\package-lock.json                                    | JSON               |      6,927 |          0 |          1 |      6,928 |
+| d:\Websites\Prescripto\admin\package.json                                         | JSON               |         38 |          0 |          1 |         39 |
+| d:\Websites\Prescripto\admin\postcss.config.js                                    | JavaScript         |          6 |          0 |          1 |          7 |
+| d:\Websites\Prescripto\admin\public\favicon.svg                                   | XML                |          4 |          0 |          1 |          5 |
+| d:\Websites\Prescripto\admin\public\vite.svg                                      | XML                |          1 |          0 |          0 |          1 |
+| d:\Websites\Prescripto\admin\src\App.jsx                                          | JavaScript JSX     |         45 |          0 |          4 |         49 |
+| d:\Websites\Prescripto\admin\src\assets\add_icon.svg                              | XML                |          4 |          0 |          1 |          5 |
+| d:\Websites\Prescripto\admin\src\assets\admin_logo.svg                            | XML                |          6 |          0 |          1 |          7 |
+| d:\Websites\Prescripto\admin\src\assets\appointment_icon.svg                      | XML                |         12 |          0 |          1 |         13 |
+| d:\Websites\Prescripto\admin\src\assets\appointments_icon.svg                     | XML                |          6 |          0 |          1 |          7 |
+| d:\Websites\Prescripto\admin\src\assets\assets.js                                 | JavaScript         |         28 |          0 |          2 |         30 |
+| d:\Websites\Prescripto\admin\src\assets\cancel_icon.svg                           | XML                |         20 |          0 |          1 |         21 |
+| d:\Websites\Prescripto\admin\src\assets\doctor_icon.svg                           | XML                |          6 |          0 |          1 |          7 |
+| d:\Websites\Prescripto\admin\src\assets\earning_icon.svg                          | XML                |         11 |          0 |          1 |         12 |
+| d:\Websites\Prescripto\admin\src\assets\home_icon.svg                             | XML                |          4 |          0 |          1 |          5 |
+| d:\Websites\Prescripto\admin\src\assets\list_icon.svg                             | XML                |          5 |          0 |          1 |          6 |
+| d:\Websites\Prescripto\admin\src\assets\patient_icon.svg                          | XML                |          3 |          0 |          1 |          4 |
+| d:\Websites\Prescripto\admin\src\assets\patients_icon.svg                         | XML                |         14 |          0 |          1 |         15 |
+| d:\Websites\Prescripto\admin\src\assets\people_icon.svg                           | XML                |         11 |          0 |          1 |         12 |
+| d:\Websites\Prescripto\admin\src\assets\tick_icon.svg                             | XML                |         20 |          0 |          1 |         21 |
+| d:\Websites\Prescripto\admin\src\assets\upload_area.svg                           | XML                |          5 |          0 |          1 |          6 |
+| d:\Websites\Prescripto\admin\src\components\IncomeChart.jsx                       | JavaScript JSX     |         62 |          0 |          9 |         71 |
+| d:\Websites\Prescripto\admin\src\components\Navbar.jsx                            | JavaScript JSX     |         27 |          0 |          6 |         33 |
+| d:\Websites\Prescripto\admin\src\components\Sidebar.jsx                           | JavaScript JSX     |         46 |          0 |          6 |         52 |
+| d:\Websites\Prescripto\admin\src\context\AdminContext.jsx                         | JavaScript JSX     |        179 |         18 |         49 |        246 |
+| d:\Websites\Prescripto\admin\src\context\AppContext.jsx                           | JavaScript JSX     |         29 |          2 |         11 |         42 |
+| d:\Websites\Prescripto\admin\src\context\DoctorContext.jsx                        | JavaScript JSX     |         93 |          7 |         34 |        134 |
+| d:\Websites\Prescripto\admin\src\index.css                                        | CSS                |         10 |          0 |          2 |         12 |
+| d:\Websites\Prescripto\admin\src\main.jsx                                         | JavaScript JSX     |         19 |          0 |          2 |         21 |
+| d:\Websites\Prescripto\admin\src\pages\Admin\AddDoctor.jsx                        | JavaScript JSX     |        137 |          1 |         37 |        175 |
+| d:\Websites\Prescripto\admin\src\pages\Admin\AllAppointments.jsx                  | JavaScript JSX     |        120 |          0 |          9 |        129 |
+| d:\Websites\Prescripto\admin\src\pages\Admin\Dashboard.jsx                        | JavaScript JSX     |         80 |          0 |         14 |         94 |
+| d:\Websites\Prescripto\admin\src\pages\Admin\DoctorsList.jsx                      | JavaScript JSX     |         73 |          0 |          7 |         80 |
+| d:\Websites\Prescripto\admin\src\pages\Doctor\DoctorAppointments.jsx              | JavaScript JSX     |         56 |          0 |          8 |         64 |
+| d:\Websites\Prescripto\admin\src\pages\Doctor\DoctorDashboard.jsx                 | JavaScript JSX     |         68 |          0 |         12 |         80 |
+| d:\Websites\Prescripto\admin\src\pages\Doctor\DoctorProfile.jsx                   | JavaScript JSX     |         84 |          2 |         22 |        108 |
+| d:\Websites\Prescripto\admin\src\pages\Login.jsx                                  | JavaScript JSX     |         55 |          0 |         14 |         69 |
+| d:\Websites\Prescripto\admin\src\pages\NotFound.jsx                               | JavaScript JSX     |         20 |          0 |          2 |         22 |
+| d:\Websites\Prescripto\admin\tailwind.config.js                                   | JavaScript         |         17 |          1 |          0 |         18 |
+| d:\Websites\Prescripto\admin\vercel.json                                          | JSON               |          8 |          0 |          0 |          8 |
+| d:\Websites\Prescripto\admin\vite.config.js                                       | JavaScript         |          6 |          1 |          2 |          9 |
+| d:\Websites\Prescripto\backend\.env                                               | Properties         |         18 |          2 |          3 |         23 |
+| d:\Websites\Prescripto\backend\config\appwrite.js                                 | JavaScript         |          7 |          1 |          3 |         11 |
+| d:\Websites\Prescripto\backend\config\cloudinary.js                               | JavaScript         |          9 |          0 |          4 |         13 |
+| d:\Websites\Prescripto\backend\config\mongodb.js                                  | JavaScript         |         33 |          3 |          8 |         44 |
+| d:\Websites\Prescripto\backend\controllers\adminController.js                     | JavaScript         |        186 |         20 |         55 |        261 |
+| d:\Websites\Prescripto\backend\controllers\apiPackageController.js                | JavaScript         |         83 |          0 |         12 |         95 |
+| d:\Websites\Prescripto\backend\controllers\communityController.js                 | JavaScript         |         86 |          6 |         20 |        112 |
+| d:\Websites\Prescripto\backend\controllers\doctorController.js                    | JavaScript         |        140 |          9 |         54 |        203 |
+| d:\Websites\Prescripto\backend\controllers\googleFitController.js                 | JavaScript         |        139 |          5 |         28 |        172 |
+| d:\Websites\Prescripto\backend\controllers\medicineController.js                  | JavaScript         |         64 |          1 |         10 |         75 |
+| d:\Websites\Prescripto\backend\controllers\userController.js                      | JavaScript         |        259 |         23 |         84 |        366 |
+| d:\Websites\Prescripto\backend\docs\appwrite-setup.md                             | Markdown           |         93 |          0 |         19 |        112 |
+| d:\Websites\Prescripto\backend\middleware\authAdmin.js                            | JavaScript         |         18 |          1 |          2 |         21 |
+| d:\Websites\Prescripto\backend\middleware\authDoctor.js                           | JavaScript         |         16 |          1 |          2 |         19 |
+| d:\Websites\Prescripto\backend\middleware\authUser.js                             | JavaScript         |         16 |          1 |          2 |         19 |
+| d:\Websites\Prescripto\backend\middleware\multer.js                               | JavaScript         |          8 |          0 |          3 |         11 |
+| d:\Websites\Prescripto\backend\models\apiPackageModel.js                          | JavaScript         |         44 |          0 |          2 |         46 |
+| d:\Websites\Prescripto\backend\models\appointmentModel.js                         | JavaScript         |         16 |          0 |          2 |         18 |
+| d:\Websites\Prescripto\backend\models\communityModel.js                           | JavaScript         |         51 |          0 |          2 |         53 |
+| d:\Websites\Prescripto\backend\models\communityPostModel.js                       | JavaScript         |         22 |          0 |          3 |         25 |
+| d:\Websites\Prescripto\backend\models\doctorModel.js                              | JavaScript         |         18 |          0 |          2 |         20 |
+| d:\Websites\Prescripto\backend\models\medicineModel.js                            | JavaScript         |         54 |          0 |          4 |         58 |
+| d:\Websites\Prescripto\backend\models\userModel.js                                | JavaScript         |         15 |          0 |          2 |         17 |
+| d:\Websites\Prescripto\backend\package-lock.json                                  | JSON               |      3,108 |          0 |          1 |      3,109 |
+| d:\Websites\Prescripto\backend\package.json                                       | JSON               |         37 |          0 |          1 |         38 |
+| d:\Websites\Prescripto\backend\routes\adminRoute.js                               | JavaScript         |         16 |          0 |          2 |         18 |
+| d:\Websites\Prescripto\backend\routes\apiPackageRoute.js                          | JavaScript         |          8 |          0 |          3 |         11 |
+| d:\Websites\Prescripto\backend\routes\communityRoute.js                           | JavaScript         |          9 |          2 |          4 |         15 |
+| d:\Websites\Prescripto\backend\routes\doctorRoute.js                              | JavaScript         |         14 |          0 |          2 |         16 |
+| d:\Websites\Prescripto\backend\routes\medicineRoute.js                            | JavaScript         |          6 |          0 |          3 |          9 |
+| d:\Websites\Prescripto\backend\routes\userRoute.js                                | JavaScript         |         22 |          1 |          4 |         27 |
+| d:\Websites\Prescripto\backend\server.js                                          | JavaScript         |         43 |          4 |          6 |         53 |
+| d:\Websites\Prescripto\backend\utils\apiKeyGenerator.js                           | JavaScript         |          5 |          0 |          1 |          6 |
+| d:\Websites\Prescripto\backend\utils\csvGenerator.js                              | JavaScript         |         20 |          4 |          5 |         29 |
+| d:\Websites\Prescripto\backend\utils\emailService.js                              | JavaScript         |         41 |         11 |          6 |         58 |
+| d:\Websites\Prescripto\backend\utils\pdfGenerator.js                              | JavaScript         |         34 |          8 |         10 |         52 |
+| d:\Websites\Prescripto\frontend\.env                                              | Properties         |          3 |          0 |          0 |          3 |
+| d:\Websites\Prescripto\frontend\.eslintrc.cjs                                     | JavaScript         |         21 |          0 |          1 |         22 |
+| d:\Websites\Prescripto\frontend\README.md                                         | Markdown           |          5 |          0 |          4 |          9 |
+| d:\Websites\Prescripto\frontend\index.html                                        | Django HTML        |         14 |          0 |          1 |         15 |
+| d:\Websites\Prescripto\frontend\package-lock.json                                 | JSON               |      6,841 |          0 |          1 |      6,842 |
+| d:\Websites\Prescripto\frontend\package.json                                      | JSON               |         36 |          0 |          1 |         37 |
+| d:\Websites\Prescripto\frontend\postcss.config.js                                 | JavaScript         |          6 |          0 |          1 |          7 |
+| d:\Websites\Prescripto\frontend\public\favicon.svg                                | XML                |          4 |          0 |          1 |          5 |
+| d:\Websites\Prescripto\frontend\public\sitemap.xml                                | XML                |         51 |          0 |          0 |         51 |
+| d:\Websites\Prescripto\frontend\public\vite.svg                                   | XML                |          1 |          0 |          0 |          1 |
+| d:\Websites\Prescripto\frontend\src\App.jsx                                       | JavaScript JSX     |         57 |          0 |          2 |         59 |
+| d:\Websites\Prescripto\frontend\src\assets\Dermatologist.svg                      | XML                |         18 |          0 |          1 |         19 |
+| d:\Websites\Prescripto\frontend\src\assets\Gastroenterologist.svg                 | XML                |         18 |          0 |          1 |         19 |
+| d:\Websites\Prescripto\frontend\src\assets\General_physician.svg                  | XML                |         12 |          0 |          1 |         13 |
+| d:\Websites\Prescripto\frontend\src\assets\Gynecologist.svg                       | XML                |         36 |          0 |          1 |         37 |
+| d:\Websites\Prescripto\frontend\src\assets\Neurologist.svg                        | XML                |         16 |          0 |          1 |         17 |
+| d:\Websites\Prescripto\frontend\src\assets\Pediatricians.svg                      | XML                |         17 |          0 |          1 |         18 |
+| d:\Websites\Prescripto\frontend\src\assets\arrow_icon.svg                         | XML                |          3 |          0 |          1 |          4 |
+| d:\Websites\Prescripto\frontend\src\assets\assets.js                              | JavaScript         |        295 |          0 |          4 |        299 |
+| d:\Websites\Prescripto\frontend\src\assets\chats_icon.svg                         | XML                |          3 |          0 |          1 |          4 |
+| d:\Websites\Prescripto\frontend\src\assets\dropdown_icon.svg                      | XML                |          8 |          0 |          1 |          9 |
+| d:\Websites\Prescripto\frontend\src\assets\info_icon.svg                          | XML                |          3 |          0 |          1 |          4 |
+| d:\Websites\Prescripto\frontend\src\assets\logo.svg                               | XML                |          5 |          0 |          1 |          6 |
+| d:\Websites\Prescripto\frontend\src\assets\menu_icon.svg                          | XML                |          5 |          0 |          1 |          6 |
+| d:\Websites\Prescripto\frontend\src\assets\verified_icon.svg                      | XML                |          3 |          0 |          1 |          4 |
+| d:\Websites\Prescripto\frontend\src\components\Banner.jsx                         | JavaScript JSX     |         21 |          2 |          6 |         29 |
+| d:\Websites\Prescripto\frontend\src\components\Footer.jsx                         | JavaScript JSX     |         37 |          0 |          9 |         46 |
+| d:\Websites\Prescripto\frontend\src\components\GoogleFitData.jsx                  | JavaScript JSX     |         92 |          0 |          8 |        100 |
+| d:\Websites\Prescripto\frontend\src\components\Header.jsx                         | JavaScript JSX     |         24 |          2 |          4 |         30 |
+| d:\Websites\Prescripto\frontend\src\components\MedicineSearch.jsx                 | JavaScript JSX     |        127 |          0 |         15 |        142 |
+| d:\Websites\Prescripto\frontend\src\components\Navbar.jsx                         | JavaScript JSX     |         74 |          1 |          8 |         83 |
+| d:\Websites\Prescripto\frontend\src\components\RelatedDoctors.jsx                 | JavaScript JSX     |         35 |          1 |          5 |         41 |
+| d:\Websites\Prescripto\frontend\src\components\SEO.jsx                            | JavaScript JSX     |         36 |          7 |          8 |         51 |
+| d:\Websites\Prescripto\frontend\src\components\SpecialityMenu.jsx                 | JavaScript JSX     |         20 |          0 |          2 |         22 |
+| d:\Websites\Prescripto\frontend\src\components\TopDoctors.jsx                     | JavaScript JSX     |         29 |          0 |          5 |         34 |
+| d:\Websites\Prescripto\frontend\src\context\AppContext.jsx                        | JavaScript JSX     |         58 |          2 |         21 |         81 |
+| d:\Websites\Prescripto\frontend\src\index.css                                     | CSS                |         18 |          0 |          5 |         23 |
+| d:\Websites\Prescripto\frontend\src\main.jsx                                      | JavaScript JSX     |         16 |          0 |          2 |         18 |
+| d:\Websites\Prescripto\frontend\src\pages\About.jsx                               | JavaScript JSX     |         45 |          0 |          8 |         53 |
+| d:\Websites\Prescripto\frontend\src\pages\ApiMarketplace.jsx                      | JavaScript JSX     |        299 |          5 |         17 |        321 |
+| d:\Websites\Prescripto\frontend\src\pages\Appointment.jsx                         | JavaScript JSX     |        131 |         11 |         47 |        189 |
+| d:\Websites\Prescripto\frontend\src\pages\Community.jsx                           | JavaScript JSX     |         94 |          0 |          9 |        103 |
+| d:\Websites\Prescripto\frontend\src\pages\Contact.jsx                             | JavaScript JSX     |         30 |          0 |          7 |         37 |
+| d:\Websites\Prescripto\frontend\src\pages\CreatePost.jsx                          | JavaScript JSX     |        130 |          0 |         14 |        144 |
+| d:\Websites\Prescripto\frontend\src\pages\Doctors.jsx                             | JavaScript JSX     |         64 |          2 |         10 |         76 |
+| d:\Websites\Prescripto\frontend\src\pages\Features.jsx                            | JavaScript JSX     |         47 |          0 |          6 |         53 |
+| d:\Websites\Prescripto\frontend\src\pages\GoogleFitDashboard.jsx                  | JavaScript JSX     |        168 |          0 |         12 |        180 |
+| d:\Websites\Prescripto\frontend\src\pages\Home.jsx                                | JavaScript JSX     |         23 |          0 |          2 |         25 |
+| d:\Websites\Prescripto\frontend\src\pages\Login.jsx                               | JavaScript JSX     |         67 |          0 |         16 |         83 |
+| d:\Websites\Prescripto\frontend\src\pages\MedicineDetails.jsx                     | JavaScript JSX     |        132 |          0 |         17 |        149 |
+| d:\Websites\Prescripto\frontend\src\pages\Medicines.jsx                           | JavaScript JSX     |         19 |          0 |          2 |         21 |
+| d:\Websites\Prescripto\frontend\src\pages\MyAppointments.jsx                      | JavaScript JSX     |        211 |         13 |         34 |        258 |
+| d:\Websites\Prescripto\frontend\src\pages\MyProfile.jsx                           | JavaScript JSX     |        110 |          0 |          6 |        116 |
+| d:\Websites\Prescripto\frontend\src\pages\NotFound.jsx                            | JavaScript JSX     |         20 |          0 |          2 |         22 |
+| d:\Websites\Prescripto\frontend\src\pages\Privacy.jsx                             | JavaScript JSX     |         94 |          0 |         24 |        118 |
+| d:\Websites\Prescripto\frontend\src\pages\Terms.jsx                               | JavaScript JSX     |         89 |          0 |         15 |        104 |
+| d:\Websites\Prescripto\frontend\src\pages\Verify.jsx                              | JavaScript JSX     |         37 |          1 |         15 |         53 |
+| d:\Websites\Prescripto\frontend\tailwind.config.js                                | JavaScript         |         17 |          1 |          0 |         18 |
+| d:\Websites\Prescripto\frontend\vercel.json                                       | JSON               |          8 |          0 |          0 |          8 |
+| d:\Websites\Prescripto\frontend\vite.config.js                                    | JavaScript         |          6 |          1 |          2 |          9 |
+| Total                                                                             |                    |     35,584 |        232 |      1,646 |     37,462 |
++-----------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

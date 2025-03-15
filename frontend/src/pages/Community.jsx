@@ -14,15 +14,29 @@ const Community = () => {
 
     const fetchPosts = async () => {
         try {
-            const response = await fetch('/api/community/posts');
-            const data = await response.json();
+            const response = await fetch('/api/community/posts', {
+                headers: {
+                    'Authorization': `Bearer ${localStorage.getItem('token')}`,
+                    'Accept': 'application/json'
+                }
+            });
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            let data;
+            try {
+                data = await response.json();
+            } catch (parseError) {
+                throw new Error('Invalid response format from server');
+            }
             if (data.success) {
                 setPosts(data.posts);
             } else {
-                setError('Failed to fetch posts');
+                setError(data.message || 'Failed to fetch posts');
             }
         } catch (err) {
-            setError('Network error occurred');
+            setError(err.message === 'Failed to fetch' ? 'Network error occurred. Please check your internet connection.' : err.message);
+            console.error('Error fetching posts:', err);
         } finally {
             setLoading(false);
         }

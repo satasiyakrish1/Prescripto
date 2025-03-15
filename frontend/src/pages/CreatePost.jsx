@@ -26,13 +26,21 @@ const CreatePost = () => {
         setError(null);
 
         try {
+            const userId = localStorage.getItem('userId');
+            if (!userId) {
+                setError('Please login to create a post');
+                return;
+            }
+
             const response = await fetch('/api/community/create-post', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${localStorage.getItem('token')}`
                 },
                 body: JSON.stringify({
                     ...formData,
+                    userId,
                     tags: formData.tags.split(',').map(tag => tag.trim()).filter(Boolean)
                 })
             });
