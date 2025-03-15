@@ -17,32 +17,37 @@ const razorpayInstance = new razorpay({
 
 // API to register user
 const registerUser = async (req, res) => {
-
     try {
         const { name, email, password } = req.body;
 
         // checking for all data to register user
         if (!name || !email || !password) {
-            return res.json({ success: false, message: 'Missing Details' })
+            return res.status(400).json({ success: false, message: 'Please provide all required fields: name, email, and password' })
         }
 
         // validating email format
         if (!validator.isEmail(email)) {
-            return res.json({ success: false, message: "Please enter a valid email" })
+            return res.status(400).json({ success: false, message: "Please enter a valid email address" })
+        }
+
+        // Check if email already exists
+        const existingUser = await userModel.findOne({ email })
+        if (existingUser) {
+            return res.status(409).json({ success: false, message: "Email already registered" })
         }
 
         // validating strong password
         if (password.length < 8) {
-            return res.json({ success: false, message: "Please enter a strong password" })
+            return res.status(400).json({ success: false, message: "Password must be at least 8 characters long" })
         }
 
         // hashing user password
-        const salt = await bcrypt.genSalt(10); // the more no. round the more time it will take
+        const salt = await bcrypt.genSalt(10);
         const hashedPassword = await bcrypt.hash(password, salt)
 
         const userData = {
-            name,
-            email,
+            name: name.trim(),
+            email: email.toLowerCase(),
             password: hashedPassword,
         }
 
@@ -50,11 +55,14 @@ const registerUser = async (req, res) => {
         const user = await newUser.save()
         const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET)
 
-        res.json({ success: true, token })
+        res.status(201).json({ success: true, token })
 
     } catch (error) {
-        console.log(error)
-        res.json({ success: false, message: error.message })
+        console.error('Registration error:', error)
+        if (error.name === 'ValidationError') {
+            return res.status(400).json({ success: false, message: 'Invalid input data' })
+        }
+        res.status(500).json({ success: false, message: 'Server error during registration' })
     }
 }
 

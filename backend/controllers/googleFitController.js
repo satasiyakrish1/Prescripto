@@ -10,6 +10,21 @@ const oauth2Client = new google.auth.OAuth2(
     process.env.GOOGLE_REDIRECT_URI
 );
 
+// Configure OAuth client settings
+oauth2Client.setCredentials({
+    prompt: 'consent',
+    access_type: 'offline'
+});
+
+// Set application name for Google OAuth consent screen
+const oauth2 = google.oauth2({ version: 'v2', auth: oauth2Client });
+oauth2Client._options = {
+    ...oauth2Client._options,
+    clientId: process.env.GOOGLE_CLIENT_ID,
+    clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+    redirectUri: process.env.GOOGLE_REDIRECT_URI
+};
+
 const fitness = google.fitness('v1');
 
 export const getAuthUrl = async (req, res) => {

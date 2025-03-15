@@ -20,6 +20,7 @@ import Medicines from './pages/Medicines'
 import MedicineDetails from './pages/MedicineDetails'
 import NotFound from './pages/NotFound'
 import GoogleFitDashboard from './pages/GoogleFitDashboard'
+import Terms from './pages/Terms'
 
 const App = () => {
   return (
@@ -43,6 +44,7 @@ const App = () => {
         <Route path='/medicines' element={<Medicines />} />
         <Route path='/medicine/:id' element={<MedicineDetails />} />
         <Route path='/google-fit' element={<GoogleFitDashboard />} />
+        <Route path='/terms' element={<Terms />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />

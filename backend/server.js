@@ -17,7 +17,22 @@ connectCloudinary()
 
 // middlewares
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: process.env.FRONTEND_URL || '*',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true
+}))
+
+// Global error handler
+app.use((err, req, res, next) => {
+    console.error('Global error:', err);
+    res.status(err.status || 500).json({
+        success: false,
+        message: err.message || 'Internal server error',
+        error: process.env.NODE_ENV === 'development' ? err : {}
+    });
+});
 
 // api endpoints
 app.use("/api/user", userRouter)
