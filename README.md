@@ -1,116 +1,91 @@
-🏥 Priscripto - Medical Appointment Booking System
+# 🏥 Priscripto - Medical Appointment Booking System
 
-🚀 Overview
-Priscripto is a next-gen Medical Appointment Booking System built to streamline healthcare services and bridge the gap between patients and medical facilities. It integrates appointment bookings, medicine orders, optical needs, and health service collaborations all in one platform.
+![Priscripto Banner](https://via.placeholder.com/1200x400?text=Priscripto+Medical+Booking+System)
 
-✨ Key Features
-🔹 Doctor Appointment Booking (Search & schedule by specialty, availability)
-🔹 Collaborations
-📦 Apollo Pharmacy Integration – Book & order medicines.
-👓 Lenskart Partnership – Book eyeglasses & checkups.
-🏥 Diagnostic labs & hospitals.
-🔹 E-Prescriptions & Reports
-🔹 User & Doctor Dashboards
-🔹 Real-Time Notifications & Reminders
-🔹 Admin Panel for Management
-🔹 Secure Payment Gateway Integration
-🔹 Responsive UI/UX Design
-🖌️ UI/UX Design
-Our design approach is patient-first — making the interface intuitive, accessible, and clean. Designed in Figma, inspired by modern healthcare platforms.
+<p align="center">
+  <a href="https://github.com/krishsatasiya/priscripto/stargazers"><img src="https://img.shields.io/github/stars/krishsatasiya/priscripto" alt="Stars Badge"/></a>
+  <a href="https://github.com/krishsatasiya/priscripto/issues"><img src="https://img.shields.io/github/issues/krishsatasiya/priscripto" alt="Issues Badge"/></a>
+  <a href="https://github.com/krishsatasiya/priscripto/network/members"><img src="https://img.shields.io/github/forks/krishsatasiya/priscripto" alt="Forks Badge"/></a>
+  <a href="https://github.com/krishsatasiya/priscripto/blob/main/LICENSE"><img src="https://img.shields.io/github/license/krishsatasiya/priscripto" alt="License Badge"/></a>
+</p>
 
-🎨 Design Highlights:
-Simple onboarding & quick login flow
-Minimal, clutter-free dashboards for patients & doctors
-Easy navigation between bookings, reports, and pharmacy
-Light & dark mode support
-Fully mobile-responsive
-Preview Screenshots:
+---
 
-Home Page	Booking Flow	Pharmacy	Dashboard
-Figma File:
-🔗 View Full Figma Design
+## 🚀 Overview
 
-🛠️ Tech Stack
-Frontend	Backend	Database	Others
-React.js (MERN)	Node.js + Express	MongoDB	Redux, JWT, Razorpay API, Figma, CSS3, Bootstrap
-📂 Project Structure
-csharp
-Copy
-Edit
-Priscripto/
-├── client/           # Frontend React App
-├── server/           # Backend Node.js APIs
-├── database/         # MongoDB Config
-├── public/           # Assets & Images
-├── docs/             # API Documentation
-└── README.md
-⚙️ Installation
-1️⃣ Clone the repository
-bash
-Copy
-Edit
-git clone https://github.com/krishsatasiya/priscripto.git
-cd priscripto
-2️⃣ Install dependencies
-For client:
-bash
-Copy
-Edit
-cd client
-npm install
-For server:
-bash
-Copy
-Edit
-cd server
-npm install
-3️⃣ Environment Variables
-Create .env files in server/ folder:
+**Priscripto** is a modern **Medical Appointment Booking System** aimed at simplifying healthcare services.  
+It combines doctor appointment bookings, pharmacy orders, optical services, and more — all in a single powerful platform!
 
-ini
-Copy
-Edit
-MONGO_URI = your_mongodb_url
-JWT_SECRET = your_jwt_secret
-RAZORPAY_KEY = your_key
-4️⃣ Run the project
-bash
-Copy
-Edit
-# Start backend
-cd server
-npm start
+---
 
-# Start frontend
-cd client
-npm start
-📑 API Documentation
-Complete REST API documentation is available in /docs/api-docs.md
-Includes:
+## ✨ Features
 
-Authentication
-Bookings
-Pharmacy orders
-Admin routes
-Payment APIs
-📈 Future Scope
-Telemedicine Video Consultations
-AI-based doctor recommendations
-Health insurance integrations
-Multilingual support
-🤝 Contributions
-We welcome contributions!
-📌 Fork, Star, and send us a Pull Request.
-For suggestions or collaboration opportunities, feel free to open an issue.
+- 🔹 **Doctor Appointment Booking System**
+- 🔹 **Apollo Pharmacy Integration** – Order medicines online.
+- 🔹 **Lenskart Collaboration** – Book eyeglasses & vision checkups.
+- 🔹 **Patient & Doctor Dashboards**
+- 🔹 **Admin Management Panel**
+- 🔹 **Real-Time Notifications & Reminders**
+- 🔹 **E-Prescriptions & Reports Download**
+- 🔹 **Secure Payment Gateway Integration**
+- 🔹 **Mobile-Responsive & Clean UI/UX**
 
-💼 License
-Distributed under the MIT License. See LICENSE for more details.
+---
 
-📞 Contact
-Made with ❤️ by Krish Satasiya
+## 🖌️ UI/UX Design
 
-📧 Email: krish.satasiya@example.com
-🌐 Portfolio: krishsatasiya.dev
+Crafted with **simplicity & usability** at the core.  
+Designed in **Figma**, ensuring a seamless and intuitive experience across all devices.
 
-🌟 Show Your Support
-If you liked Priscripto, don’t forget to ⭐️ this repository and share!
+### 🎨 Design Highlights:
+- Effortless onboarding & login experience
+- Minimal dashboards for quick access to bookings & reports
+- Pharmacy & optical integration flow
+- Light & dark mode support
+- Fully responsive on all devices
+
+**📂 Figma Design File:**  
+[🔗 View Complete Figma Design](https://www.figma.com/your-design-link)
+
+---
+
+## 🖼️ Preview Screenshots
+
+| Home Page | Booking Flow | Pharmacy Page | Dashboard |
+|---------|---------|---------|---------|
+| ![Home](https://via.placeholder.com/300x200?text=Home+Page) | ![Booking](https://via.placeholder.com/300x200?text=Booking+Flow) | ![Pharmacy](https://via.placeholder.com/300x200?text=Pharmacy) | ![Dashboard](https://via.placeholder.com/300x200?text=Dashboard) |
+
+---
+
+## 🛠️ Tech Stack
+
+| Frontend            | Backend               | Database | Others                              |
+|--------------------|----------------------|---------|------------------------------------|
+| React.js (MERN)    | Node.js + Express.js  | MongoDB | Redux, JWT, Razorpay API, Bootstrap, Figma |
+
+---
+
+## 📂 Project Structure
+
+
+
+---
+
+## 🚀 **What You Need To Do Next:**
+1. Replace:
+   - `https://www.figma.com/your-design-link` → Your actual Figma design link.
+   - `https://via.placeholder.com/` → Replace placeholder images with real screenshots (host on GitHub, Imgur, or similar).
+   - `krish.satasiya@example.com` → Replace with your real email.
+   - `https://krishsatasiya.dev` → Your portfolio link.
+   - Repository links in badges if repo name or username changes.
+2. Optionally:  
+Add `.LICENSE` and `.CONTRIBUTING.md` files for completeness (I can draft them for you if needed!).
+
+---
+
+**Would you like me to create:**
+- `LICENSE`
+- `CONTRIBUTING.md`
+- `API Docs template`  
+**as well?** 🎯
+
