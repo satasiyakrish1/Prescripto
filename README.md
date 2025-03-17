@@ -2,13 +2,6 @@
 
 ![Priscripto Banner](https://via.placeholder.com/1200x400?text=Priscripto+Medical+Booking+System)
 
-<p align="center">
-  <a href="https://github.com/krishsatasiya/priscripto/stargazers"><img src="https://img.shields.io/github/stars/krishsatasiya/priscripto" alt="Stars Badge"/></a>
-  <a href="https://github.com/krishsatasiya/priscripto/issues"><img src="https://img.shields.io/github/issues/krishsatasiya/priscripto" alt="Issues Badge"/></a>
-  <a href="https://github.com/krishsatasiya/priscripto/network/members"><img src="https://img.shields.io/github/forks/krishsatasiya/priscripto" alt="Forks Badge"/></a>
-  <a href="https://github.com/krishsatasiya/priscripto/blob/main/LICENSE"><img src="https://img.shields.io/github/license/krishsatasiya/priscripto" alt="License Badge"/></a>
-</p>
-
 ---
 
 ## 🚀 Overview
@@ -45,15 +38,7 @@ Designed in **Figma**, ensuring a seamless and intuitive experience across all d
 - Fully responsive on all devices
 
 **📂 Figma Design File:**  
-[🔗 View Complete Figma Design](https://www.figma.com/your-design-link)
-
----
-
-## 🖼️ Preview Screenshots
-
-| Home Page | Booking Flow | Pharmacy Page | Dashboard |
-|---------|---------|---------|---------|
-| ![Home](https://via.placeholder.com/300x200?text=Home+Page) | ![Booking](https://via.placeholder.com/300x200?text=Booking+Flow) | ![Pharmacy](https://via.placeholder.com/300x200?text=Pharmacy) | ![Dashboard](https://via.placeholder.com/300x200?text=Dashboard) |
+[🔗 View Complete Figma Design](https://www.figma.com/design/T1Y4xjgrE7nHYJYmrXcAsh/Prescripto?node-id=12-2&t=PT3FOrhE8zWbE78G-1)
 
 ---
 
@@ -67,25 +52,71 @@ Designed in **Figma**, ensuring a seamless and intuitive experience across all d
 
 ## 📂 Project Structure
 
+---
 
+Great question! Let me break down the **`📂 Project Structure`** section for you clearly. This part in the README gives an overview of how the folders and files are organized in your Priscripto project, so developers can easily navigate and understand the codebase.
+
+Here’s a more detailed and realistic **Project Structure** for your Priscripto project:
 
 ---
 
-## 🚀 **What You Need To Do Next:**
-1. Replace:
-   - `https://www.figma.com/your-design-link` → Your actual Figma design link.
-   - `https://via.placeholder.com/` → Replace placeholder images with real screenshots (host on GitHub, Imgur, or similar).
-   - `krish.satasiya@example.com` → Replace with your real email.
-   - `https://krishsatasiya.dev` → Your portfolio link.
-   - Repository links in badges if repo name or username changes.
-2. Optionally:  
-Add `.LICENSE` and `.CONTRIBUTING.md` files for completeness (I can draft them for you if needed!).
+```markdown
+## 📂 Project Structure
+
+Priscripto/
+├── client/                     # React Frontend
+│   ├── public/                 # Public assets (index.html, favicon, etc.)
+│   ├── src/
+│   │   ├── assets/             # Images, Icons, Fonts
+│   │   ├── components/         # Reusable React components
+│   │   ├── pages/              # Different pages (Home, Booking, Dashboard, etc.)
+│   │   ├── redux/              # Redux store, actions, reducers
+│   │   ├── services/           # API calls & utility functions
+│   │   ├── App.js              # Root React component
+│   │   └── index.js            # React DOM render
+│   └── package.json            # Frontend dependencies
+│
+├── server/                     # Node.js + Express Backend
+│   ├── config/                 # DB config, payment config, etc.
+│   ├── controllers/            # Route controller logic
+│   ├── models/                 # Mongoose schemas (User, Booking, Prescription)
+│   ├── routes/                 # API route files
+│   ├── middlewares/            # Authentication, error handling, etc.
+│   ├── utils/                  # Utility functions
+│   ├── .env                    # Environment variables
+│   └── server.js               # Entry point of backend server
+│
+├── docs/                       # API Documentation & Developer Guides
+│   └── api-docs.md
+│
+├── database/                   # Optional DB backup scripts or mock data
+│
+├── public/                     # Static files, if any (e.g., logo, terms pdf)
+│
+├── README.md                   # Project overview (this file!)
+├── LICENSE                     # License file
+└── .gitignore                  # Git ignored files
+```
+
+---
+### 🔥 **Explanation:**
+- **client/**: Entire React frontend application.
+  - `components/`: Contains UI components like Navbar, BookingForm, DoctorCard, etc.
+  - `pages/`: Contains full pages like Home, Dashboard, Pharmacy, etc.
+  - `redux/`: Manages state like auth, bookings, and payments.
+  - `services/`: API calls like login, appointment booking, etc.
+  
+- **server/**: Entire backend (Node.js + Express).
+  - `models/`: Defines MongoDB collections (User, Doctor, Booking, Orders, etc.).
+  - `controllers/`: Contains logic for routes (authentication, booking, orders).
+  - `routes/`: Defines all REST API endpoints.
+  - `middlewares/`: Authentication check, error handling, etc.
+  - `.env`: Keeps your API keys & DB URL safe.
+
+- **docs/**: API documentation and guides.
+
+- **database/**: Optional folder if you want to keep MongoDB backup JSON or initial data.
 
 ---
 
-**Would you like me to create:**
-- `LICENSE`
-- `CONTRIBUTING.md`
-- `API Docs template`  
-**as well?** 🎯
-
+**Want me to generate this part formatted and added in your README complete file?** 😊
