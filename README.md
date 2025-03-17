@@ -6,8 +6,7 @@
 
 ## 🚀 Overview
 
-**Priscripto** is a modern **Medical Appointment Booking System** aimed at simplifying healthcare services.  
-It combines doctor appointment bookings, pharmacy orders, optical services, and more — all in a single powerful platform!
+**Priscripto** is an innovative, end-to-end medical appointment and healthcare management platform designed to simplify, streamline, and digitize the entire healthcare experience for patients, doctors, pharmacies, and administrators. In today’s fast-paced world, the healthcare sector demands efficient solutions that ensure timely access to doctors, medicines, and healthcare services. Priscripto bridges the gap by offering a unified system that caters to all stakeholders.Built with cutting-edge technologies like React.js, Node.js, Express, MongoDB, and integrated with powerful services such as Google Maps and Stripe payments, Priscripto not only provides a seamless user experience but also ensures security, scalability, and flexibility.
 
 ---
 
@@ -18,6 +17,8 @@ It combines doctor appointment bookings, pharmacy orders, optical services, and 
 - 🔹 **Lenskart Collaboration** – Book eyeglasses & vision checkups.
 - 🔹 **Patient & Doctor Dashboards**
 - 🔹 **Admin Management Panel**
+- 🔹 **Health Care Vault - Store & Access Medical Records Securely**
+- 🔹 **Search Medicine by Name, Category, or Brand**
 - 🔹 **Real-Time Notifications & Reminders**
 - 🔹 **E-Prescriptions & Reports Download**
 - 🔹 **Secure Payment Gateway Integration**
@@ -117,6 +118,3 @@ Priscripto/
 
 - **database/**: Optional folder if you want to keep MongoDB backup JSON or initial data.
 
----
-
-**Want me to generate this part formatted and added in your README complete file?** 😊
