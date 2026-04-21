@@ -1,10 +1,34 @@
 /node_modules
 
-# Environment variables
+# Environment variables - NEVER commit real .env files
 .env
+.env.*
+.env.local
+.env.producation
+.env.production
+!.env.example
+!.env.template
 
-# Google Wallet credentials
+# Google Wallet & Service Account credentials
 /config/google-wallet-key.json
+/config/google-wallet-service-account.json
+/config/recaptcha-service-account.json
 
-# Google Drive service account
+# All service account JSONs (allow only .example and .template)
 service-account.json
+*service-account*.json
+!*service-account*.json.example
+!*service-account*.json.template
+
+# SSL/TLS Certificates and Private Keys
+/certs/*.pem
+/certs/*.crt
+/certs/*.key
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Upload directories (exclude uploaded files)
+uploads/medical-files/*
+!uploads/medical-files/.gitkeep
