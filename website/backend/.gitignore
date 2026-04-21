@@ -1,0 +1,10 @@
+/node_modules
+
+# Environment variables
+.env
+
+# Google Wallet credentials
+/config/google-wallet-key.json
+
+# Google Drive service account
+service-account.json

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="60" viewBox="0 0 180 60" fill="none">
+  <path d="M20 15H30C35.5 15 40 19.5 40 25V35C40 40.5 35.5 45 30 45H20C14.5 45 10 40.5 10 35V25C10 19.5 14.5 15 20 15Z" fill="#4A5568"/>
+  <path d="M25 20C20.6 20 17 23.6 17 28C17 32.4 20.6 36 25 36C29.4 36 33 32.4 33 28C33 23.6 29.4 20 25 20ZM25 33C22.2 33 20 30.8 20 28C20 25.2 22.2 23 25 23C27.8 23 30 25.2 30 28C30 30.8 27.8 33 25 33Z" fill="white"/>
+  <path d="M25.5 24H24.5V29H29.5V28H25.5V24Z" fill="white"/>
+  <path d="M22.5 30H27.5V31H22.5V30Z" fill="white"/>
+  <path d="M50 25H55M60 25H65M70 25H75M80 25H85M90 25H95M100 25H105M110 25H115M120 25H125M130 25H135M140 25H145M150 25H155M160 25H165" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  <path d="M50 35H60M65 35H75M80 35H90M95 35H105M110 35H120M125 35H135M140 35H150M155 35H165" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  <text x="50" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="#4A5568">PRESCRIPTO</text>
+</svg>

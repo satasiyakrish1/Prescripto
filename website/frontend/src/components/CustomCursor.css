@@ -1,0 +1,45 @@
+/* Custom Cursor – Prescripto Frontend */
+
+/* Hide native cursor everywhere except interactive elements */
+*:not(a):not(button):not(input):not(select):not(textarea):not(label):not([role="button"]):not([role="link"]):not([data-cursor="pointer"]) {
+  cursor: none !important;
+}
+
+a, button, label, [role="button"], [role="link"], [data-cursor="pointer"] { cursor: pointer !important; }
+input, textarea { cursor: text !important; }
+select { cursor: default !important; }
+input[disabled], button[disabled], [disabled] { cursor: not-allowed !important; }
+
+/* Arrow cursor */
+.cc-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 26px;
+  pointer-events: none;
+  z-index: 999999;
+  transform: translate(-200px, -200px);
+  will-change: transform;
+  transition: opacity 0.15s ease;
+}
+
+.cc-cursor.cc-hidden { opacity: 0; }
+
+.cc-cursor.cc-click {
+  animation: cc-click 0.25s ease;
+}
+
+@keyframes cc-click {
+  0%   { transform: translate(var(--cx, 0), var(--cy, 0)) scale(1);    }
+  50%  { transform: translate(var(--cx, 0), var(--cy, 0)) scale(0.85); }
+  100% { transform: translate(var(--cx, 0), var(--cy, 0)) scale(1);    }
+}
+
+/* Touch / coarse pointer – restore native cursors */
+@media (pointer: coarse) {
+  .cc-cursor { display: none !important; }
+  * { cursor: auto !important; }
+  a, button, [role="button"], [role="link"] { cursor: pointer !important; }
+  input, textarea { cursor: text !important; }
+}
