@@ -1,0 +1,25 @@
+version: 2
+updates:
+  # Maintain dependencies for website/backend
+  - package-ecosystem: "npm"
+    directory: "/website/backend"
+    schedule:
+      interval: "weekly"
+
+  # Maintain dependencies for website/frontend
+  - package-ecosystem: "npm"
+    directory: "/website/frontend"
+    schedule:
+      interval: "weekly"
+
+  # Maintain dependencies for website/admin
+  - package-ecosystem: "npm"
+    directory: "/website/admin"
+    schedule:
+      interval: "weekly"
+
+  # Maintain dependencies for application/prescripto
+  - package-ecosystem: "npm"
+    directory: "/application/prescripto"
+    schedule:
+      interval: "weekly"
