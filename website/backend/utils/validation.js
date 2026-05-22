@@ -1,0 +1,11 @@
+import mongoose from 'mongoose';
+
+/**
+ * Validates if a string is a valid MongoDB ObjectId
+ * @param {string} id - The ID to validate
+ * @returns {boolean} - True if valid, false otherwise
+ */
+export const validateObjectId = (id) => {
+    if (!id) return false;
+    return mongoose.Types.ObjectId.isValid(id);
+};

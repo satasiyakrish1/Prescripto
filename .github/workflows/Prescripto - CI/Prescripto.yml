@@ -1,0 +1,76 @@
+name: Priscripto CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Backend Dependencies
+        working-directory: ./website/backend
+        run: npm install
+
+      - name: Install Frontend Dependencies
+        working-directory: ./website/frontend
+        run: npm install
+
+      - name: Install Admin Dependencies
+        working-directory: ./website/admin
+        run: npm install
+
+      - name: Run Backend Tests
+        working-directory: ./website/backend
+        run: npm test --if-present
+
+  docker-build:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Login DockerHub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build Backend Image
+        run: |
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/priscripto-backend ./website/backend
+
+      - name: Push Backend Image
+        run: |
+          docker push ${{ secrets.DOCKER_USERNAME }}/priscripto-backend
+
+      - name: Build Frontend Image
+        run: |
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/priscripto-frontend ./website/frontend
+
+      - name: Push Frontend Image
+        run: |
+          docker push ${{ secrets.DOCKER_USERNAME }}/priscripto-frontend
+
+      - name: Build Admin Image
+        run: |
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/priscripto-admin ./website/admin
+
+      - name: Push Admin Image
+        run: |
+          docker push ${{ secrets.DOCKER_USERNAME }}/priscripto-admin

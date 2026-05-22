@@ -1,0 +1,327 @@
+# Auto-Cancellation System - Flow Diagrams
+
+## 1. Daily Auto-Cancellation Flow
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    23:59 IST Daily                          │
+│                  Cron Job Triggers                          │
+└────────────────────────┬────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Query Appointments:                                        │
+│  - scheduledAt: today (00:00-23:59 IST)                    │
+│  - status: 'booked'                                         │
+│  - isCompleted: false                                       │
+│  - cancelled: false                                         │
+└────────────────────────┬────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────┐
+│  For Each Appointment:                                      │
+│  ┌───────────────────────────────────────────────────────┐ │
+│  │ 1. Update Appointment:                                │ │
+│  │    - status = 'auto_cancelled'                        │ │
+│  │    - autoCancelled = true                             │ │
+│  │    - autoCancelReason = 'no-show-end-of-day'         │ │
+│  │    - autoCancelledAt = now                            │ │
+│  └───────────────────────────────────────────────────────┘ │
+│  ┌───────────────────────────────────────────────────────┐ │
+│  │ 2. Update User:                                       │ │
+│  │    - autoCancelCount++                                │ │
+│  │    - lastAutoCancelDate = now                         │ │
+│  └───────────────────────────────────────────────────────┘ │
+│  ┌───────────────────────────────────────────────────────┐ │
+│  │ 3. Create Notification:                               │ │
+│  │    - Type: 'warning'                                  │ │
+│  │    - Message: Auto-cancel details                     │ │
+│  └───────────────────────────────────────────────────────┘ │
+│  ┌───────────────────────────────────────────────────────┐ │
+│  │ 4. Check Block Condition:                             │ │
+│  │    If autoCancelCount >= 5:                           │ │
+│  │      - bookingBlockedUntil = now + 1 month            │ │
+│  │      - Create block notification                      │ │
+│  └───────────────────────────────────────────────────────┘ │
+└─────────────────────────────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Log Results:                                               │
+│  - Appointments cancelled: X                                │
+│  - Users blocked: Y                                         │
+│  - Errors: Z                                                │
+└─────────────────────────────────────────────────────────────┘
+```
+
+## 2. Booking Flow with Restriction Check
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  User Attempts to Book Appointment                          │
+│  POST /api/user/book-appointment                            │
+└────────────────────────┬────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Middleware: checkBookingRestriction                        │
+│  ┌───────────────────────────────────────────────────────┐ │
+│  │ 1. Fetch user data                                    │ │
+│  │ 2. Check bookingBlockedUntil                          │ │
+│  └───────────────────────────────────────────────────────┘ │
+└────────────────────────┬────────────────────────────────────┘
+                         │
+                ┌────────┴────────┐
+                │                 │
+                ▼                 ▼
+    ┌──────────────────┐  ┌──────────────────┐
+    │  Block Active?   │  │  No Block        │
+    │  (blockUntil >   │  │                  │
+    │   now)           │  │  Continue to     │
+    └────────┬─────────┘  │  booking logic   │
+             │            └──────────────────┘
+             ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Return 403 Error:                                          │
+│  {                                                           │
+│    success: false,                                          │
+│    blocked: true,                                           │
+│    message: "Booking suspended until [date]",               │
+│    blockUntil: "2026-01-15T00:00:00.000Z",                 │
+│    daysRemaining: 30,                                       │
+│    autoCancelCount: 5                                       │
+│  }                                                           │
+└─────────────────────────────────────────────────────────────┘
+```
+
+## 3. User Penalty Progression
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    User Journey                             │
+└─────────────────────────────────────────────────────────────┘
+
+Auto-Cancel #1
+    │
+    ▼
+┌─────────────────────────────────────────────────────────────┐
+│ autoCancelCount: 1                                          │
+│ Status: Warning notification sent                           │
+│ Action: Can still book                                      │
+└─────────────────────────────────────────────────────────────┘
+    │
+    ▼
+Auto-Cancel #2-4
+    │
+    ▼
+┌─────────────────────────────────────────────────────────────┐
+│ autoCancelCount: 2-4                                        │
+│ Status: Multiple warnings sent                              │
+│ Action: Can still book (approaching limit)                  │
+└─────────────────────────────────────────────────────────────┘
+    │
+    ▼
+Auto-Cancel #5
+    │
+    ▼
+┌─────────────────────────────────────────────────────────────┐
+│ autoCancelCount: 5                                          │
+│ Status: BLOCKED                                             │
+│ bookingBlockedUntil: now + 1 month                         │
+│ Action: Cannot book for 1 month                             │
+│ Notification: Block notification sent                       │
+└─────────────────────────────────────────────────────────────┘
+    │
+    ▼
+After 1 Month
+    │
+    ▼
+┌─────────────────────────────────────────────────────────────┐
+│ Block Expires Automatically                                 │
+│ bookingBlockedUntil: null                                   │
+│ autoCancelCount: reset to 0                                 │
+│ Action: Can book again                                      │
+└─────────────────────────────────────────────────────────────┘
+```
+
+## 4. Notification Flow
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              Appointment Auto-Cancelled                     │
+└────────────────────────┬────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────┐
+│  createAutoCancelNotification()                             │
+│  ┌───────────────────────────────────────────────────────┐ │
+│  │ Title: "Appointment Auto-Cancelled"                   │ │
+│  │ Type: 'warning'                                       │ │
+│  │ Message: Details about cancelled appointment          │ │
+│  │ Recipient: User                                       │ │
+│  │ RecipientModel: 'user'                                │ │
+│  └───────────────────────────────────────────────────────┘ │
+└────────────────────────┬────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────┐
+│  User sees notification in:                                 │
+│  - Notification page                                        │
+│  - Notification bell (unread count)                         │
+└─────────────────────────────────────────────────────────────┘
+
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────┐
+│  If autoCancelCount >= 5:                                   │
+│  createBlockNotification()                                  │
+│  ┌───────────────────────────────────────────────────────┐ │
+│  │ Title: "Booking Temporarily Blocked"                  │ │
+│  │ Type: 'error'                                         │ │
+│  │ Message: Block details and duration                   │ │
+│  │ Recipient: User                                       │ │
+│  └───────────────────────────────────────────────────────┘ │
+└─────────────────────────────────────────────────────────────┘
+```
+
+## 5. Admin Management Flow
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    Admin Dashboard                          │
+└─────────────────────────┬───────────────────────────────────┘
+                          │
+        ┌─────────────────┼─────────────────┐
+        │                 │                 │
+        ▼                 ▼                 ▼
+┌──────────────┐  ┌──────────────┐  ┌──────────────┐
+│ View Auto-   │  │ View Blocked │  │ View Stats   │
+│ Cancelled    │  │ Users        │  │              │
+│ Appointments │  │              │  │              │
+└──────┬───────┘  └──────┬───────┘  └──────────────┘
+       │                 │
+       │                 ▼
+       │         ┌──────────────────┐
+       │         │ Unblock User?    │
+       │         └────────┬─────────┘
+       │                  │
+       │                  ▼
+       │         ┌──────────────────────────────────┐
+       │         │ POST /api/auto-cancel/unblock/   │
+       │         │ - Clear bookingBlockedUntil      │
+       │         │ - Reset autoCancelCount          │
+       │         │ - Create unblock notification    │
+       │         └──────────────────────────────────┘
+       │
+       ▼
+┌─────────────────────────────────────────────────────────────┐
+│ Manual Trigger Job                                          │
+│ POST /api/auto-cancel/trigger-job                          │
+│ - Useful for testing                                        │
+│ - Runs immediately                                          │
+└─────────────────────────────────────────────────────────────┘
+```
+
+## 6. Data Flow Architecture
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                      Application Layer                      │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │
+│  │   Frontend   │  │   Admin      │  │   Scheduler  │     │
+│  │   (User)     │  │   Panel      │  │   (Cron)     │     │
+│  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘     │
+└─────────┼──────────────────┼──────────────────┼─────────────┘
+          │                  │                  │
+          ▼                  ▼                  ▼
+┌─────────────────────────────────────────────────────────────┐
+│                      API Layer                              │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │
+│  │ User Routes  │  │ Admin Routes │  │  Scheduler   │     │
+│  │ + Middleware │  │              │  │   Service    │     │
+│  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘     │
+└─────────┼──────────────────┼──────────────────┼─────────────┘
+          │                  │                  │
+          ▼                  ▼                  ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    Business Logic Layer                     │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │
+│  │   Booking    │  │ Auto-Cancel  │  │ Notification │     │
+│  │ Restriction  │  │  Controller  │  │   Helper     │     │
+│  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘     │
+└─────────┼──────────────────┼──────────────────┼─────────────┘
+          │                  │                  │
+          ▼                  ▼                  ▼
+┌─────────────────────────────────────────────────────────────┐
+│                      Data Layer                             │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │
+│  │ Appointment  │  │     User     │  │ Notification │     │
+│  │    Model     │  │    Model     │  │    Model     │     │
+│  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘     │
+└─────────┼──────────────────┼──────────────────┼─────────────┘
+          │                  │                  │
+          └──────────────────┴──────────────────┘
+                             │
+                             ▼
+                    ┌──────────────────┐
+                    │    MongoDB       │
+                    └──────────────────┘
+```
+
+## 7. State Diagram - Appointment Status
+
+```
+                    ┌──────────┐
+                    │  booked  │ ◄─── Initial state
+                    └────┬─────┘
+                         │
+        ┌────────────────┼────────────────┐
+        │                │                │
+        ▼                ▼                ▼
+┌──────────────┐  ┌──────────────┐  ┌──────────────┐
+│  completed   │  │  cancelled   │  │auto_cancelled│
+│              │  │              │  │              │
+│ (by doctor)  │  │ (by user)    │  │ (by system)  │
+└──────────────┘  └──────────────┘  └──────────────┘
+     (final)           (final)           (final)
+```
+
+## 8. Timeline Example
+
+```
+Day 1 - Monday
+├─ 10:00 AM: User books appointment
+├─ 11:00 AM: scheduledAt = Monday 11:00 AM
+└─ 23:59 PM: Scheduler runs
+    └─ Appointment not completed
+        └─ Status changed to 'auto_cancelled'
+        └─ User autoCancelCount: 0 → 1
+        └─ Notification sent
+
+Day 2 - Tuesday
+└─ User receives notification
+    └─ "Your appointment was auto-cancelled"
+
+Day 30 - After 5 auto-cancels
+├─ 23:59 PM: Scheduler runs
+├─ 5th appointment auto-cancelled
+├─ User autoCancelCount: 4 → 5
+├─ bookingBlockedUntil = Day 60
+└─ Block notification sent
+
+Day 31 - Next day
+└─ User tries to book
+    └─ Middleware blocks request
+        └─ Error: "Blocked until Day 60"
+
+Day 60 - Block expires
+└─ User tries to book
+    └─ Middleware checks block
+        └─ Block expired, cleared automatically
+        └─ autoCancelCount reset to 0
+        └─ Booking allowed
+```
+
+---
+
+**Visual Flow Diagrams v1.0** | Last Updated: December 2024

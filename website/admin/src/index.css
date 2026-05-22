@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: Outfit;
+}
+
+/* Ensure primary color buttons are visible */
+@layer utilities {
+    .bg-primary {
+        background-color: #5F6FFF !important;
+    }
+    .bg-primary-600 {
+        background-color: #4C59CC !important;
+    }
+    .hover\:bg-primary:hover {
+        background-color: #5F6FFF !important;
+    }
+    .hover\:bg-primary-600:hover {
+        background-color: #4C59CC !important;
+    }
+    .hover\:bg-primary\/90:hover {
+        background-color: rgba(95, 111, 255, 0.9) !important;
+    }
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Parallax scrolling effect for background */
+.parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

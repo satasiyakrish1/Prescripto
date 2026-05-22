@@ -1,0 +1,40 @@
+[
+  {
+    "id": "c91e2c29-de14-45c5-9e60-ba9a99e3e8b4",
+    "status": "NEW",
+    "platform": "ANDROID",
+    "artifacts": {},
+    "fingerprint": {
+      "id": "019d2890-cf6b-75a4-a6cb-656e82e87b6a",
+      "hash": "325d9b02a16be5a693e79f0334d1c3d9a2366030"
+    },
+    "initiatingActor": {
+      "id": "401674f3-4e7c-4280-954a-f46dc3a9465c",
+      "displayName": "satasiyakrish1"
+    },
+    "logFiles": [
+      "https://job-logs.eascdn.net/production/c91e2c29-de14-45c5-9e60-ba9a99e3e8b4/1774502390118-e7053631-9853-4bda-9ce0-872960eb8f64.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260326%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260326T052153Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=731232154cef3610d3dd61ede024aa44d69ab4d76cb11111a2d3ff1fd139c5f88be338e02d750c9abef4722bf3688d9413d76ec5313fed5ad3344f5d337bad085d27f76ef4a58af2b0be76497f0258f92bd9ed7442ea9f225e71a10b3888532722a06e7498c323bd5accbcec5ffa92daf11bf6bcfe6f04f2c9fcbb7b7182e1945b3ea1d336a1a435312ce2c570aea7df2a5f6e058616c5f21c3ab77ff64fcf0cff5cac0ec184e958e8e48b58665aefaac6007c41a7da426c1c71a5405397781f1c87a6d1860aaa3214370228124a638057a37aa49ea62176e4de2670914eb155c6fc78cc137d180e925b6de5597849a366b56726758445156714eac13d595a02"
+    ],
+    "project": {
+      "id": "7e8fe537-151d-4656-978b-a81e1abe5796",
+      "name": "prescripto",
+      "slug": "prescripto",
+      "ownerAccount": {
+        "id": "1e5a855c-7e7a-4efb-a16b-00b8be25567e",
+        "name": "satasiyakrish1"
+      }
+    },
+    "distribution": "INTERNAL",
+    "buildProfile": "preview",
+    "sdkVersion": "54.0.0",
+    "appVersion": "1.0.0",
+    "appBuildVersion": "1",
+    "gitCommitHash": "a94b42f86ea36297ec41bb511275453a57de4f31",
+    "gitCommitMessage": "Fix CORS, URLs, and Icons for building",
+    "priority": "NORMAL_PLUS",
+    "createdAt": "2026-03-26T05:19:49.900Z",
+    "updatedAt": "2026-03-26T05:19:50.394Z",
+    "expirationDate": "2026-04-09T05:19:49.934Z",
+    "isForIosSimulator": false
+  }
+]
