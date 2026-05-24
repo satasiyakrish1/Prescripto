@@ -13,6 +13,9 @@ import axios from 'axios';
  * @returns {string} - The backend URL to use
  */
 export const getBackendUrl = () => {
+  if (typeof window !== 'undefined' && (/electron/i.test(navigator.userAgent) || window.process?.versions?.electron)) {
+    return window.location.origin;
+  }
   // Check if we're in a production environment
   const isProduction = import.meta.env.PROD;
   

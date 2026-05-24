@@ -159,94 +159,193 @@ export const getAppointmentConfirmationTemplate = (userData, docData, slotDate, 
         user: {
             subject: 'Appointment Confirmed - Prescripto',
             html: `
-                <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 40px 20px; color: #333333;">
-                    
-                    <!-- Header -->
-                    <div style="text-align: center; margin-bottom: 40px;">
-                        <img src="https://krishsatasiya-prescriptosystem.onrender.com/assets/logo-BNCDj_dh.svg" alt="Prescripto" style="height: 30px; width: auto;">
-                    </div>
-
-                    <!-- Main Content -->
-                    <div style="text-align: center; margin-bottom: 40px;">
-                        <h1 style="color: #1a1a1a; font-size: 24px; font-weight: 500; margin-bottom: 10px; margin-top: 0;">Appointment Confirmed</h1>
-                        <p style="color: #666666; font-size: 16px; margin: 0;">We look forward to seeing you, ${userData.name}.</p>
-                    </div>
-
-                    <!-- Details Card -->
-                    <div style="background-color: #fafafa; border: 1px solid #eeeeee; border-radius: 12px; padding: 30px; margin-bottom: 40px;">
-                        <div style="margin-bottom: 25px;">
-                            <p style="color: #999999; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin: 0 0 5px 0;">Doctor</p>
-                            <p style="color: #1a1a1a; font-size: 18px; margin: 0; font-weight: 500;">Dr. ${docData.name}</p>
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Appointment Confirmed</title>
+                    <style>
+                        body { margin: 0; padding: 0; background-color: #f8fafc; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+                        .container { max-width: 600px; margin: 40px auto; background-color: #ffffff; border-radius: 24px; overflow: hidden; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.02); border: 1px solid #edf2f7; }
+                        .header { background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%); padding: 40px 30px; text-align: center; position: relative; }
+                        .logo-img { height: 32px; width: auto; margin-bottom: 25px; filter: brightness(0) invert(1); }
+                        .badge { background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(12px); border-radius: 9999px; padding: 6px 18px; color: #ffffff; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; display: inline-block; border: 1px solid rgba(255, 255, 255, 0.25); }
+                        .title { color: #ffffff; font-size: 28px; font-weight: 700; margin: 15px 0 8px 0; }
+                        .subtitle { color: rgba(255, 255, 255, 0.9); font-size: 16px; margin: 0; }
+                        .content { padding: 40px 35px 35px 35px; }
+                        .intro-text { color: #4a5568; font-size: 16px; line-height: 1.6; margin: 0 0 30px 0; text-align: center; }
+                        .card { background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%); border-radius: 16px; padding: 25px; margin-bottom: 30px; border: 1px solid #e2e8f0; }
+                        .detail-group { margin-bottom: 20px; display: flex; align-items: flex-start; }
+                        .detail-icon { font-size: 20px; margin-right: 15px; margin-top: 2px; }
+                        .detail-label { color: #718096; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin: 0 0 4px 0; }
+                        .detail-val { color: #1a202c; font-size: 16px; font-weight: 600; margin: 0; line-height: 1.4; }
+                        .wallet-section { text-align: center; padding: 25px 0 10px 0; border-top: 1px solid #edf2f7; margin-bottom: 10px; }
+                        .wallet-title { color: #718096; font-size: 13px; font-weight: 500; margin-bottom: 15px; }
+                        .wallet-links { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+                        .wallet-img { height: 40px; transition: transform 0.2s; }
+                        .wallet-img:hover { transform: scale(1.05); }
+                        .checklist { background-color: #ecfdf5; border-left: 4px solid #10b981; border-radius: 12px; padding: 20px; margin-bottom: 30px; }
+                        .checklist-title { color: #065f46; font-size: 15px; font-weight: 600; margin: 0 0 10px 0; display: flex; align-items: center; }
+                        .checklist-list { color: #047857; margin: 0; padding-left: 20px; font-size: 13px; line-height: 1.6; }
+                        .footer { background-color: #f8fafc; padding: 30px; text-align: center; border-top: 1px solid #edf2f7; }
+                        .footer-text { color: #718096; font-size: 13px; line-height: 1.5; margin: 0 0 15px 0; }
+                        .footer-copyright { color: #a0aec0; font-size: 11px; margin: 0; text-transform: uppercase; letter-spacing: 0.5px; }
+                        @media (max-width: 480px) {
+                            .container { margin: 15px; }
+                            .content { padding: 30px 20px; }
+                            .title { font-size: 24px; }
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="container">
+                        <div class="header">
+                            <img class="logo-img" src="https://krishsatasiya-prescriptosystem.onrender.com/assets/logo-BNCDj_dh.svg" alt="Prescripto">
+                            <br>
+                            <span class="badge">Confirmed</span>
+                            <h1 class="title">Appointment Confirmed</h1>
+                            <p class="subtitle">We look forward to seeing you, ${userData.name}.</p>
                         </div>
-                        <div style="margin-bottom: 25px;">
-                            <p style="color: #999999; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin: 0 0 5px 0;">Date & Time</p>
-                            <p style="color: #1a1a1a; font-size: 18px; margin: 0; font-weight: 500;">${slotDate} at ${slotTime}</p>
-                        </div>
-                        <div>
-                            <p style="color: #999999; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin: 0 0 5px 0;">Location</p>
-                            <p style="color: #1a1a1a; font-size: 16px; margin: 0; line-height: 1.5;">${docData.address.line1 || ''} ${docData.address.line2 ? ', ' + docData.address.line2 : ''}</p>
-                        </div>
-                    </div>
+                        <div class="content">
+                            <p class="intro-text">Your appointment has been successfully scheduled. Below are your appointment details:</p>
+                            
+                            <div class="card">
+                                <div class="detail-group">
+                                    <span class="detail-icon">👨‍⚕️</span>
+                                    <div>
+                                        <p class="detail-label">Doctor</p>
+                                        <p class="detail-val">Dr. ${docData.name}</p>
+                                    </div>
+                                </div>
+                                <div class="detail-group">
+                                    <span class="detail-icon">📅</span>
+                                    <div>
+                                        <p class="detail-label">Date & Time</p>
+                                        <p class="detail-val">${slotDate} at ${slotTime}</p>
+                                    </div>
+                                </div>
+                                <div class="detail-group" style="margin-bottom: 0;">
+                                    <span class="detail-icon">📍</span>
+                                    <div>
+                                        <p class="detail-label">Location</p>
+                                        <p class="detail-val">${docData.address.line1 || ''}${docData.address.line2 ? ', ' + docData.address.line2 : ''}</p>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <!-- Wallet Buttons -->
-                    <div style="text-align: center; margin-bottom: 40px;">
-                        <p style="color: #999999; font-size: 13px; margin-bottom: 20px;">Save to your wallet</p>
-                        <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-                            <a href="${applePassLink}" style="display: inline-block; text-decoration: none;">
-                                <img src="https://developer.apple.com/wallet/Add_to_Apple_Wallet_rgb_US-UK.svg" alt="Add to Apple Wallet" style="height: 40px;">
-                            </a>
-                            <a href="${googlePassLink}" style="display: inline-block; text-decoration: none;">
-                                <img src="https://developers.google.com/pay/api/images/brand-guidelines/save-to-google-pay.png" alt="Save to Google Pay" style="height: 40px;">
-                            </a>
+                            <div class="checklist">
+                                <h4 class="checklist-title">📋 Quick Instructions</h4>
+                                <ul class="checklist-list">
+                                    <li>Please arrive 10 minutes before your scheduled time.</li>
+                                    <li>Bring a valid ID card and any relevant medical history documents.</li>
+                                    <li>If you need to cancel or reschedule, please do so at least 24 hours in advance.</li>
+                                </ul>
+                            </div>
+
+                            <div class="wallet-section">
+                                <p class="wallet-title">Save this appointment to your wallet</p>
+                                <div class="wallet-links">
+                                    <a href="${applePassLink}" style="text-decoration: none;">
+                                        <img class="wallet-img" src="https://developer.apple.com/wallet/Add_to_Apple_Wallet_rgb_US-UK.svg" alt="Add to Apple Wallet">
+                                    </a>
+                                    <a href="${googlePassLink}" style="text-decoration: none;">
+                                        <img class="wallet-img" src="https://developers.google.com/pay/api/images/brand-guidelines/save-to-google-pay.png" alt="Save to Google Pay">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <p class="footer-text">Need help? Contact support or manage your booking through our website.</p>
+                            <p class="footer-copyright">© ${new Date().getFullYear()} Prescripto Inc. All rights reserved.</p>
                         </div>
                     </div>
-
-                    <!-- Footer -->
-                    <div style="text-align: center; border-top: 1px solid #eeeeee; padding-top: 30px;">
-                        <p style="color: #999999; font-size: 13px; margin-bottom: 10px; line-height: 1.5;">Please arrive 10 minutes before your scheduled time.</p>
-                        <p style="color: #cccccc; font-size: 12px; margin-top: 20px;">Prescripto Inc.</p>
-                    </div>
-                </div>
+                </body>
+                </html>
             `
         },
         doctor: {
             subject: 'New Appointment Scheduled - Prescripto',
             html: `
-                <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 40px 20px; color: #333333;">
-                    
-                    <!-- Header -->
-                    <div style="text-align: center; margin-bottom: 40px;">
-                        <img src="https://krishsatasiya-prescriptosystem.onrender.com/assets/logo-BNCDj_dh.svg" alt="Prescripto" style="height: 30px; width: auto;">
-                    </div>
-
-                    <!-- Main Content -->
-                    <div style="text-align: center; margin-bottom: 40px;">
-                        <h1 style="color: #1a1a1a; font-size: 24px; font-weight: 500; margin-bottom: 10px; margin-top: 0;">New Appointment</h1>
-                        <p style="color: #666666; font-size: 16px; margin: 0;">You have a new booking, Dr. ${docData.name}.</p>
-                    </div>
-
-                    <!-- Details Card -->
-                    <div style="background-color: #fafafa; border: 1px solid #eeeeee; border-radius: 12px; padding: 30px; margin-bottom: 40px;">
-                        <div style="margin-bottom: 25px;">
-                            <p style="color: #999999; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin: 0 0 5px 0;">Patient</p>
-                            <p style="color: #1a1a1a; font-size: 18px; margin: 0; font-weight: 500;">${userData.name}</p>
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>New Appointment Scheduled</title>
+                    <style>
+                        body { margin: 0; padding: 0; background-color: #f8fafc; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+                        .container { max-width: 600px; margin: 40px auto; background-color: #ffffff; border-radius: 24px; overflow: hidden; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.02); border: 1px solid #edf2f7; }
+                        .header { background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%); padding: 40px 30px; text-align: center; position: relative; }
+                        .logo-img { height: 32px; width: auto; margin-bottom: 25px; filter: brightness(0) invert(1); }
+                        .badge { background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(12px); border-radius: 9999px; padding: 6px 18px; color: #ffffff; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; display: inline-block; border: 1px solid rgba(255, 255, 255, 0.25); }
+                        .title { color: #ffffff; font-size: 28px; font-weight: 700; margin: 15px 0 8px 0; }
+                        .subtitle { color: rgba(255, 255, 255, 0.9); font-size: 16px; margin: 0; }
+                        .content { padding: 40px 35px 35px 35px; }
+                        .intro-text { color: #4a5568; font-size: 16px; line-height: 1.6; margin: 0 0 30px 0; text-align: center; }
+                        .card { background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%); border-radius: 16px; padding: 25px; margin-bottom: 30px; border: 1px solid #e2e8f0; }
+                        .detail-group { margin-bottom: 20px; display: flex; align-items: flex-start; }
+                        .detail-icon { font-size: 20px; margin-right: 15px; margin-top: 2px; }
+                        .detail-label { color: #718096; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin: 0 0 4px 0; }
+                        .detail-val { color: #1a202c; font-size: 16px; font-weight: 600; margin: 0; line-height: 1.4; }
+                        .btn-wrapper { text-align: center; margin: 10px 0 20px 0; }
+                        .btn { display: inline-block; background-color: #4F46E5; color: #ffffff; font-weight: 600; text-decoration: none; padding: 14px 30px; border-radius: 12px; font-size: 14px; box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3); transition: background-color 0.2s, transform 0.2s; }
+                        .btn:hover { background-color: #4338ca; transform: translateY(-1px); }
+                        .footer { background-color: #f8fafc; padding: 30px; text-align: center; border-top: 1px solid #edf2f7; }
+                        .footer-copyright { color: #a0aec0; font-size: 11px; margin: 0; text-transform: uppercase; letter-spacing: 0.5px; }
+                        @media (max-width: 480px) {
+                            .container { margin: 15px; }
+                            .content { padding: 30px 20px; }
+                            .title { font-size: 24px; }
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="container">
+                        <div class="header">
+                            <img class="logo-img" src="https://krishsatasiya-prescriptosystem.onrender.com/assets/logo-BNCDj_dh.svg" alt="Prescripto">
+                            <br>
+                            <span class="badge">New Booking</span>
+                            <h1 class="title">New Appointment</h1>
+                            <p class="subtitle">You have a new booking, Dr. ${docData.name}.</p>
                         </div>
-                        <div style="margin-bottom: 25px;">
-                            <p style="color: #999999; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin: 0 0 5px 0;">Date & Time</p>
-                            <p style="color: #1a1a1a; font-size: 18px; margin: 0; font-weight: 500;">${slotDate} at ${slotTime}</p>
-                        </div>
-                        <div style="margin-bottom: 25px;">
-                             <p style="color: #999999; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin: 0 0 5px 0;">Contact</p>
-                             <p style="color: #1a1a1a; font-size: 16px; margin: 0; line-height: 1.5;">${userData.phone || 'Not provided'}</p>
-                         </div>
-                    </div>
+                        <div class="content">
+                            <p class="intro-text">A patient has scheduled an appointment with you. Below are the details:</p>
+                            
+                            <div class="card">
+                                <div class="detail-group">
+                                    <span class="detail-icon">👤</span>
+                                    <div>
+                                        <p class="detail-label">Patient</p>
+                                        <p class="detail-val">${userData.name}</p>
+                                    </div>
+                                </div>
+                                <div class="detail-group">
+                                    <span class="detail-icon">📅</span>
+                                    <div>
+                                        <p class="detail-label">Date & Time</p>
+                                        <p class="detail-val">${slotDate} at ${slotTime}</p>
+                                    </div>
+                                </div>
+                                <div class="detail-group" style="margin-bottom: 0;">
+                                    <span class="detail-icon">📞</span>
+                                    <div>
+                                        <p class="detail-label">Contact</p>
+                                        <p class="detail-val">${userData.phone || 'Not provided'}</p>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <!-- Footer -->
-                    <div style="text-align: center; border-top: 1px solid #eeeeee; padding-top: 30px;">
-                        <a href="https://prescripto.com/doctor/dashboard" style="display: inline-block; background-color: #000000; color: #ffffff; text-decoration: none; padding: 12px 24px; border-radius: 6px; font-size: 14px; font-weight: 500;">View Dashboard</a>
-                        <p style="color: #cccccc; font-size: 12px; margin-top: 30px;">Prescripto Inc.</p>
+                            <div class="btn-wrapper">
+                                <a class="btn" href="https://prescripto.com/doctor/dashboard">View Doctor Dashboard</a>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <p class="footer-copyright">© ${new Date().getFullYear()} Prescripto Inc. All rights reserved.</p>
+                        </div>
                     </div>
-                </div>
+                </body>
+                </html>
             `
         },
         walletPasses: {
@@ -412,73 +511,165 @@ export const getAppointmentCancellationTemplate = (userData, docData, slotDate, 
         user: {
             subject: 'Appointment Cancelled - Prescripto',
             html: `
-                <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 40px 20px; color: #333333;">
-                    
-                    <!-- Header -->
-                    <div style="text-align: center; margin-bottom: 40px;">
-                        <img src="https://krishsatasiya-prescriptosystem.onrender.com/assets/logo-BNCDj_dh.svg" alt="Prescripto" style="height: 30px; width: auto;">
-                    </div>
-
-                    <!-- Main Content -->
-                    <div style="text-align: center; margin-bottom: 40px;">
-                        <h1 style="color: #1a1a1a; font-size: 24px; font-weight: 500; margin-bottom: 10px; margin-top: 0;">Appointment Cancelled</h1>
-                        <p style="color: #666666; font-size: 16px; margin: 0;">It's sad to see you go, ${userData.name}.</p>
-                    </div>
-
-                    <!-- Details Card -->
-                    <div style="background-color: #fafafa; border: 1px solid #eeeeee; border-radius: 12px; padding: 30px; margin-bottom: 40px;">
-                        <div style="margin-bottom: 20px;">
-                             <p style="color: #999999; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin: 0 0 5px 0;">Doctor</p>
-                            <p style="color: #1a1a1a; font-size: 18px; margin: 0; font-weight: 500;">Dr. ${docData.name}</p>
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Appointment Cancelled</title>
+                    <style>
+                        body { margin: 0; padding: 0; background-color: #f8fafc; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+                        .container { max-width: 600px; margin: 40px auto; background-color: #ffffff; border-radius: 24px; overflow: hidden; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.02); border: 1px solid #edf2f7; }
+                        .header { background: linear-gradient(135deg, #F43F5E 0%, #E11D48 100%); padding: 40px 30px; text-align: center; position: relative; }
+                        .logo-img { height: 32px; width: auto; margin-bottom: 25px; filter: brightness(0) invert(1); }
+                        .badge { background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(12px); border-radius: 9999px; padding: 6px 18px; color: #ffffff; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; display: inline-block; border: 1px solid rgba(255, 255, 255, 0.25); }
+                        .title { color: #ffffff; font-size: 28px; font-weight: 700; margin: 15px 0 8px 0; }
+                        .subtitle { color: rgba(255, 255, 255, 0.9); font-size: 16px; margin: 0; }
+                        .content { padding: 40px 35px 35px 35px; }
+                        .intro-text { color: #4a5568; font-size: 16px; line-height: 1.6; margin: 0 0 30px 0; text-align: center; }
+                        .card { background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%); border-radius: 16px; padding: 25px; margin-bottom: 30px; border: 1px solid #e2e8f0; }
+                        .detail-group { margin-bottom: 20px; display: flex; align-items: flex-start; }
+                        .detail-icon { font-size: 20px; margin-right: 15px; margin-top: 2px; }
+                        .detail-label { color: #718096; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin: 0 0 4px 0; }
+                        .detail-val { color: #1a202c; font-size: 16px; font-weight: 600; margin: 0; line-height: 1.4; }
+                        .btn-wrapper { text-align: center; margin: 10px 0 20px 0; }
+                        .btn { display: inline-block; background-color: #E11D48; color: #ffffff; font-weight: 600; text-decoration: none; padding: 14px 30px; border-radius: 12px; font-size: 14px; box-shadow: 0 4px 14px rgba(225, 29, 72, 0.3); transition: background-color 0.2s, transform 0.2s; }
+                        .btn:hover { background-color: #be123c; transform: translateY(-1px); }
+                        .info-box { background-color: #fef2f2; border-left: 4px solid #ef4444; border-radius: 12px; padding: 20px; margin-bottom: 30px; }
+                        .info-title { color: #991b1b; font-size: 15px; font-weight: 600; margin: 0 0 8px 0; display: flex; align-items: center; }
+                        .info-text-box { color: #b91c1c; margin: 0; font-size: 13px; line-height: 1.6; }
+                        .footer { background-color: #f8fafc; padding: 30px; text-align: center; border-top: 1px solid #edf2f7; }
+                        .footer-text { color: #718096; font-size: 13px; line-height: 1.5; margin: 0 0 15px 0; }
+                        .footer-copyright { color: #a0aec0; font-size: 11px; margin: 0; text-transform: uppercase; letter-spacing: 0.5px; }
+                        @media (max-width: 480px) {
+                            .container { margin: 15px; }
+                            .content { padding: 30px 20px; }
+                            .title { font-size: 24px; }
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="container">
+                        <div class="header">
+                            <img class="logo-img" src="https://krishsatasiya-prescriptosystem.onrender.com/assets/logo-BNCDj_dh.svg" alt="Prescripto">
+                            <br>
+                            <span class="badge" style="background: rgba(255, 255, 255, 0.2); border: 1px solid rgba(255, 255, 255, 0.3);">Cancelled</span>
+                            <h1 class="title">Appointment Cancelled</h1>
+                            <p class="subtitle">It's sad to see you go, ${userData.name}.</p>
                         </div>
-                         <div>
-                             <p style="color: #999999; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin: 0 0 5px 0;">Date & Time</p>
-                            <p style="color: #1a1a1a; font-size: 18px; margin: 0; font-weight: 500;">${slotDate} at ${slotTime}</p>
+                        <div class="content">
+                            <p class="intro-text">This appointment has been cancelled. Below are the details of the cancelled booking:</p>
+                            
+                            <div class="card">
+                                <div class="detail-group">
+                                    <span class="detail-icon">👨‍⚕️</span>
+                                    <div>
+                                        <p class="detail-label">Doctor</p>
+                                        <p class="detail-val">Dr. ${docData.name}</p>
+                                    </div>
+                                </div>
+                                <div class="detail-group" style="margin-bottom: 0;">
+                                    <span class="detail-icon">📅</span>
+                                    <div>
+                                        <p class="detail-label">Date & Time</p>
+                                        <p class="detail-val">${slotDate} at ${slotTime}</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-box">
+                                <h4 class="info-title">ℹ️ Refund & Rebooking</h4>
+                                <p class="info-text-box">If any advance payment was made, it will be refunded to your original payment method within 5-7 business days. You can easily schedule a new appointment at your convenience.</p>
+                            </div>
+
+                            <div class="btn-wrapper">
+                                <a class="btn" href="https://prescripto.com/book-appointment">Book New Appointment</a>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <p class="footer-text">Need assistance? Please contact our support team.</p>
+                            <p class="footer-copyright">© ${new Date().getFullYear()} Prescripto Inc. All rights reserved.</p>
                         </div>
                     </div>
-
-                    <!-- Footer -->
-                    <div style="text-align: center; border-top: 1px solid #eeeeee; padding-top: 30px;">
-                        <a href="https://prescripto.com/book-appointment" style="display: inline-block; background-color: #000000; color: #ffffff; text-decoration: none; padding: 12px 24px; border-radius: 6px; font-size: 14px; font-weight: 500;">Book New Appointment</a>
-                        <p style="color: #cccccc; font-size: 12px; margin-top: 30px;">Prescripto Inc.</p>
-                    </div>
-                </div>
+                </body>
+                </html>
             `
         },
         doctor: {
             subject: 'Appointment Cancelled by Patient - Prescripto',
             html: `
-                <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 40px 20px; color: #333333;">
-                    
-                    <!-- Header -->
-                    <div style="text-align: center; margin-bottom: 40px;">
-                        <img src="https://krishsatasiya-prescriptosystem.onrender.com/assets/logo-BNCDj_dh.svg" alt="Prescripto" style="height: 30px; width: auto;">
-                    </div>
-
-                    <!-- Main Content -->
-                    <div style="text-align: center; margin-bottom: 40px;">
-                        <h1 style="color: #1a1a1a; font-size: 24px; font-weight: 500; margin-bottom: 10px; margin-top: 0;">Appointment Cancelled</h1>
-                        <p style="color: #666666; font-size: 16px; margin: 0;">An appointment has been cancelled.</p>
-                    </div>
-
-                    <!-- Details Card -->
-                    <div style="background-color: #fafafa; border: 1px solid #eeeeee; border-radius: 12px; padding: 30px; margin-bottom: 40px;">
-                         <div style="margin-bottom: 25px;">
-                             <p style="color: #999999; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin: 0 0 5px 0;">Patient</p>
-                            <p style="color: #1a1a1a; font-size: 18px; margin: 0; font-weight: 500;">${userData.name}</p>
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Appointment Cancelled</title>
+                    <style>
+                        body { margin: 0; padding: 0; background-color: #f8fafc; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+                        .container { max-width: 600px; margin: 40px auto; background-color: #ffffff; border-radius: 24px; overflow: hidden; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.02); border: 1px solid #edf2f7; }
+                        .header { background: linear-gradient(135deg, #F43F5E 0%, #E11D48 100%); padding: 40px 30px; text-align: center; position: relative; }
+                        .logo-img { height: 32px; width: auto; margin-bottom: 25px; filter: brightness(0) invert(1); }
+                        .badge { background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(12px); border-radius: 9999px; padding: 6px 18px; color: #ffffff; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; display: inline-block; border: 1px solid rgba(255, 255, 255, 0.25); }
+                        .title { color: #ffffff; font-size: 28px; font-weight: 700; margin: 15px 0 8px 0; }
+                        .subtitle { color: rgba(255, 255, 255, 0.9); font-size: 16px; margin: 0; }
+                        .content { padding: 40px 35px 35px 35px; }
+                        .intro-text { color: #4a5568; font-size: 16px; line-height: 1.6; margin: 0 0 30px 0; text-align: center; }
+                        .card { background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%); border-radius: 16px; padding: 25px; margin-bottom: 30px; border: 1px solid #e2e8f0; }
+                        .detail-group { margin-bottom: 20px; display: flex; align-items: flex-start; }
+                        .detail-icon { font-size: 20px; margin-right: 15px; margin-top: 2px; }
+                        .detail-label { color: #718096; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin: 0 0 4px 0; }
+                        .detail-val { color: #1a202c; font-size: 16px; font-weight: 600; margin: 0; line-height: 1.4; }
+                        .btn-wrapper { text-align: center; margin: 10px 0 20px 0; }
+                        .btn { display: inline-block; background-color: #E11D48; color: #ffffff; font-weight: 600; text-decoration: none; padding: 14px 30px; border-radius: 12px; font-size: 14px; box-shadow: 0 4px 14px rgba(225, 29, 72, 0.3); transition: background-color 0.2s, transform 0.2s; }
+                        .btn:hover { background-color: #be123c; transform: translateY(-1px); }
+                        .footer { background-color: #f8fafc; padding: 30px; text-align: center; border-top: 1px solid #edf2f7; }
+                        .footer-copyright { color: #a0aec0; font-size: 11px; margin: 0; text-transform: uppercase; letter-spacing: 0.5px; }
+                        @media (max-width: 480px) {
+                            .container { margin: 15px; }
+                            .content { padding: 30px 20px; }
+                            .title { font-size: 24px; }
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="container">
+                        <div class="header">
+                            <img class="logo-img" src="https://krishsatasiya-prescriptosystem.onrender.com/assets/logo-BNCDj_dh.svg" alt="Prescripto">
+                            <br>
+                            <span class="badge" style="background: rgba(255, 255, 255, 0.2); border: 1px solid rgba(255, 255, 255, 0.3);">Cancelled</span>
+                            <h1 class="title">Appointment Cancelled</h1>
+                            <p class="subtitle">An appointment has been cancelled.</p>
                         </div>
-                        <div>
-                             <p style="color: #999999; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin: 0 0 5px 0;">Date & Time</p>
-                            <p style="color: #1a1a1a; font-size: 18px; margin: 0; font-weight: 500;">${slotDate} at ${slotTime}</p>
+                        <div class="content">
+                            <p class="intro-text">An appointment with you has been cancelled. Below are the details:</p>
+                            
+                            <div class="card">
+                                <div class="detail-group">
+                                    <span class="detail-icon">👤</span>
+                                    <div>
+                                        <p class="detail-label">Patient</p>
+                                        <p class="detail-val">${userData.name}</p>
+                                    </div>
+                                </div>
+                                <div class="detail-group" style="margin-bottom: 0;">
+                                    <span class="detail-icon">📅</span>
+                                    <div>
+                                        <p class="detail-label">Date & Time</p>
+                                        <p class="detail-val">${slotDate} at ${slotTime}</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btn-wrapper">
+                                <a class="btn" href="https://prescripto.com/doctor/dashboard">View Doctor Dashboard</a>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <p class="footer-copyright">© ${new Date().getFullYear()} Prescripto Inc. All rights reserved.</p>
                         </div>
                     </div>
-
-                    <!-- Footer -->
-                    <div style="text-align: center; border-top: 1px solid #eeeeee; padding-top: 30px;">
-                        <a href="https://prescripto.com/doctor/dashboard" style="display: inline-block; background-color: #000000; color: #ffffff; text-decoration: none; padding: 12px 24px; border-radius: 6px; font-size: 14px; font-weight: 500;">View Dashboard</a>
-                        <p style="color: #cccccc; font-size: 12px; margin-top: 30px;">Prescripto Inc.</p>
-                    </div>
-                </div>
+                </body>
+                </html>
             `
         }
     };

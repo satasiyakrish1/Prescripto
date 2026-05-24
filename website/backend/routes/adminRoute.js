@@ -35,7 +35,7 @@ import { appointmentDetailsAdmin } from '../controllers/adminController.js';
 const adminRouter = express.Router();
 
 // Ensure upload directories exist
-const uploadsDir = 'uploads';
+const uploadsDir = process.env.UPLOADS_DIR || 'uploads';
 const blogImagesDir = path.join(uploadsDir, 'blog-images');
 const doctorImagesDir = path.join(uploadsDir, 'doctor-images');
 
@@ -82,7 +82,7 @@ adminRouter.get("/subscribers", authAdminOrViewer, getAllSubscribers)
 const profileUpload = multer({
     storage: multer.diskStorage({
         destination: (req, file, cb) => {
-            const dir = 'uploads/profile-images';
+            const dir = path.join(process.env.UPLOADS_DIR || 'uploads', 'profile-images');
             if (!fs.existsSync(dir)) {
                 fs.mkdirSync(dir, { recursive: true });
             }

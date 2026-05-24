@@ -131,7 +131,9 @@ const Login = () => {
 
   const handleGoogleLogin = async () => {
     try {
-      const { data } = await axios.get(`${backendUrl}/api/user/google-login/auth-url`);
+      const isElectron = typeof window !== 'undefined' && (/electron/i.test(navigator.userAgent) || window.process?.versions?.electron);
+      const url = `${backendUrl}/api/user/google-login/auth-url${isElectron ? '?electron=true' : ''}`;
+      const { data } = await axios.get(url);
       if (data && data.authUrl && typeof data.authUrl === 'string') {
         window.location.href = data.authUrl;
       } else {

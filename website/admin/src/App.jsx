@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import { DoctorContext } from './context/DoctorContext';
 import { AdminContext } from './context/AdminContext';
 import { PharmacyContext } from './context/PharmacyContext';
@@ -66,6 +66,18 @@ const App = () => {
     const { aToken } = useContext(AdminContext)
     const { pToken } = useContext(PharmacyContext)
     const { vToken } = useContext(ViewerContext) || {}
+
+    const [speed, setSpeed] = useState(45.5);
+    useEffect(() => {
+        if (navigator.connection) {
+            const updateSpeed = () => {
+                setSpeed(navigator.connection.downlink || 45.5);
+            };
+            navigator.connection.addEventListener('change', updateSpeed);
+            updateSpeed();
+            return () => navigator.connection.removeEventListener('change', updateSpeed);
+        }
+    }, []);
 
     return dToken || aToken || pToken || vToken ? (
         <LanguageProvider>
@@ -140,6 +152,23 @@ const App = () => {
                                             <Route path='/pharmacy-profile' element={<ProtectedRoute requiredRole="pharmacy"><PharmacyProfile /></ProtectedRoute>} />
                                             <Route path='/pharmacy/analysis' element={<ProtectedRoute requiredRole="pharmacy"><Analysis /></ProtectedRoute>} />
                                         </Routes>
+                                    </div>
+                                </div>
+                                
+                                {/* Internet Speed Status Bar */}
+                                <div className="fixed bottom-0 left-0 right-0 h-6 bg-white border-t border-gray-200 z-50 flex items-center justify-between px-4 text-[10px] text-gray-500 font-medium select-none">
+                                    <div className="flex items-center gap-1.5">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                                        <span>Connected to Prescripto Secure Server</span>
+                                    </div>
+                                    <div className="flex items-center gap-4">
+                                        <div className="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                            </svg>
+                                            <span>Internet Speed: {speed.toFixed(1)} Mbps</span>
+                                        </div>
+                                        <span>V5.5 (Desktop App)</span>
                                     </div>
                                 </div>
                             </div>

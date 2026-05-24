@@ -1,0 +1,631 @@
+"filename", "language", "JavaScript", "JSON", "HTML", "Markdown", "Docker", "XML", "JavaScript JSX", "YAML", "JSON with Comments", "Properties", "TypeScript JSX", "TypeScript", "CSS", "comment", "blank", "total"
+"d:\Websites\Prescripto\.github\dependabot.yml", "YAML", 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 0, 0, 0, 4, 4, 26
+"d:\Websites\Prescripto\.github\workflows\Prescripto - CI\Prescripto.yml", "YAML", 0, 0, 0, 0, 0, 0, 0, 56, 0, 0, 0, 0, 0, 0, 20, 76
+"d:\Websites\Prescripto\README.md", "Markdown", 0, 0, 0, 180, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 74, 254
+"d:\Websites\Prescripto\SECURITY.md", "Markdown", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 16
+"d:\Websites\Prescripto\application\prescripto\README.md", "Markdown", 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 51
+"d:\Websites\Prescripto\application\prescripto\app.json", "JSON", 0, 56, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 57
+"d:\Websites\Prescripto\application\prescripto\app\(tabs)\_layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 80, 0, 0, 1, 3, 84
+"d:\Websites\Prescripto\application\prescripto\app\(tabs)\booking.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 283, 0, 0, 5, 16, 304
+"d:\Websites\Prescripto\application\prescripto\app\(tabs)\explore.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 109, 0, 0, 0, 4, 113
+"d:\Websites\Prescripto\application\prescripto\app\(tabs)\index.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 655, 0, 0, 8, 29, 692
+"d:\Websites\Prescripto\application\prescripto\app\(tabs)\profile.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 313, 0, 0, 5, 20, 338
+"d:\Websites\Prescripto\application\prescripto\app\_layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 1, 9, 60
+"d:\Websites\Prescripto\application\prescripto\app\index.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 12, 26, 293
+"d:\Websites\Prescripto\application\prescripto\app\login.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 367, 0, 0, 4, 24, 395
+"d:\Websites\Prescripto\application\prescripto\app\modal.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 0, 0, 0, 4, 30
+"d:\Websites\Prescripto\application\prescripto\app\signup.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 314, 0, 0, 0, 22, 336
+"d:\Websites\Prescripto\application\prescripto\assets\images\favicon.svg", "XML", 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5
+"d:\Websites\Prescripto\application\prescripto\babel.config.js", "JavaScript", 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"d:\Websites\Prescripto\application\prescripto\build_url.json", "JSON", 0, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 41
+"d:\Websites\Prescripto\application\prescripto\components\LogoSVG.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 3, 14
+"d:\Websites\Prescripto\application\prescripto\components\external-link.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 0, 0, 2, 3, 26
+"d:\Websites\Prescripto\application\prescripto\components\haptic-tab.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 1, 2, 19
+"d:\Websites\Prescripto\application\prescripto\components\hello-wave.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 0, 2, 20
+"d:\Websites\Prescripto\application\prescripto\components\parallax-scroll-view.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 73, 0, 0, 0, 7, 80
+"d:\Websites\Prescripto\application\prescripto\components\themed-text.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 55, 0, 0, 0, 6, 61
+"d:\Websites\Prescripto\application\prescripto\components\themed-view.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 5, 15
+"d:\Websites\Prescripto\application\prescripto\components\ui\collapsible.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 40, 0, 0, 0, 6, 46
+"d:\Websites\Prescripto\application\prescripto\components\ui\icon-symbol.ios.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 0, 0, 0, 2, 33
+"d:\Websites\Prescripto\application\prescripto\components\ui\icon-symbol.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 0, 0, 1, 5, 42
+"d:\Websites\Prescripto\application\prescripto\constants\theme.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 0, 0, 5, 54
+"d:\Websites\Prescripto\application\prescripto\context\AppContext.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 135, 0, 0, 2, 17, 154
+"d:\Websites\Prescripto\application\prescripto\eas.json", "JSON", 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 22
+"d:\Websites\Prescripto\application\prescripto\eslint.config.js", "JavaScript", 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 11
+"d:\Websites\Prescripto\application\prescripto\hooks\use-color-scheme.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 2
+"d:\Websites\Prescripto\application\prescripto\hooks\use-color-scheme.web.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 6, 22
+"d:\Websites\Prescripto\application\prescripto\hooks\use-theme-color.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 4, 22
+"d:\Websites\Prescripto\application\prescripto\local.properties", "Properties", 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 2
+"d:\Websites\Prescripto\application\prescripto\package-lock.json", "JSON", 0, 13710, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 13711
+"d:\Websites\Prescripto\application\prescripto\package.json", "JSON", 0, 56, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 57
+"d:\Websites\Prescripto\application\prescripto\scripts\reset-project.js", "JavaScript", 92, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 16, 113
+"d:\Websites\Prescripto\application\prescripto\tsconfig.json", "JSON with Comments", 0, 0, 0, 0, 0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 1, 18
+"d:\Websites\Prescripto\application\prescripto\vercel.json", "JSON", 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5
+"d:\Websites\Prescripto\website\admin\.eslintrc.cjs", "JavaScript", 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 22
+"d:\Websites\Prescripto\website\admin\README.md", "Markdown", 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 9
+"d:\Websites\Prescripto\website\admin\index.html", "HTML", 0, 0, 97, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 113
+"d:\Websites\Prescripto\website\admin\package-lock.json", "JSON", 0, 11671, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 11672
+"d:\Websites\Prescripto\website\admin\package.json", "JSON", 0, 86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 87
+"d:\Websites\Prescripto\website\admin\postcss.config.js", "JavaScript", 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7
+"d:\Websites\Prescripto\website\admin\public\favicon.svg", "XML", 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5
+"d:\Websites\Prescripto\website\admin\public\vite.svg", "XML", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"d:\Websites\Prescripto\website\admin\src\App.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 158, 0, 0, 0, 0, 0, 0, 6, 4, 168
+"d:\Websites\Prescripto\website\admin\src\assets\People surfing on social networks on hashtag.json", "JSON", 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"d:\Websites\Prescripto\website\admin\src\assets\add_icon.svg", "XML", 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5
+"d:\Websites\Prescripto\website\admin\src\assets\admin_logo.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7
+"d:\Websites\Prescripto\website\admin\src\assets\appointment_icon.svg", "XML", 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 1, 13
+"d:\Websites\Prescripto\website\admin\src\assets\appointments_icon.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7
+"d:\Websites\Prescripto\website\admin\src\assets\assets.js", "JavaScript", 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 38
+"d:\Websites\Prescripto\website\admin\src\assets\bed_allocation_icon.svg", "XML", 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7
+"d:\Websites\Prescripto\website\admin\src\assets\bed_allocation_icon_alt.svg", "XML", 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7
+"d:\Websites\Prescripto\website\admin\src\assets\bed_allocation_icon_alt2.svg", "XML", 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8
+"d:\Websites\Prescripto\website\admin\src\assets\cancel_icon.svg", "XML", 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 1, 21
+"d:\Websites\Prescripto\website\admin\src\assets\doctor_icon.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7
+"d:\Websites\Prescripto\website\admin\src\assets\earning_icon.svg", "XML", 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 1, 12
+"d:\Websites\Prescripto\website\admin\src\assets\home_icon.svg", "XML", 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5
+"d:\Websites\Prescripto\website\admin\src\assets\list_icon.svg", "XML", 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"d:\Websites\Prescripto\website\admin\src\assets\logo.svg", "XML", 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5
+"d:\Websites\Prescripto\website\admin\src\assets\medicine_icon.svg", "XML", 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5
+"d:\Websites\Prescripto\website\admin\src\assets\patient_icon.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"d:\Websites\Prescripto\website\admin\src\assets\patients_icon.svg", "XML", 0, 0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 1, 15
+"d:\Websites\Prescripto\website\admin\src\assets\people_icon.svg", "XML", 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 1, 12
+"d:\Websites\Prescripto\website\admin\src\assets\reception_icon.svg", "XML", 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10
+"d:\Websites\Prescripto\website\admin\src\assets\tick_icon.svg", "XML", 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 1, 21
+"d:\Websites\Prescripto\website\admin\src\assets\upload_area.svg", "XML", 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"d:\Websites\Prescripto\website\admin\src\assets\vehicle_icon.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3
+"d:\Websites\Prescripto\website\admin\src\assets\ward_icon.svg", "XML", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"d:\Websites\Prescripto\website\admin\src\components\AIAssistantModal.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 395, 0, 0, 0, 0, 0, 0, 16, 36, 447
+"d:\Websites\Prescripto\website\admin\src\components\AdminNotificationMenu.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 183, 0, 0, 0, 0, 0, 0, 3, 14, 200
+"d:\Websites\Prescripto\website\admin\src\components\AppointmentStatusChart.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 76, 0, 0, 0, 0, 0, 0, 0, 11, 87
+"d:\Websites\Prescripto\website\admin\src\components\AppointmentStatusDistribution.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 167, 0, 0, 0, 0, 0, 0, 1, 12, 180
+"d:\Websites\Prescripto\website\admin\src\components\AppointmentTrends.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 121, 0, 0, 0, 0, 0, 0, 1, 9, 131
+"d:\Websites\Prescripto\website\admin\src\components\BlogEditor.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 216, 0, 0, 0, 0, 0, 0, 8, 19, 243
+"d:\Websites\Prescripto\website\admin\src\components\Blog\BlogAnalytics.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 197, 0, 0, 0, 0, 0, 0, 7, 15, 219
+"d:\Websites\Prescripto\website\admin\src\components\Blog\BlogForm.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 341, 0, 0, 0, 0, 0, 0, 17, 28, 386
+"d:\Websites\Prescripto\website\admin\src\components\CreateNotificationModal.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 338, 0, 0, 0, 0, 0, 0, 10, 41, 389
+"d:\Websites\Prescripto\website\admin\src\components\EditVehicleModal.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 461, 0, 0, 0, 0, 0, 0, 2, 40, 503
+"d:\Websites\Prescripto\website\admin\src\components\EnhancedEventManagement.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 584, 0, 0, 0, 0, 0, 0, 20, 44, 648
+"d:\Websites\Prescripto\website\admin\src\components\EnhancedPharmacyInventory.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 431, 0, 0, 0, 0, 0, 0, 13, 30, 474
+"d:\Websites\Prescripto\website\admin\src\components\IncomeChart.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 110, 0, 0, 0, 0, 0, 0, 2, 4, 116
+"d:\Websites\Prescripto\website\admin\src\components\IncomePieChart.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 94, 0, 0, 0, 0, 0, 0, 0, 7, 101
+"d:\Websites\Prescripto\website\admin\src\components\LoadingAnimation.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 84, 0, 0, 0, 0, 0, 0, 0, 4, 88
+"d:\Websites\Prescripto\website\admin\src\components\LoadingSpinner.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 5
+"d:\Websites\Prescripto\website\admin\src\components\Navbar.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 436, 0, 0, 0, 0, 0, 0, 23, 46, 505
+"d:\Websites\Prescripto\website\admin\src\components\NotificationCard.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 88, 0, 0, 0, 0, 0, 0, 0, 5, 93
+"d:\Websites\Prescripto\website\admin\src\components\PatientDemographics.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 81, 0, 0, 0, 0, 0, 0, 0, 5, 86
+"d:\Websites\Prescripto\website\admin\src\components\PatientGrowthChart.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 139, 0, 0, 0, 0, 0, 0, 4, 16, 159
+"d:\Websites\Prescripto\website\admin\src\components\PrescriptionForm.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 242, 0, 0, 0, 0, 0, 0, 8, 27, 277
+"d:\Websites\Prescripto\website\admin\src\components\PrescriptionList.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 212, 0, 0, 0, 0, 0, 0, 1, 24, 237
+"d:\Websites\Prescripto\website\admin\src\components\ProtectedRoute.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 77, 0, 0, 0, 0, 0, 0, 3, 10, 90
+"d:\Websites\Prescripto\website\admin\src\components\QuickStats.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 156, 0, 0, 0, 0, 0, 0, 2, 8, 166
+"d:\Websites\Prescripto\website\admin\src\components\Receipt.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 92, 0, 0, 0, 0, 0, 0, 0, 10, 102
+"d:\Websites\Prescripto\website\admin\src\components\RevenueByDoctor.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 111, 0, 0, 0, 0, 0, 0, 4, 16, 131
+"d:\Websites\Prescripto\website\admin\src\components\SalesHistory.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 309, 0, 0, 0, 0, 0, 0, 0, 19, 328
+"d:\Websites\Prescripto\website\admin\src\components\SettingsModal.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 423, 0, 0, 0, 0, 0, 0, 18, 40, 481
+"d:\Websites\Prescripto\website\admin\src\components\Sidebar.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 207, 0, 0, 0, 0, 0, 0, 4, 32, 243
+"d:\Websites\Prescripto\website\admin\src\components\StaffModal.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 309, 0, 0, 0, 0, 0, 0, 5, 25, 339
+"d:\Websites\Prescripto\website\admin\src\components\Subscribers.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 194, 0, 0, 0, 0, 0, 0, 12, 24, 230
+"d:\Websites\Prescripto\website\admin\src\components\TestimonialManagement.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 222, 0, 0, 0, 0, 0, 0, 2, 18, 242
+"d:\Websites\Prescripto\website\admin\src\components\WeeklyComparisonChart.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 9, 111
+"d:\Websites\Prescripto\website\admin\src\components\WorkingPharmacyDashboard.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 435, 0, 0, 0, 0, 0, 0, 19, 35, 489
+"d:\Websites\Prescripto\website\admin\src\components\WorldClock.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 146, 0, 0, 0, 0, 0, 0, 3, 12, 161
+"d:\Websites\Prescripto\website\admin\src\context\AdminContext.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 304, 0, 0, 0, 0, 0, 0, 15, 52, 371
+"d:\Websites\Prescripto\website\admin\src\context\AppContext.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 79, 0, 0, 0, 0, 0, 0, 16, 23, 118
+"d:\Websites\Prescripto\website\admin\src\context\DoctorContext.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 137, 0, 0, 0, 0, 0, 0, 15, 38, 190
+"d:\Websites\Prescripto\website\admin\src\context\LanguageContext.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 154, 0, 0, 0, 0, 0, 0, 1, 8, 163
+"d:\Websites\Prescripto\website\admin\src\context\PerioperativeContext.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 190, 0, 0, 0, 0, 0, 0, 8, 19, 217
+"d:\Websites\Prescripto\website\admin\src\context\PharmacyContext.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 273, 0, 0, 0, 0, 0, 0, 20, 31, 324
+"d:\Websites\Prescripto\website\admin\src\context\SearchContext.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 61, 0, 0, 0, 0, 0, 0, 0, 10, 71
+"d:\Websites\Prescripto\website\admin\src\context\StaffContext.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 211, 0, 0, 0, 0, 0, 0, 21, 20, 252
+"d:\Websites\Prescripto\website\admin\src\context\ThemeContext.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 0, 6, 36
+"d:\Websites\Prescripto\website\admin\src\context\ViewerContext.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 55, 0, 0, 0, 0, 0, 0, 0, 6, 61
+"d:\Websites\Prescripto\website\admin\src\context\WardContext.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 311, 0, 0, 0, 0, 0, 0, 7, 29, 347
+"d:\Websites\Prescripto\website\admin\src\controllers\doctorController.js", "JavaScript", 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 18
+"d:\Websites\Prescripto\website\admin\src\controllers\notificationController.js", "JavaScript", 183, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 27, 215
+"d:\Websites\Prescripto\website\admin\src\examples\AppointmentWithPrescription.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 168, 0, 0, 0, 0, 0, 0, 5, 14, 187
+"d:\Websites\Prescripto\website\admin\src\index.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 52, 0, 7, 59
+"d:\Websites\Prescripto\website\admin\src\main.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 28, 0, 0, 0, 0, 0, 0, 0, 2, 30
+"d:\Websites\Prescripto\website\admin\src\models\Doctor.js", "JavaScript", 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4, 55
+"d:\Websites\Prescripto\website\admin\src\models\Notification.js", "JavaScript", 55, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4, 60
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\AccessManagement.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 346, 0, 0, 0, 0, 0, 0, 1, 18, 365
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\AddDoctor.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 502, 0, 0, 0, 0, 0, 0, 25, 47, 574
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\AdminProfile.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 333, 0, 0, 0, 0, 0, 0, 2, 30, 365
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\AllAppointments.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 1050, 0, 0, 0, 0, 0, 0, 52, 78, 1180
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\AppointmentDetails.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 259, 0, 0, 0, 0, 0, 0, 0, 11, 270
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\Assets.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 421, 0, 0, 0, 0, 0, 0, 0, 19, 440
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\BedAllocation.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 753, 0, 0, 0, 0, 0, 0, 18, 53, 824
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\BlogManagement.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 620, 0, 0, 0, 0, 0, 0, 12, 44, 676
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\BugReportsManagement.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 314, 0, 0, 0, 0, 0, 0, 5, 27, 346
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\BugsManagement.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 299, 0, 0, 0, 0, 0, 0, 5, 28, 332
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\ContactUsManagement.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 505, 0, 0, 0, 0, 0, 0, 2, 33, 540
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\Coupons.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 169, 0, 0, 0, 0, 0, 0, 0, 11, 180
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\CreateAccessUser.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 144, 0, 0, 0, 0, 0, 0, 1, 11, 156
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\Dashboard.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 195, 0, 0, 0, 0, 0, 0, 12, 19, 226
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\DoctorsList.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 262, 0, 0, 0, 0, 0, 0, 15, 21, 298
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\EventAnalytics.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 395, 0, 0, 0, 0, 0, 0, 14, 27, 436
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\EventManagement.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 254, 0, 0, 0, 0, 0, 0, 7, 20, 281
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\EventParticipants.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 462, 0, 0, 0, 0, 0, 0, 6, 32, 500
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\FeatureRequestsManagement.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 291, 0, 0, 0, 0, 0, 0, 6, 26, 323
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\FeaturesManagement.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 299, 0, 0, 0, 0, 0, 0, 5, 28, 332
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\FeedbackManagement.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 323, 0, 0, 0, 0, 0, 0, 6, 30, 359
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\GeneralInquiriesManagement.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 296, 0, 0, 0, 0, 0, 0, 5, 21, 322
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\LogsDownload.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 307, 0, 0, 0, 0, 0, 0, 17, 29, 353
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\MarketingAnalysis.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 232, 0, 0, 0, 0, 0, 0, 11, 14, 257
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\Notifications.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 517, 0, 0, 0, 0, 0, 0, 37, 61, 615
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\PerioperativeChecklist.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 1234, 0, 0, 0, 0, 0, 0, 17, 44, 1295
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\Sessions.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 145, 0, 0, 0, 0, 0, 0, 3, 13, 161
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\StaffDetails.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 142, 0, 0, 0, 0, 0, 0, 3, 13, 158
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\StaffList.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 419, 0, 0, 0, 0, 0, 0, 7, 19, 445
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\Support.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 181, 0, 0, 0, 0, 0, 0, 5, 10, 196
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\SupportManagement.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 260, 0, 0, 0, 0, 0, 0, 5, 23, 288
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\TodoList.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 316, 0, 0, 0, 0, 0, 0, 0, 22, 338
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\VehicleManagement.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 821, 0, 0, 0, 0, 0, 0, 12, 56, 889
+"d:\Websites\Prescripto\website\admin\src\pages\Admin\VehicleTracker.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 139, 0, 0, 0, 0, 0, 0, 6, 16, 161
+"d:\Websites\Prescripto\website\admin\src\pages\DoctorPrescriptions.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 67, 0, 0, 0, 0, 0, 0, 2, 8, 77
+"d:\Websites\Prescripto\website\admin\src\pages\Doctor\BookingSettings.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 400, 0, 0, 0, 0, 0, 0, 6, 26, 432
+"d:\Websites\Prescripto\website\admin\src\pages\Doctor\DoctorAppointments.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 209, 0, 0, 0, 0, 0, 0, 0, 26, 235
+"d:\Websites\Prescripto\website\admin\src\pages\Doctor\DoctorDashboard.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 627, 0, 0, 0, 0, 0, 0, 35, 43, 705
+"d:\Websites\Prescripto\website\admin\src\pages\Doctor\DoctorProfile.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 271, 0, 0, 0, 0, 0, 0, 4, 29, 304
+"d:\Websites\Prescripto\website\admin\src\pages\Doctor\SalesPage.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 1019, 0, 0, 0, 0, 0, 0, 60, 95, 1174
+"d:\Websites\Prescripto\website\admin\src\pages\Doctor\TodoList.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 278, 0, 0, 0, 0, 0, 0, 5, 19, 302
+"d:\Websites\Prescripto\website\admin\src\pages\GoogleCallback.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 36, 0, 0, 0, 0, 0, 0, 4, 7, 47
+"d:\Websites\Prescripto\website\admin\src\pages\Home.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 162, 0, 0, 0, 0, 0, 0, 9, 20, 191
+"d:\Websites\Prescripto\website\admin\src\pages\Login.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 485, 0, 0, 0, 0, 0, 0, 31, 58, 574
+"d:\Websites\Prescripto\website\admin\src\pages\NotFound.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 65, 0, 0, 0, 0, 0, 0, 6, 14, 85
+"d:\Websites\Prescripto\website\admin\src\pages\Pharmacy\Analysis.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 490, 0, 0, 0, 0, 0, 0, 26, 33, 549
+"d:\Websites\Prescripto\website\admin\src\pages\Pharmacy\CompleteSalesPage.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 512, 0, 0, 0, 0, 0, 0, 19, 49, 580
+"d:\Websites\Prescripto\website\admin\src\pages\Pharmacy\InventoryManagement.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 796, 0, 0, 0, 0, 0, 0, 32, 66, 894
+"d:\Websites\Prescripto\website\admin\src\pages\Pharmacy\PharmacyDashboard.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 685, 0, 0, 0, 0, 0, 0, 24, 38, 747
+"d:\Websites\Prescripto\website\admin\src\pages\Pharmacy\PharmacyInventory.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 891, 0, 0, 0, 0, 0, 0, 16, 75, 982
+"d:\Websites\Prescripto\website\admin\src\pages\Pharmacy\PharmacyProfile.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 221, 0, 0, 0, 0, 0, 0, 13, 13, 247
+"d:\Websites\Prescripto\website\admin\src\pages\Pharmacy\SalesHistory.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 806, 0, 0, 0, 0, 0, 0, 25, 49, 880
+"d:\Websites\Prescripto\website\admin\src\pages\Pharmacy\SalesHistoryPage.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 530, 0, 0, 0, 0, 0, 0, 18, 30, 578
+"d:\Websites\Prescripto\website\admin\src\pages\Pharmacy\SalesPage.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 1313, 0, 0, 0, 0, 0, 0, 80, 114, 1507
+"d:\Websites\Prescripto\website\admin\src\pages\WorldClockPage.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 218, 0, 0, 0, 0, 0, 0, 9, 17, 244
+"d:\Websites\Prescripto\website\admin\src\routes\doctorRoutes.js", "JavaScript", 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 10
+"d:\Websites\Prescripto\website\admin\src\routes\notificationRoutes.js", "JavaScript", 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 5, 28
+"d:\Websites\Prescripto\website\admin\src\scripts\fetchDoctors.js", "JavaScript", 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 7, 51
+"d:\Websites\Prescripto\website\admin\src\scripts\seedDoctors.js", "JavaScript", 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 10, 119
+"d:\Websites\Prescripto\website\admin\src\scripts\seedPharmacyInventory.js", "JavaScript", 55, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 62
+"d:\Websites\Prescripto\website\admin\src\scripts\testConnection.js", "JavaScript", 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 19
+"d:\Websites\Prescripto\website\admin\src\server.js", "JavaScript", 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 7, 43
+"d:\Websites\Prescripto\website\admin\src\utils\connectionHelper.js", "JavaScript", 112, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 19, 146
+"d:\Websites\Prescripto\website\admin\src\utils\constants.js", "JavaScript", 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 6, 34
+"d:\Websites\Prescripto\website\admin\src\utils\googleDriveAuth.js", "JavaScript", 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 17, 91
+"d:\Websites\Prescripto\website\admin\tailwind.config.js", "JavaScript", 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30
+"d:\Websites\Prescripto\website\admin\vercel.json", "JSON", 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8
+"d:\Websites\Prescripto\website\admin\vite.config.js", "JavaScript", 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 10
+"d:\Websites\Prescripto\website\backend\Dockerfile", "Docker", 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 13
+"d:\Websites\Prescripto\website\backend\app.js", "JavaScript", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 4
+"d:\Websites\Prescripto\website\backend\certs\README.md", "Markdown", 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 19
+"d:\Websites\Prescripto\website\backend\config\appwrite.js", "JavaScript", 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 11
+"d:\Websites\Prescripto\website\backend\config\cloudinary.js", "JavaScript", 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 26
+"d:\Websites\Prescripto\website\backend\config\envLoader.js", "JavaScript", 37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 9, 52
+"d:\Websites\Prescripto\website\backend\config\googleDrive.js", "JavaScript", 137, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 27, 177
+"d:\Websites\Prescripto\website\backend\config\googleWalletPassConfig.js", "JavaScript", 703, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 91, 82, 876
+"d:\Websites\Prescripto\website\backend\config\mongodb.js", "JavaScript", 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 8, 45
+"d:\Websites\Prescripto\website\backend\config\passport.js", "JavaScript", 60, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 69
+"d:\Websites\Prescripto\website\backend\config\zohoPaymentsConfig.js", "JavaScript", 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 9, 44
+"d:\Websites\Prescripto\website\backend\controllers\accessUserController.js", "JavaScript", 87, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 95
+"d:\Websites\Prescripto\website\backend\controllers\adminController.js", "JavaScript", 566, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 116, 751
+"d:\Websites\Prescripto\website\backend\controllers\aiController.js", "JavaScript", 285, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 52, 357
+"d:\Websites\Prescripto\website\backend\controllers\analysisController.js", "JavaScript", 329, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 33, 49, 411
+"d:\Websites\Prescripto\website\backend\controllers\apiPackageController.js", "JavaScript", 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 95
+"d:\Websites\Prescripto\website\backend\controllers\appointmentPDFController.js", "JavaScript", 201, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 53, 270
+"d:\Websites\Prescripto\website\backend\controllers\autoCancelController.js", "JavaScript", 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 38, 274
+"d:\Websites\Prescripto\website\backend\controllers\bedAllocationController.js", "JavaScript", 735, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 120, 882
+"d:\Websites\Prescripto\website\backend\controllers\bedCategoryController.js", "JavaScript", 70, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 87
+"d:\Websites\Prescripto\website\backend\controllers\blogController.js", "JavaScript", 820, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 75, 139, 1034
+"d:\Websites\Prescripto\website\backend\controllers\bookmarkController.js", "JavaScript", 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 10, 64
+"d:\Websites\Prescripto\website\backend\controllers\captchaController.js", "JavaScript", 159, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 26, 198
+"d:\Websites\Prescripto\website\backend\controllers\cashPaymentController.js", "JavaScript", 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 21, 158
+"d:\Websites\Prescripto\website\backend\controllers\communityController.js", "JavaScript", 130, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 30, 169
+"d:\Websites\Prescripto\website\backend\controllers\contactController.js", "JavaScript", 183, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 41, 236
+"d:\Websites\Prescripto\website\backend\controllers\couponController.js", "JavaScript", 110, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 117
+"d:\Websites\Prescripto\website\backend\controllers\doctorController.js", "JavaScript", 608, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 54, 120, 782
+"d:\Websites\Prescripto\website\backend\controllers\doctorVerificationController.js", "JavaScript", 296, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 38, 356
+"d:\Websites\Prescripto\website\backend\controllers\donationController.js", "JavaScript", 72, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 19, 102
+"d:\Websites\Prescripto\website\backend\controllers\eventController.js", "JavaScript", 1187, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 141, 177, 1505
+"d:\Websites\Prescripto\website\backend\controllers\familyController.js", "JavaScript", 174, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 41, 230
+"d:\Websites\Prescripto\website\backend\controllers\feedbackController.js", "JavaScript", 195, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 44, 255
+"d:\Websites\Prescripto\website\backend\controllers\googleFitController.js", "JavaScript", 711, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 42, 120, 873
+"d:\Websites\Prescripto\website\backend\controllers\googleTasksController.js", "JavaScript", 203, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 12, 223
+"d:\Websites\Prescripto\website\backend\controllers\gpsController.js", "JavaScript", 72, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 16, 96
+"d:\Websites\Prescripto\website\backend\controllers\inventoryController.js", "JavaScript", 235, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 37, 302
+"d:\Websites\Prescripto\website\backend\controllers\loginHistoryController.js", "JavaScript", 106, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 16, 131
+"d:\Websites\Prescripto\website\backend\controllers\medicalFilesController.js", "JavaScript", 521, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 52, 110, 683
+"d:\Websites\Prescripto\website\backend\controllers\medicalQuestionnaireController.js", "JavaScript", 81, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 12, 100
+"d:\Websites\Prescripto\website\backend\controllers\medicineController.js", "JavaScript", 676, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 119, 864
+"d:\Websites\Prescripto\website\backend\controllers\notificationController.js", "JavaScript", 341, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 47, 400
+"d:\Websites\Prescripto\website\backend\controllers\patientController.js", "JavaScript", 142, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 27, 183
+"d:\Websites\Prescripto\website\backend\controllers\paymentController.js", "JavaScript", 525, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 92, 656
+"d:\Websites\Prescripto\website\backend\controllers\perioperativeChecklistController.js", "JavaScript", 217, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 33, 265
+"d:\Websites\Prescripto\website\backend\controllers\pharmacyController.js", "JavaScript", 360, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 47, 54, 461
+"d:\Websites\Prescripto\website\backend\controllers\prescriptionController.js", "JavaScript", 278, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 67, 376
+"d:\Websites\Prescripto\website\backend\controllers\saleController.js", "JavaScript", 355, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 62, 466
+"d:\Websites\Prescripto\website\backend\controllers\saleHistoryController.js", "JavaScript", 124, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 19, 158
+"d:\Websites\Prescripto\website\backend\controllers\salesController.js", "JavaScript", 371, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 57, 451
+"d:\Websites\Prescripto\website\backend\controllers\sessionController.js", "JavaScript", 70, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 77
+"d:\Websites\Prescripto\website\backend\controllers\settingsController.js", "JavaScript", 264, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 59, 349
+"d:\Websites\Prescripto\website\backend\controllers\staffController.js", "JavaScript", 198, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 36, 251
+"d:\Websites\Prescripto\website\backend\controllers\statisticsController.js", "JavaScript", 237, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 23, 269
+"d:\Websites\Prescripto\website\backend\controllers\subscriberController.js", "JavaScript", 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 14, 104
+"d:\Websites\Prescripto\website\backend\controllers\testimonialController.js", "JavaScript", 275, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 40, 334
+"d:\Websites\Prescripto\website\backend\controllers\todoController.js", "JavaScript", 91, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 12, 112
+"d:\Websites\Prescripto\website\backend\controllers\userController.js", "JavaScript", 958, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 99, 196, 1253
+"d:\Websites\Prescripto\website\backend\controllers\userNotificationController.js", "JavaScript", 62, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 14, 81
+"d:\Websites\Prescripto\website\backend\controllers\vehicleController.js", "JavaScript", 171, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 29, 215
+"d:\Websites\Prescripto\website\backend\controllers\verificationController.js", "JavaScript", 456, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 61, 544
+"d:\Websites\Prescripto\website\backend\controllers\vhidController.js", "JavaScript", 177, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 19, 208
+"d:\Websites\Prescripto\website\backend\controllers\walletController.js", "JavaScript", 420, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 56, 497
+"d:\Websites\Prescripto\website\backend\controllers\wardController.js", "JavaScript", 232, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 39, 290
+"d:\Websites\Prescripto\website\backend\docs\AI_ASSISTANT.md", "Markdown", 0, 0, 0, 316, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 58, 374
+"d:\Websites\Prescripto\website\backend\docs\AUTO_CANCELLATION_SYSTEM.md", "Markdown", 0, 0, 0, 251, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 56, 307
+"d:\Websites\Prescripto\website\backend\docs\AUTO_CANCEL_FLOW_DIAGRAM.md", "Markdown", 0, 0, 0, 303, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 25, 328
+"d:\Websites\Prescripto\website\backend\docs\AUTO_CANCEL_SETUP.md", "Markdown", 0, 0, 0, 185, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 72, 257
+"d:\Websites\Prescripto\website\backend\docs\MEDICAL_FILES_OPTIMIZATIONS.md", "Markdown", 0, 0, 0, 194, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 47, 241
+"d:\Websites\Prescripto\website\backend\docs\MEDICAL_FILES_SYSTEM.md", "Markdown", 0, 0, 0, 266, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 55, 321
+"d:\Websites\Prescripto\website\backend\docs\TESTIMONIALS_GUIDE.md", "Markdown", 0, 0, 0, 149, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 37, 186
+"d:\Websites\Prescripto\website\backend\docs\appwrite-setup.md", "Markdown", 0, 0, 0, 93, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 112
+"d:\Websites\Prescripto\website\backend\docs\bedAllocationAPI.md", "Markdown", 0, 0, 0, 381, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 444
+"d:\Websites\Prescripto\website\backend\docs\test-mode-payment-flow.md", "Markdown", 0, 0, 0, 165, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 229
+"d:\Websites\Prescripto\website\backend\docs\zoho-payments.md", "Markdown", 0, 0, 0, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 79
+"d:\Websites\Prescripto\website\backend\docs\zoho-webhook-integration.md", "Markdown", 0, 0, 0, 171, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 219
+"d:\Websites\Prescripto\website\backend\fix-buffer.js", "JavaScript", 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 3, 15
+"d:\Websites\Prescripto\website\backend\middleware\authAdmin.js", "JavaScript", 62, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 13, 86
+"d:\Websites\Prescripto\website\backend\middleware\authAdminOrPharmacy.js", "JavaScript", 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 7, 76
+"d:\Websites\Prescripto\website\backend\middleware\authAdminOrViewer.js", "JavaScript", 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 43
+"d:\Websites\Prescripto\website\backend\middleware\authDoctor.js", "JavaScript", 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 34
+"d:\Websites\Prescripto\website\backend\middleware\authMiddleware.js", "JavaScript", 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 16, 96
+"d:\Websites\Prescripto\website\backend\middleware\authPharmacy.js", "JavaScript", 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 9, 46
+"d:\Websites\Prescripto\website\backend\middleware\authUser.js", "JavaScript", 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 6, 32
+"d:\Websites\Prescripto\website\backend\middleware\bookingRestriction.js", "JavaScript", 108, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 22, 135
+"d:\Websites\Prescripto\website\backend\middleware\customCaptchaMiddleware.js", "JavaScript", 52, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 70
+"d:\Websites\Prescripto\website\backend\middleware\multer.js", "JavaScript", 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 11
+"d:\Websites\Prescripto\website\backend\middleware\optionalAuth.js", "JavaScript", 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 7, 44
+"d:\Websites\Prescripto\website\backend\middleware\recaptchaMiddleware.js", "JavaScript", 58, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 9, 75
+"d:\Websites\Prescripto\website\backend\migrations\add-settings-fields.js", "JavaScript", 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 9, 56
+"d:\Websites\Prescripto\website\backend\migrations\addAutoCancelFields.js", "JavaScript", 82, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 25, 120
+"d:\Websites\Prescripto\website\backend\models\BedCategory.js", "JavaScript", 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 30
+"d:\Websites\Prescripto\website\backend\models\BedHistory.js", "JavaScript", 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 51
+"d:\Websites\Prescripto\website\backend\models\Blog.js", "JavaScript", 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 118
+"d:\Websites\Prescripto\website\backend\models\BlogPost.js", "JavaScript", 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 44
+"d:\Websites\Prescripto\website\backend\models\Floor.js", "JavaScript", 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 31
+"d:\Websites\Prescripto\website\backend\models\Hospital.js", "JavaScript", 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 32
+"d:\Websites\Prescripto\website\backend\models\Inventory.js", "JavaScript", 73, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 6, 84
+"d:\Websites\Prescripto\website\backend\models\Medicine.js", "JavaScript", 179, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 14, 200
+"d:\Websites\Prescripto\website\backend\models\Patient.js", "JavaScript", 91, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 95
+"d:\Websites\Prescripto\website\backend\models\Room.js", "JavaScript", 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 41
+"d:\Websites\Prescripto\website\backend\models\Todo.js", "JavaScript", 31, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 5, 39
+"d:\Websites\Prescripto\website\backend\models\User.js", "JavaScript", 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 9
+"d:\Websites\Prescripto\website\backend\models\Ward.js", "JavaScript", 56, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 60
+"d:\Websites\Prescripto\website\backend\models\accessUserModel.js", "JavaScript", 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 17
+"d:\Websites\Prescripto\website\backend\models\activeSessionModel.js", "JavaScript", 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 17
+"d:\Websites\Prescripto\website\backend\models\adminCredentialModel.js", "JavaScript", 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 9
+"d:\Websites\Prescripto\website\backend\models\adminModel.js", "JavaScript", 74, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 78
+"d:\Websites\Prescripto\website\backend\models\admissionModel.js", "JavaScript", 53, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 55
+"d:\Websites\Prescripto\website\backend\models\apiPackageModel.js", "JavaScript", 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 46
+"d:\Websites\Prescripto\website\backend\models\appointmentModel.js", "JavaScript", 58, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 2, 64
+"d:\Websites\Prescripto\website\backend\models\communityModel.js", "JavaScript", 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 53
+"d:\Websites\Prescripto\website\backend\models\communityPostModel.js", "JavaScript", 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 25
+"d:\Websites\Prescripto\website\backend\models\contactModel.js", "JavaScript", 70, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5, 76
+"d:\Websites\Prescripto\website\backend\models\couponModel.js", "JavaScript", 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 18
+"d:\Websites\Prescripto\website\backend\models\doctorModel.js", "JavaScript", 167, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 20, 208
+"d:\Websites\Prescripto\website\backend\models\emergencyModel.js", "JavaScript", 82, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 86
+"d:\Websites\Prescripto\website\backend\models\eventModel.js", "JavaScript", 86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 5, 94
+"d:\Websites\Prescripto\website\backend\models\eventRSVPModel.js", "JavaScript", 90, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 96
+"d:\Websites\Prescripto\website\backend\models\familyModel.js", "JavaScript", 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 8, 56
+"d:\Websites\Prescripto\website\backend\models\feedbackModel.js", "JavaScript", 58, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5, 64
+"d:\Websites\Prescripto\website\backend\models\googleWalletPassModel.js", "JavaScript", 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 23, 157
+"d:\Websites\Prescripto\website\backend\models\gpsLocationModel.js", "JavaScript", 47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 5, 55
+"d:\Websites\Prescripto\website\backend\models\inventoryModel.js", "JavaScript", 73, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 80
+"d:\Websites\Prescripto\website\backend\models\loginHistoryModel.js", "JavaScript", 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 40
+"d:\Websites\Prescripto\website\backend\models\medicalFileModel.js", "JavaScript", 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 55
+"d:\Websites\Prescripto\website\backend\models\medicalQuestionnaireModel.js", "JavaScript", 60, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 62
+"d:\Websites\Prescripto\website\backend\models\medicineModel.js", "JavaScript", 132, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 9, 149
+"d:\Websites\Prescripto\website\backend\models\notificationModel.js", "JavaScript", 55, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4, 60
+"d:\Websites\Prescripto\website\backend\models\perioperativeChecklistModel.js", "JavaScript", 223, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 225
+"d:\Websites\Prescripto\website\backend\models\pharmacyModel.js", "JavaScript", 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 68
+"d:\Websites\Prescripto\website\backend\models\prescriptionModel.js", "JavaScript", 57, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 62
+"d:\Websites\Prescripto\website\backend\models\queueModel.js", "JavaScript", 47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 49
+"d:\Websites\Prescripto\website\backend\models\saleModel.js", "JavaScript", 120, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 9, 134
+"d:\Websites\Prescripto\website\backend\models\staffModel.js", "JavaScript", 62, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 64
+"d:\Websites\Prescripto\website\backend\models\subscriberModel.js", "JavaScript", 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 22
+"d:\Websites\Prescripto\website\backend\models\testimonialModel.js", "JavaScript", 43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 45
+"d:\Websites\Prescripto\website\backend\models\userModel.js", "JavaScript", 87, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 2, 100
+"d:\Websites\Prescripto\website\backend\models\userNotificationModel.js", "JavaScript", 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 37
+"d:\Websites\Prescripto\website\backend\models\vehicleModel.js", "JavaScript", 72, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 75
+"d:\Websites\Prescripto\website\backend\models\verificationLogModel.js", "JavaScript", 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 20
+"d:\Websites\Prescripto\website\backend\models\verifiedUserModel.js", "JavaScript", 31, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 33
+"d:\Websites\Prescripto\website\backend\models\wardModel.js", "JavaScript", 98, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5, 104
+"d:\Websites\Prescripto\website\backend\node-loader.cjs", "JavaScript", 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 7, 32
+"d:\Websites\Prescripto\website\backend\node-loader.js", "JavaScript", 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 5, 16
+"d:\Websites\Prescripto\website\backend\package-lock.json", "JSON", 0, 33355, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 33356
+"d:\Websites\Prescripto\website\backend\package.json", "JSON", 0, 84, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 84
+"d:\Websites\Prescripto\website\backend\patch-buffer-package.js", "JavaScript", 24, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 6, 33
+"d:\Websites\Prescripto\website\backend\public\wallet-images\apple-wallet-icon.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3
+"d:\Websites\Prescripto\website\backend\public\wallet-images\icon.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6
+"d:\Websites\Prescripto\website\backend\public\wallet-images\logo.svg", "XML", 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9
+"d:\Websites\Prescripto\website\backend\routes\accessAuthRoute.js", "JavaScript", 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 34
+"d:\Websites\Prescripto\website\backend\routes\accessUserRoute.js", "JavaScript", 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4, 15
+"d:\Websites\Prescripto\website\backend\routes\adminRoute.js", "JavaScript", 139, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 21, 184
+"d:\Websites\Prescripto\website\backend\routes\aiRoute.js", "JavaScript", 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 7, 26
+"d:\Websites\Prescripto\website\backend\routes\analysisRoute.js", "JavaScript", 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 24
+"d:\Websites\Prescripto\website\backend\routes\apiPackageRoute.js", "JavaScript", 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 11
+"d:\Websites\Prescripto\website\backend\routes\appointmentPDFRoute.js", "JavaScript", 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 14
+"d:\Websites\Prescripto\website\backend\routes\auth.js", "JavaScript", 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 48
+"d:\Websites\Prescripto\website\backend\routes\autoCancelRoute.js", "JavaScript", 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 26
+"d:\Websites\Prescripto\website\backend\routes\bedAllocationRoute.js", "JavaScript", 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 44
+"d:\Websites\Prescripto\website\backend\routes\bedCategoryRoute.js", "JavaScript", 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 19
+"d:\Websites\Prescripto\website\backend\routes\blogRoute.js", "JavaScript", 70, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 9, 83
+"d:\Websites\Prescripto\website\backend\routes\captchaRoute.js", "JavaScript", 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 20
+"d:\Websites\Prescripto\website\backend\routes\cashPaymentRoutes.js", "JavaScript", 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 10
+"d:\Websites\Prescripto\website\backend\routes\communityRoute.js", "JavaScript", 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 5, 19
+"d:\Websites\Prescripto\website\backend\routes\contactRoute.js", "JavaScript", 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 26
+"d:\Websites\Prescripto\website\backend\routes\couponRoutes.js", "JavaScript", 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 14
+"d:\Websites\Prescripto\website\backend\routes\doctorRoute.js", "JavaScript", 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 5, 32
+"d:\Websites\Prescripto\website\backend\routes\doctorVerificationRoute.js", "JavaScript", 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 36
+"d:\Websites\Prescripto\website\backend\routes\donationRoute.js", "JavaScript", 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 11
+"d:\Websites\Prescripto\website\backend\routes\driveRoute.js", "JavaScript", 72, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 14, 97
+"d:\Websites\Prescripto\website\backend\routes\eventRoute.js", "JavaScript", 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 12, 98
+"d:\Websites\Prescripto\website\backend\routes\familyRoute.js", "JavaScript", 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 27
+"d:\Websites\Prescripto\website\backend\routes\feedbackRoute.js", "JavaScript", 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 27
+"d:\Websites\Prescripto\website\backend\routes\googleTasksRoute.js", "JavaScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 13
+"d:\Websites\Prescripto\website\backend\routes\gpsRoute.js", "JavaScript", 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 6, 24
+"d:\Websites\Prescripto\website\backend\routes\index.js", "JavaScript", 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 21
+"d:\Websites\Prescripto\website\backend\routes\inventory.js", "JavaScript", 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 39, 259
+"d:\Websites\Prescripto\website\backend\routes\inventoryRoute.js", "JavaScript", 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 9, 35
+"d:\Websites\Prescripto\website\backend\routes\loginHistoryRoutes.js", "JavaScript", 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 5, 15
+"d:\Websites\Prescripto\website\backend\routes\medicalFilesRoute.js", "JavaScript", 45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 12, 65
+"d:\Websites\Prescripto\website\backend\routes\medicalQuestionnaireRoute.js", "JavaScript", 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 5, 20
+"d:\Websites\Prescripto\website\backend\routes\medicineRoute.js", "JavaScript", 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 23
+"d:\Websites\Prescripto\website\backend\routes\medicineRoutes.js", "JavaScript", 370, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 42, 428
+"d:\Websites\Prescripto\website\backend\routes\notificationRoute.js", "JavaScript", 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 6, 44
+"d:\Websites\Prescripto\website\backend\routes\patientRoute.js", "JavaScript", 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 5, 33
+"d:\Websites\Prescripto\website\backend\routes\patientRoutes.js", "JavaScript", 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 18
+"d:\Websites\Prescripto\website\backend\routes\paymentRoutes.js", "JavaScript", 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 7, 27
+"d:\Websites\Prescripto\website\backend\routes\perioperativeChecklistRoute.js", "JavaScript", 24, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 10, 42
+"d:\Websites\Prescripto\website\backend\routes\pharmacyRoute.js", "JavaScript", 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 8, 31
+"d:\Websites\Prescripto\website\backend\routes\prescriptionRoutes.js", "JavaScript", 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 11, 42
+"d:\Websites\Prescripto\website\backend\routes\receptionRoute.js", "JavaScript", 190, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 37, 246
+"d:\Websites\Prescripto\website\backend\routes\saleHistoryRoute.js", "JavaScript", 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 6, 23
+"d:\Websites\Prescripto\website\backend\routes\saleRoutes.js", "JavaScript", 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 9, 28
+"d:\Websites\Prescripto\website\backend\routes\salesRoute.js", "JavaScript", 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 11, 40
+"d:\Websites\Prescripto\website\backend\routes\sessionRoutes.js", "JavaScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 13
+"d:\Websites\Prescripto\website\backend\routes\settingsRoute.js", "JavaScript", 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 12, 51
+"d:\Websites\Prescripto\website\backend\routes\staffRoute.js", "JavaScript", 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 24
+"d:\Websites\Prescripto\website\backend\routes\statisticsRoute.js", "JavaScript", 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 18
+"d:\Websites\Prescripto\website\backend\routes\subscriberRoute.js", "JavaScript", 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 9
+"d:\Websites\Prescripto\website\backend\routes\testBlogRoute.js", "JavaScript", 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 24
+"d:\Websites\Prescripto\website\backend\routes\testimonialRoute.js", "JavaScript", 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 25
+"d:\Websites\Prescripto\website\backend\routes\todoRoutes.js", "JavaScript", 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 7, 22
+"d:\Websites\Prescripto\website\backend\routes\userRoute.js", "JavaScript", 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 9, 69
+"d:\Websites\Prescripto\website\backend\routes\vehicleRoute.js", "JavaScript", 24, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 11, 44
+"d:\Websites\Prescripto\website\backend\routes\verificationRoute.js", "JavaScript", 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 5, 19
+"d:\Websites\Prescripto\website\backend\routes\vhidRoute.js", "JavaScript", 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 8, 45
+"d:\Websites\Prescripto\website\backend\routes\viewerRoute.js", "JavaScript", 43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 54
+"d:\Websites\Prescripto\website\backend\routes\walletRoute.js", "JavaScript", 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 8, 33
+"d:\Websites\Prescripto\website\backend\routes\wardRoute.js", "JavaScript", 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 32
+"d:\Websites\Prescripto\website\backend\routes\wardRoutes.js", "JavaScript", 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 4, 23
+"d:\Websites\Prescripto\website\backend\routes\webhooks.js", "JavaScript", 130, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 25, 178
+"d:\Websites\Prescripto\website\backend\routes\whatsappWebhooks.js", "JavaScript", 37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 11, 57
+"d:\Websites\Prescripto\website\backend\security\security.js", "JavaScript", 121, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 20, 157
+"d:\Websites\Prescripto\website\backend\server.js", "JavaScript", 1122, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 137, 1289
+"d:\Websites\Prescripto\website\backend\services\appointmentScheduler.js", "JavaScript", 151, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 36, 204
+"d:\Websites\Prescripto\website\backend\tests\autoCancelSystem.test.js", "JavaScript", 156, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 37, 214
+"d:\Websites\Prescripto\website\backend\tests\bedAllocation.test.js", "JavaScript", 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 24
+"d:\Websites\Prescripto\website\backend\tests\debug-payment-link.js", "JavaScript", 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 42
+"d:\Websites\Prescripto\website\backend\tests\diagnose-zoho-issue.js", "JavaScript", 87, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 12, 102
+"d:\Websites\Prescripto\website\backend\tests\firebase.js", "JavaScript", 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 2, 23
+"d:\Websites\Prescripto\website\backend\tests\fix-zoho-payments.js", "JavaScript", 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 26, 154
+"d:\Websites\Prescripto\website\backend\tests\keepAlive.js", "JavaScript", 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 18
+"d:\Websites\Prescripto\website\backend\tests\payment-status.js", "JavaScript", 47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 56
+"d:\Websites\Prescripto\website\backend\tests\quick-zoho-test.js", "JavaScript", 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 10, 72
+"d:\Websites\Prescripto\website\backend\tests\seedEventRSVPs.js", "JavaScript", 67, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 10, 82
+"d:\Websites\Prescripto\website\backend\tests\setup-google-wallet-credentials.js", "JavaScript", 156, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 35, 199
+"d:\Websites\Prescripto\website\backend\tests\switch-payment-mode.js", "JavaScript", 60, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 15, 79
+"d:\Websites\Prescripto\website\backend\tests\test-appointment-pdf.js", "JavaScript", 106, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 24, 142
+"d:\Websites\Prescripto\website\backend\tests\test-auth.js", "JavaScript", 81, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 24, 115
+"d:\Websites\Prescripto\website\backend\tests\test-booking-modes.js", "JavaScript", 139, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 15, 163
+"d:\Websites\Prescripto\website\backend\tests\test-complete-payment-flow.js", "JavaScript", 54, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 12, 70
+"d:\Websites\Prescripto\website\backend\tests\test-connection.js", "JavaScript", 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 6, 55
+"d:\Websites\Prescripto\website\backend\tests\test-email.js", "JavaScript", 52, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 10, 66
+"d:\Websites\Prescripto\website\backend\tests\test-fixed-payment-flow.js", "JavaScript", 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 8, 40
+"d:\Websites\Prescripto\website\backend\tests\test-medical-files-api.js", "JavaScript", 134, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 24, 166
+"d:\Websites\Prescripto\website\backend\tests\test-payment-creation.js", "JavaScript", 45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 55
+"d:\Websites\Prescripto\website\backend\tests\test-payment-link-creation.js", "JavaScript", 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 14, 63
+"d:\Websites\Prescripto\website\backend\tests\test-payment-system.js", "JavaScript", 154, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 30, 191
+"d:\Websites\Prescripto\website\backend\tests\test-pdf-generation-simple.js", "JavaScript", 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 11, 52
+"d:\Websites\Prescripto\website\backend\tests\test-prescription-system.js", "JavaScript", 121, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 24, 153
+"d:\Websites\Prescripto\website\backend\tests\test-testimonial-system.js", "JavaScript", 176, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 31, 213
+"d:\Websites\Prescripto\website\backend\tests\test-webhook-flow.js", "JavaScript", 47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 13, 64
+"d:\Websites\Prescripto\website\backend\tests\test-zoho-integration.js", "JavaScript", 182, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 25, 215
+"d:\Websites\Prescripto\website\backend\tests\test-zoho-now.js", "JavaScript", 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 44
+"d:\Websites\Prescripto\website\backend\tests\validate-zoho-config.js", "JavaScript", 95, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 25, 125
+"d:\Websites\Prescripto\website\backend\tests\validate-zoho-token.js", "JavaScript", 55, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 69
+"d:\Websites\Prescripto\website\backend\tests\verify-google-drive-setup.js", "JavaScript", 126, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 26, 161
+"d:\Websites\Prescripto\website\backend\tests\verify-google-wallet-setup.js", "JavaScript", 224, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 45, 281
+"d:\Websites\Prescripto\website\backend\tests\verify-real-payments.js", "JavaScript", 75, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 13, 89
+"d:\Websites\Prescripto\website\backend\tests\zoho-env-check.js", "JavaScript", 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5, 23
+"d:\Websites\Prescripto\website\backend\tests\zoho-payment-fix.js", "JavaScript", 157, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 19, 184
+"d:\Websites\Prescripto\website\backend\utils\apiFeatures.js", "JavaScript", 52, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 9, 62
+"d:\Websites\Prescripto\website\backend\utils\apiKeyGenerator.js", "JavaScript", 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"d:\Websites\Prescripto\website\backend\utils\appointmentCancellation.js", "JavaScript", 298, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 57, 366
+"d:\Websites\Prescripto\website\backend\utils\autoUploadToDrive.js", "JavaScript", 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 16, 103
+"d:\Websites\Prescripto\website\backend\utils\convertWalletImages.js", "JavaScript", 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 20, 144
+"d:\Websites\Prescripto\website\backend\utils\csvGenerator.js", "JavaScript", 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 5, 29
+"d:\Websites\Prescripto\website\backend\utils\dateHelper.js", "JavaScript", 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 9, 81
+"d:\Websites\Prescripto\website\backend\utils\emailReminderService.js", "JavaScript", 170, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 29, 217
+"d:\Websites\Prescripto\website\backend\utils\emailService.js", "JavaScript", 295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 32, 335
+"d:\Websites\Prescripto\website\backend\utils\emailTemplates.js", "JavaScript", 694, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 73, 773
+"d:\Websites\Prescripto\website\backend\utils\gpsSimulator.js", "JavaScript", 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 14, 82
+"d:\Websites\Prescripto\website\backend\utils\jwt-test.js", "JavaScript", 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 8, 58
+"d:\Websites\Prescripto\website\backend\utils\noShowCancellation.js", "JavaScript", 39, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 7, 53
+"d:\Websites\Prescripto\website\backend\utils\notificationHelper.js", "JavaScript", 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 91
+"d:\Websites\Prescripto\website\backend\utils\pdfGenerator.js", "JavaScript", 90, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 23, 132
+"d:\Websites\Prescripto\website\backend\utils\permissions.js", "JavaScript", 283, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 46, 355
+"d:\Websites\Prescripto\website\backend\utils\pkpassGenerator.js", "JavaScript", 175, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 22, 213
+"d:\Websites\Prescripto\website\backend\utils\razorpayService.js", "JavaScript", 58, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 9, 72
+"d:\Websites\Prescripto\website\backend\utils\scheduledTasks.js", "JavaScript", 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 6, 39
+"d:\Websites\Prescripto\website\backend\utils\smsService.js", "JavaScript", 72, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 13, 96
+"d:\Websites\Prescripto\website\backend\utils\staffExporter.js", "JavaScript", 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 21, 111
+"d:\Websites\Prescripto\website\backend\utils\stripeService.js", "JavaScript", 90, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 10, 104
+"d:\Websites\Prescripto\website\backend\utils\testWhatsApp.js", "JavaScript", 184, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 53, 260
+"d:\Websites\Prescripto\website\backend\utils\uploadToDrive.js", "JavaScript", 70, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 13, 95
+"d:\Websites\Prescripto\website\backend\utils\validation.js", "JavaScript", 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 11
+"d:\Websites\Prescripto\website\backend\utils\walletPassStructure.js", "JavaScript", 282, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 17, 311
+"d:\Websites\Prescripto\website\backend\utils\whatsappService.js", "JavaScript", 295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 88, 400
+"d:\Websites\Prescripto\website\backend\utils\zohoAPI.js", "JavaScript", 53, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 10, 65
+"d:\Websites\Prescripto\website\backend\utils\zohoOAuth.js", "JavaScript", 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 17, 91
+"d:\Websites\Prescripto\website\backend\utils\zohoPaymentsService.js", "JavaScript", 286, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 29, 337
+"d:\Websites\Prescripto\website\backend\utils\zohoVerify.js", "JavaScript", 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 23
+"d:\Websites\Prescripto\website\backend\utils\zohoWebhookService.js", "JavaScript", 86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 17, 110
+"d:\Websites\Prescripto\website\backend\vercel.json", "JSON", 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18
+"d:\Websites\Prescripto\website\frontend\.eslintrc.cjs", "JavaScript", 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 22
+"d:\Websites\Prescripto\website\frontend\Dockerfile", "Docker", 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 13
+"d:\Websites\Prescripto\website\frontend\README.md", "Markdown", 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 9
+"d:\Websites\Prescripto\website\frontend\index.html", "HTML", 0, 0, 86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 87
+"d:\Websites\Prescripto\website\frontend\package-lock.json", "JSON", 0, 9800, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 9801
+"d:\Websites\Prescripto\website\frontend\package.json", "JSON", 0, 76, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 77
+"d:\Websites\Prescripto\website\frontend\postcss.config.js", "JavaScript", 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7
+"d:\Websites\Prescripto\website\frontend\public\Emailbanner.svg", "XML", 0, 0, 0, 0, 0, 54, 0, 0, 0, 0, 0, 0, 0, 0, 1, 55
+"d:\Websites\Prescripto\website\frontend\public\favicon.svg", "XML", 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5
+"d:\Websites\Prescripto\website\frontend\public\google2174a046f237dc80.html", "HTML", 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"d:\Websites\Prescripto\website\frontend\public\sitemap.xml", "XML", 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63
+"d:\Websites\Prescripto\website\frontend\public\vite.svg", "XML", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"d:\Websites\Prescripto\website\frontend\src\App.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 136, 0, 0, 0, 0, 0, 0, 11, 20, 167
+"d:\Websites\Prescripto\website\frontend\src\assets\Dermatologist.svg", "XML", 0, 0, 0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 1, 19
+"d:\Websites\Prescripto\website\frontend\src\assets\Emailbanner.svg", "XML", 0, 0, 0, 0, 0, 54, 0, 0, 0, 0, 0, 0, 0, 0, 1, 55
+"d:\Websites\Prescripto\website\frontend\src\assets\Gastroenterologist.svg", "XML", 0, 0, 0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 1, 19
+"d:\Websites\Prescripto\website\frontend\src\assets\General_physician.svg", "XML", 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 1, 13
+"d:\Websites\Prescripto\website\frontend\src\assets\Gynecologist.svg", "XML", 0, 0, 0, 0, 0, 36, 0, 0, 0, 0, 0, 0, 0, 0, 1, 37
+"d:\Websites\Prescripto\website\frontend\src\assets\Neurologist.svg", "XML", 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17
+"d:\Websites\Prescripto\website\frontend\src\assets\Notification.json", "JSON", 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"d:\Websites\Prescripto\website\frontend\src\assets\Pediatricians.svg", "XML", 0, 0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 1, 18
+"d:\Websites\Prescripto\website\frontend\src\assets\about.svg", "XML", 0, 0, 0, 0, 0, 3933, 0, 0, 0, 0, 0, 0, 0, 0, 11, 3944
+"d:\Websites\Prescripto\website\frontend\src\assets\arrow_icon.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"d:\Websites\Prescripto\website\frontend\src\assets\assets.js", "JavaScript", 130, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 11, 153
+"d:\Websites\Prescripto\website\frontend\src\assets\chats_icon.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"d:\Websites\Prescripto\website\frontend\src\assets\download 1.svg", "XML", 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 1, 22
+"d:\Websites\Prescripto\website\frontend\src\assets\download 2.svg", "XML", 0, 0, 0, 0, 0, 134, 0, 0, 0, 0, 0, 0, 0, 0, 1, 135
+"d:\Websites\Prescripto\website\frontend\src\assets\download 3.svg", "XML", 0, 0, 0, 0, 0, 240, 0, 0, 0, 0, 0, 0, 0, 0, 1, 241
+"d:\Websites\Prescripto\website\frontend\src\assets\download 4.svg", "XML", 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 1, 20
+"d:\Websites\Prescripto\website\frontend\src\assets\download 5.svg", "XML", 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 0, 1, 25
+"d:\Websites\Prescripto\website\frontend\src\assets\download 6.svg", "XML", 0, 0, 0, 0, 0, 29, 0, 0, 0, 0, 0, 0, 0, 0, 1, 30
+"d:\Websites\Prescripto\website\frontend\src\assets\dropdown_icon.svg", "XML", 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 1, 9
+"d:\Websites\Prescripto\website\frontend\src\assets\empty-family.json", "JSON", 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"d:\Websites\Prescripto\website\frontend\src\assets\hospital1.svg", "XML", 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9
+"d:\Websites\Prescripto\website\frontend\src\assets\hospital2.svg", "XML", 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9
+"d:\Websites\Prescripto\website\frontend\src\assets\hospital3.svg", "XML", 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8
+"d:\Websites\Prescripto\website\frontend\src\assets\hospital4.svg", "XML", 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9
+"d:\Websites\Prescripto\website\frontend\src\assets\hospital5.svg", "XML", 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7
+"d:\Websites\Prescripto\website\frontend\src\assets\hospital6.svg", "XML", 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10
+"d:\Websites\Prescripto\website\frontend\src\assets\info_icon.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"d:\Websites\Prescripto\website\frontend\src\assets\logo.svg", "XML", 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"d:\Websites\Prescripto\website\frontend\src\assets\menu_icon.svg", "XML", 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"d:\Websites\Prescripto\website\frontend\src\assets\notfound-lottie.json", "JSON", 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"d:\Websites\Prescripto\website\frontend\src\assets\verified_icon.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"d:\Websites\Prescripto\website\frontend\src\components\Banner.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 1, 6, 28
+"d:\Websites\Prescripto\website\frontend\src\components\BookingModeSelector.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 549, 0, 0, 0, 0, 0, 0, 15, 67, 631
+"d:\Websites\Prescripto\website\frontend\src\components\ConnectionTroubleshooter.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 175, 0, 0, 0, 0, 0, 0, 1, 19, 195
+"d:\Websites\Prescripto\website\frontend\src\components\CosmeticSearch.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 403, 0, 0, 0, 0, 0, 0, 17, 39, 459
+"d:\Websites\Prescripto\website\frontend\src\components\CreateFamily.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 329, 0, 0, 0, 0, 0, 0, 8, 29, 366
+"d:\Websites\Prescripto\website\frontend\src\components\CustomCaptcha.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 223, 0, 0, 0, 0, 0, 0, 20, 27, 270
+"d:\Websites\Prescripto\website\frontend\src\components\CustomCursor.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 38, 0, 8, 46
+"d:\Websites\Prescripto\website\frontend\src\components\CustomCursor.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 53, 0, 0, 0, 0, 0, 0, 3, 13, 69
+"d:\Websites\Prescripto\website\frontend\src\components\DoctorTestimonials.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 208, 0, 0, 0, 0, 0, 0, 2, 15, 225
+"d:\Websites\Prescripto\website\frontend\src\components\EntryIDCard.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 46, 0, 0, 0, 0, 0, 0, 0, 5, 51
+"d:\Websites\Prescripto\website\frontend\src\components\ErrorBoundary.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 43, 0, 0, 0, 0, 0, 0, 4, 7, 54
+"d:\Websites\Prescripto\website\frontend\src\components\Footer.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 145, 0, 0, 0, 0, 0, 0, 13, 16, 174
+"d:\Websites\Prescripto\website\frontend\src\components\GoogleFitData.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 440, 0, 0, 0, 0, 0, 0, 14, 27, 481
+"d:\Websites\Prescripto\website\frontend\src\components\Header.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 33, 0, 0, 0, 0, 0, 0, 2, 8, 43
+"d:\Websites\Prescripto\website\frontend\src\components\HealthTips.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 70, 0, 0, 0, 0, 0, 0, 2, 8, 80
+"d:\Websites\Prescripto\website\frontend\src\components\LoadingScreen.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 3, 16
+"d:\Websites\Prescripto\website\frontend\src\components\MedicalFilesSection.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 454, 0, 0, 0, 0, 0, 0, 11, 36, 501
+"d:\Websites\Prescripto\website\frontend\src\components\MedicineSearch.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 221, 0, 0, 0, 0, 0, 0, 10, 29, 260
+"d:\Websites\Prescripto\website\frontend\src\components\Navbar.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 325, 0, 0, 0, 0, 0, 0, 19, 22, 366
+"d:\Websites\Prescripto\website\frontend\src\components\NotificationMenu.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 252, 0, 0, 0, 0, 0, 0, 7, 18, 277
+"d:\Websites\Prescripto\website\frontend\src\components\PasswordChangeForm.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 109, 0, 0, 0, 0, 0, 0, 0, 8, 117
+"d:\Websites\Prescripto\website\frontend\src\components\PatientHistory.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 77, 0, 0, 0, 0, 0, 0, 0, 10, 87
+"d:\Websites\Prescripto\website\frontend\src\components\PrescriptionForm.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 332, 0, 0, 0, 0, 0, 0, 19, 40, 391
+"d:\Websites\Prescripto\website\frontend\src\components\PrescriptionTemplates.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 108, 0, 0, 0, 0, 0, 0, 0, 8, 116
+"d:\Websites\Prescripto\website\frontend\src\components\ProtectedRoute.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 4, 15
+"d:\Websites\Prescripto\website\frontend\src\components\ReCaptchaWrapper.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 89, 0, 0, 0, 0, 0, 0, 2, 15, 106
+"d:\Websites\Prescripto\website\frontend\src\components\RelatedDoctors.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 1, 5, 41
+"d:\Websites\Prescripto\website\frontend\src\components\SEO.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 76, 0, 0, 0, 0, 0, 0, 9, 10, 95
+"d:\Websites\Prescripto\website\frontend\src\components\SearchBar.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 65, 0, 0, 0, 0, 0, 0, 1, 5, 71
+"d:\Websites\Prescripto\website\frontend\src\components\SpecialityMenu.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 2, 22
+"d:\Websites\Prescripto\website\frontend\src\components\StatisticsSection.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 130, 0, 0, 0, 0, 0, 0, 10, 19, 159
+"d:\Websites\Prescripto\website\frontend\src\components\TopDoctors.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 52, 0, 0, 0, 0, 0, 0, 7, 9, 68
+"d:\Websites\Prescripto\website\frontend\src\components\WardManagement.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 137, 0, 0, 0, 0, 0, 0, 3, 11, 151
+"d:\Websites\Prescripto\website\frontend\src\components\WriteReviewButton.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 1, 6, 29
+"d:\Websites\Prescripto\website\frontend\src\components\blogpage.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 195, 0, 0, 0, 0, 0, 0, 8, 14, 217
+"d:\Websites\Prescripto\website\frontend\src\components\dashboard\AnalyticsDashboard.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 164, 0, 0, 0, 0, 0, 0, 8, 17, 189
+"d:\Websites\Prescripto\website\frontend\src\components\dashboard\DataPreview.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 37, 0, 0, 0, 0, 0, 0, 0, 3, 40
+"d:\Websites\Prescripto\website\frontend\src\components\dashboard\FileUploader.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 4, 8, 76
+"d:\Websites\Prescripto\website\frontend\src\components\dashboard\LoadingSpinner.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 2, 14
+"d:\Websites\Prescripto\website\frontend\src\components\dashboard\SummaryCards.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 3, 66
+"d:\Websites\Prescripto\website\frontend\src\components\profile\VHealthCard.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 385, 0, 0, 0, 0, 0, 0, 19, 29, 433
+"d:\Websites\Prescripto\website\frontend\src\components\settings\SettingsPage.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 977, 0, 0, 0, 0, 0, 0, 42, 71, 1090
+"d:\Websites\Prescripto\website\frontend\src\context\AppContext.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 158, 0, 0, 0, 0, 0, 0, 15, 25, 198
+"d:\Websites\Prescripto\website\frontend\src\index.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 312, 0, 50, 362
+"d:\Websites\Prescripto\website\frontend\src\main.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 1, 3, 28
+"d:\Websites\Prescripto\website\frontend\src\pages\About.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 196, 0, 0, 0, 0, 0, 0, 8, 15, 219
+"d:\Websites\Prescripto\website\frontend\src\pages\ApiMarketplace.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 299, 0, 0, 0, 0, 0, 0, 5, 17, 321
+"d:\Websites\Prescripto\website\frontend\src\pages\Appointment.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 352, 0, 0, 0, 0, 0, 0, 17, 42, 411
+"d:\Websites\Prescripto\website\frontend\src\pages\AppointmentScan.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 240, 0, 0, 0, 0, 0, 0, 11, 20, 271
+"d:\Websites\Prescripto\website\frontend\src\pages\BACCalculator.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 92, 0, 0, 0, 0, 0, 0, 3, 13, 108
+"d:\Websites\Prescripto\website\frontend\src\pages\BMICalculator.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 371, 0, 0, 0, 0, 0, 0, 19, 28, 418
+"d:\Websites\Prescripto\website\frontend\src\pages\BMRCalculator.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 87, 0, 0, 0, 0, 0, 0, 1, 12, 100
+"d:\Websites\Prescripto\website\frontend\src\pages\BlogDetail.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 384, 0, 0, 0, 0, 0, 0, 11, 40, 435
+"d:\Websites\Prescripto\website\frontend\src\pages\Blogs.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 145, 0, 0, 0, 0, 0, 0, 5, 14, 164
+"d:\Websites\Prescripto\website\frontend\src\pages\Community.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 408, 0, 0, 0, 0, 0, 0, 27, 36, 471
+"d:\Websites\Prescripto\website\frontend\src\pages\Contact.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 187, 0, 0, 0, 0, 0, 0, 6, 13, 206
+"d:\Websites\Prescripto\website\frontend\src\pages\CosmeticDetails.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 409, 0, 0, 0, 0, 0, 0, 35, 38, 482
+"d:\Websites\Prescripto\website\frontend\src\pages\Cosmetics.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 33, 0, 0, 0, 0, 0, 0, 1, 4, 38
+"d:\Websites\Prescripto\website\frontend\src\pages\CreatePost.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 130, 0, 0, 0, 0, 0, 0, 0, 14, 144
+"d:\Websites\Prescripto\website\frontend\src\pages\Doctors.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 479, 0, 0, 0, 0, 0, 0, 43, 53, 575
+"d:\Websites\Prescripto\website\frontend\src\pages\Donation.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 556, 0, 0, 0, 0, 0, 0, 26, 48, 630
+"d:\Websites\Prescripto\website\frontend\src\pages\EventDetail.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 627, 0, 0, 0, 0, 0, 0, 32, 68, 727
+"d:\Websites\Prescripto\website\frontend\src\pages\Events.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 225, 0, 0, 0, 0, 0, 0, 10, 22, 257
+"d:\Websites\Prescripto\website\frontend\src\pages\EyeTest.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 475, 0, 0, 0, 0, 0, 0, 25, 52, 552
+"d:\Websites\Prescripto\website\frontend\src\pages\FamilyList.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 266, 0, 0, 0, 0, 0, 0, 9, 21, 296
+"d:\Websites\Prescripto\website\frontend\src\pages\Faq.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 59, 0, 0, 0, 0, 0, 0, 0, 5, 64
+"d:\Websites\Prescripto\website\frontend\src\pages\Features.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 131, 0, 0, 0, 0, 0, 0, 9, 11, 151
+"d:\Websites\Prescripto\website\frontend\src\pages\FitnessAnalysis.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 687, 0, 0, 0, 0, 0, 0, 27, 55, 769
+"d:\Websites\Prescripto\website\frontend\src\pages\GoogleFitDashboard.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 204, 0, 0, 0, 0, 0, 0, 0, 16, 220
+"d:\Websites\Prescripto\website\frontend\src\pages\Home.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 3, 21
+"d:\Websites\Prescripto\website\frontend\src\pages\Login.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 430, 0, 0, 0, 0, 0, 0, 25, 40, 495
+"d:\Websites\Prescripto\website\frontend\src\pages\MedicalDataDashboard.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 2192, 0, 0, 0, 0, 0, 0, 165, 190, 2547
+"d:\Websites\Prescripto\website\frontend\src\pages\MedicineDetails.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 743, 0, 0, 0, 0, 0, 0, 17, 50, 810
+"d:\Websites\Prescripto\website\frontend\src\pages\Medicines.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 644, 0, 0, 0, 0, 0, 0, 67, 88, 799
+"d:\Websites\Prescripto\website\frontend\src\pages\MenstrualPeriodCalculator.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 303, 0, 0, 0, 0, 0, 0, 16, 33, 352
+"d:\Websites\Prescripto\website\frontend\src\pages\MyAppointments.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 1261, 0, 0, 0, 0, 0, 0, 132, 150, 1543
+"d:\Websites\Prescripto\website\frontend\src\pages\MyProfile.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 868, 0, 0, 0, 0, 0, 0, 24, 78, 970
+"d:\Websites\Prescripto\website\frontend\src\pages\NotFound.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 2, 27
+"d:\Websites\Prescripto\website\frontend\src\pages\Notifications.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 115, 0, 0, 0, 0, 0, 0, 2, 15, 132
+"d:\Websites\Prescripto\website\frontend\src\pages\PaceCalculator.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 73, 0, 0, 0, 0, 0, 0, 0, 10, 83
+"d:\Websites\Prescripto\website\frontend\src\pages\Privacy.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 94, 0, 0, 0, 0, 0, 0, 0, 24, 118
+"d:\Websites\Prescripto\website\frontend\src\pages\SiteMap.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 81, 0, 0, 0, 0, 0, 0, 0, 4, 85
+"d:\Websites\Prescripto\website\frontend\src\pages\SkinAnalysis.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 637, 0, 0, 0, 0, 0, 0, 42, 63, 742
+"d:\Websites\Prescripto\website\frontend\src\pages\Team.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 133, 0, 0, 0, 0, 0, 0, 6, 12, 151
+"d:\Websites\Prescripto\website\frontend\src\pages\Terms.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 89, 0, 0, 0, 0, 0, 0, 0, 15, 104
+"d:\Websites\Prescripto\website\frontend\src\pages\TestPayment.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 119, 0, 0, 0, 0, 0, 0, 0, 16, 135
+"d:\Websites\Prescripto\website\frontend\src\pages\Testimonials.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 488, 0, 0, 0, 0, 0, 0, 24, 38, 550
+"d:\Websites\Prescripto\website\frontend\src\pages\TodoList.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 109, 0, 0, 0, 0, 0, 0, 0, 13, 122
+"d:\Websites\Prescripto\website\frontend\src\pages\Verification.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 390, 0, 0, 0, 0, 0, 0, 20, 45, 455
+"d:\Websites\Prescripto\website\frontend\src\pages\Verify.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 394, 0, 0, 0, 0, 0, 0, 17, 44, 455
+"d:\Websites\Prescripto\website\frontend\src\pages\WardManagement.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 2, 15
+"d:\Websites\Prescripto\website\frontend\src\pages\WritePrescription.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 2, 19
+"d:\Websites\Prescripto\website\frontend\src\utils\connectionDiagnostic.js", "JavaScript", 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 16, 159
+"d:\Websites\Prescripto\website\frontend\src\utils\connectionHelper.js", "JavaScript", 285, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 47, 43, 375
+"d:\Websites\Prescripto\website\frontend\src\utils\constants.js", "JavaScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 4
+"d:\Websites\Prescripto\website\frontend\src\utils\dataAnalyzer.js", "JavaScript", 103, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 12, 122
+"d:\Websites\Prescripto\website\frontend\src\utils\validateEnv.js", "JavaScript", 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 8, 44
+"d:\Websites\Prescripto\website\frontend\tailwind.config.js", "JavaScript", 72, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 72
+"d:\Websites\Prescripto\website\frontend\vercel.json", "JSON", 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8
+"d:\Websites\Prescripto\website\frontend\vite.config.js", "JavaScript", 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 18
+"d:\Websites\Prescripto\website\main.js", "JavaScript", 72, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 16, 89
+"d:\Websites\Prescripto\website\package-lock.json", "JSON", 0, 4102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4103
+"d:\Websites\Prescripto\website\package.json", "JSON", 0, 39, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 40
+"Total", "-", 33579, 73138, 184, 2776, 14, 4975, 56988, 74, 17, 1, 2898, 84, 402, 4982, 11689, 191801

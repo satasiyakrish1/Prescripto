@@ -70,25 +70,24 @@ import sessionRouter from './routes/sessionRoutes.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// Create uploads directory if it doesn't exist
-const uploadsDir = path.join(__dirname, 'uploads');
+// Base directory setup for local uploads persistence
+const baseDir = process.env.USER_DATA_PATH || __dirname;
+const uploadsDir = path.join(baseDir, 'uploads');
+process.env.UPLOADS_DIR = uploadsDir;
+
 const blogImagesDir = path.join(uploadsDir, 'blog-images');
 const eventBannersDir = path.join(uploadsDir, 'event-banners');
 const medicalFilesDir = path.join(uploadsDir, 'medical-files');
+const doctorImagesDir = path.join(uploadsDir, 'doctor-images');
+const profileImagesDir = path.join(uploadsDir, 'profile-images');
+const docVerificationDir = path.join(uploadsDir, 'doctor-verification');
+const pdfFilesDir = path.join(uploadsDir, 'pdf-files');
 
-if (!fs.existsSync(uploadsDir)) {
-  fs.mkdirSync(uploadsDir);
-}
-if (!fs.existsSync(blogImagesDir)) {
-  fs.mkdirSync(blogImagesDir);
-}
-if (!fs.existsSync(eventBannersDir)) {
-  fs.mkdirSync(eventBannersDir);
-}
-if (!fs.existsSync(medicalFilesDir)) {
-  fs.mkdirSync(medicalFilesDir);
-  console.log('✅ Created medical-files directory');
-}
+[uploadsDir, blogImagesDir, eventBannersDir, medicalFilesDir, doctorImagesDir, profileImagesDir, docVerificationDir, pdfFilesDir].forEach(dir => {
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+});
 
 // app config
 const app = express()
@@ -198,7 +197,29 @@ app.use((err, req, res, next) => {
 });
 
 // Serve uploaded files
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use('/uploads', express.static(uploadsDir));
+
+// Serve React production assets
+const frontendDistPath = path.join(__dirname, '../frontend/dist');
+if (fs.existsSync(frontendDistPath)) {
+  app.use(express.static(frontendDistPath));
+} else {
+  const localDistPath = path.join(__dirname, 'frontend');
+  if (fs.existsSync(localDistPath)) {
+    app.use(express.static(localDistPath));
+  }
+}
+
+// Serve Admin production assets
+const adminDistPath = path.join(__dirname, '../admin/dist');
+if (fs.existsSync(adminDistPath)) {
+  app.use('/admin', express.static(adminDistPath));
+} else {
+  const localAdminPath = path.join(__dirname, 'admin');
+  if (fs.existsSync(localAdminPath)) {
+    app.use('/admin', express.static(localAdminPath));
+  }
+}
 
 // api endpoints
 app.use("/api/user", userRouter)
@@ -1207,6 +1228,32 @@ app.get("/health", (req, res) => {
 // Lightweight ping endpoint for keepAlive functionality
 app.get('/ping', (req, res) => {
   res.status(200).send('pong');
+});
+
+// Wildcard fallback routing to the main index.html for SPA routing
+app.get('*', (req, res, next) => {
+  if (req.path.startsWith('/api') || req.path.startsWith('/uploads')) {
+    return next();
+  }
+  if (req.path.startsWith('/admin')) {
+    const adminIndex = path.join(__dirname, '../admin/dist/index.html');
+    if (fs.existsSync(adminIndex)) {
+      return res.sendFile(adminIndex);
+    }
+    const localAdminIndex = path.join(__dirname, 'admin/index.html');
+    if (fs.existsSync(localAdminIndex)) {
+      return res.sendFile(localAdminIndex);
+    }
+  }
+  const distIndex = path.join(__dirname, '../frontend/dist/index.html');
+  if (fs.existsSync(distIndex)) {
+    return res.sendFile(distIndex);
+  }
+  const localIndex = path.join(__dirname, 'frontend/index.html');
+  if (fs.existsSync(localIndex)) {
+    return res.sendFile(localIndex);
+  }
+  res.send('Prescripto Frontend Assets not built. Please run npm run build.');
 });
 
 // CSRF error handler (after routes that use csrfProtection)

@@ -15,7 +15,9 @@ export const useAuth = () => {
 const AppContextProvider = (props) => {
 
     const currencySymbol = '₹'
-    const backendUrl = import.meta.env.VITE_BACKEND_URL
+    const backendUrl = (typeof window !== 'undefined' && (/electron/i.test(navigator.userAgent) || window.process?.versions?.electron))
+        ? window.location.origin
+        : import.meta.env.VITE_BACKEND_URL;
 
     const [doctors, setDoctors] = useState([])
     const [token, setToken] = useState(localStorage.getItem('token') ? localStorage.getItem('token') : '')

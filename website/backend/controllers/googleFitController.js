@@ -150,8 +150,8 @@ export const handleCallback = async (req, res) => {
         }
 
         // Check if this is a login callback
-        if (userIdFromState === 'google_login') {
-            return handleGoogleLoginFlow(req, res, code, frontendUrl);
+        if (userIdFromState === 'google_login' || userIdFromState === 'google_login_electron') {
+            return handleGoogleLoginFlow(req, res, code, frontendUrl, userIdFromState === 'google_login_electron');
         }
 
         // Check if this is a connect callback
@@ -662,7 +662,7 @@ export const handleGoogleFitError = (error, req, res, next) => {
 /**
  * Handle Google login flow within the fitness callback
  */
-const handleGoogleLoginFlow = async (req, res, code, frontendUrl) => {
+const handleGoogleLoginFlow = async (req, res, code, frontendUrl, isElectron = false) => {
     try {
         // Exchange code for tokens
         const oauth2Client = createOAuthClient();
@@ -725,11 +725,18 @@ const handleGoogleLoginFlow = async (req, res, code, frontendUrl) => {
         // Generate JWT token
         const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: '7d' });
 
+        if (isElectron) {
+            return res.redirect(`prescripto://login?token=${token}&status=success`);
+        }
+
         // Redirect to frontend with token
         res.redirect(`${frontendUrl}/login?token=${token}&status=success`);
 
     } catch (error) {
         console.error('Error in Google login flow:', error);
+        if (isElectron) {
+            return res.redirect(`prescripto://login?error=${encodeURIComponent('Authentication failed')}`);
+        }
         res.redirect(`${frontendUrl}/login?error=${encodeURIComponent('Authentication failed')}`);
     }
 };
@@ -742,13 +749,14 @@ export const getGoogleLoginAuthUrl = async (req, res) => {
         validateConfig();
 
         const oauth2Client = createOAuthClient();
+        const isElectron = req.query.electron === 'true';
         const authUrl = oauth2Client.generateAuthUrl({
             access_type: 'offline',
             scope: [
                 'https://www.googleapis.com/auth/userinfo.profile',
                 'https://www.googleapis.com/auth/userinfo.email'
             ],
-            state: 'google_login', // Different state to identify login vs fitness
+            state: isElectron ? 'google_login_electron' : 'google_login', // Different state to identify login vs fitness
             prompt: 'consent',
             include_granted_scopes: true
         });

@@ -1,0 +1,43 @@
+{
+  "name": "prescripto-desktop",
+  "version": "1.0.0",
+  "description": "Standalone Desktop Version of Prescripto - Medical Application",
+  "main": "main.js",
+  "scripts": {
+    "electron": "electron .",
+    "build:admin": "npm run build --prefix admin",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.prescripto.admin",
+    "productName": "PrescriptoAdmin",
+    "icon": "icon.png",
+    "asar": true,
+    "asarUnpack": [
+      "backend"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "files": [
+      "main.js",
+      "logo.svg",
+      "icon.png",
+      "backend/**/*",
+      "!backend/node_modules/n8n",
+      "!backend/node_modules/n8n/**/*",
+      "!backend/node_modules/@n8n",
+      "!backend/node_modules/@n8n/**/*",
+      "admin/dist/**/*"
+    ]
+  }
+}

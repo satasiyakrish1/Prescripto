@@ -10,19 +10,19 @@ node_modules/
 .env.producation
 *.env.production
 *.env.producation
-backend/.env*
-frontend/.env*
-admin/.env*
+website/backend/.env*
+website/frontend/.env*
+website/admin/.env*
 # Allow only example/template files
 !**/.env.example
 !**/.env.template
 
 # Google Wallet credentials & Service Accounts
-backend/config/google-wallet-key.json
-backend/config/google-wallet-service-account.json
-backend/config/recaptcha-service-account.json
+website/backend/config/google-wallet-key.json
+website/backend/config/google-wallet-service-account.json
+website/backend/config/recaptcha-service-account.json
 **/config/recaptcha-service-account.json
-backend/service-account.json
+website/backend/service-account.json
 **/service-account*.json
 !**/service-account*.json.example
 !**/service-account*.json.template
@@ -102,6 +102,10 @@ typings/
 # Build directories
 dist/
 build/
+website/dist/
+website/admin/dist/
+website/frontend/dist/
+*.exe
 
 # Temporary files
 *.tmp

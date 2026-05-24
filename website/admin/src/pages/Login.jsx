@@ -23,6 +23,8 @@ const Login = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [rememberMe, setRememberMe] = useState(false)
   const [showForgotPasswordModal, setShowForgotPasswordModal] = useState(false)
+  const [showPrivacyConfirm, setShowPrivacyConfirm] = useState(false)
+  const [privacyAccepted, setPrivacyAccepted] = useState(false)
 
   const backendUrl = API_URL
 
@@ -142,6 +144,12 @@ const Login = () => {
 
     // Prevent submission if account is locked
     if (isLocked) return
+
+    // Show privacy policy confirmation modal if not yet accepted
+    if (!privacyAccepted) {
+      setShowPrivacyConfirm(true)
+      return
+    }
 
     setIsLoading(true)
 
@@ -563,6 +571,77 @@ const Login = () => {
             >
               Open Mail App
             </button>
+          </div>
+        </div>
+      )}
+
+      {/* Privacy Policy Confirmation Modal */}
+      {showPrivacyConfirm && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-md flex items-center justify-center z-50 p-4">
+          <div className="bg-white w-full max-w-2xl rounded-3xl p-6 shadow-[0_32px_64px_rgba(0,0,0,0.18)] text-center">
+            {/* Logo */}
+            <div className="flex justify-center mb-4">
+              <img src={logo} alt="Prescripto Logo" className="w-36 h-auto" />
+            </div>
+            
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Privacy Policy Confirmation</h3>
+            <p className="text-sm text-gray-500 leading-relaxed mb-4">
+              Please review and agree to the Privacy Policy below to proceed to the Admin portal.
+            </p>
+            
+            {/* Embedded Live Privacy Policy Webview */}
+            <div className="w-full h-80 rounded-2xl overflow-hidden border border-gray-200 mb-4 bg-gray-50">
+              <iframe 
+                src="https://krishsatasiya-prescriptosystem.onrender.com/privacy" 
+                className="w-full h-full border-none"
+                title="Privacy Policy Webview"
+              />
+            </div>
+            
+            {/* Checkbox */}
+            <div className="flex items-start text-left bg-gray-50 p-4 rounded-2xl mb-4 border border-gray-100">
+              <input
+                id="privacy-checkbox"
+                type="checkbox"
+                checked={privacyAccepted}
+                onChange={(e) => setPrivacyAccepted(e.target.checked)}
+                className="mt-1 w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 cursor-pointer"
+              />
+              <label htmlFor="privacy-checkbox" className="ml-3 text-sm text-gray-600 leading-normal cursor-pointer select-none">
+                I have read, understood, and agree to the <span className="text-blue-600 font-semibold">Privacy Policy</span> of the platform.
+              </label>
+            </div>
+            
+            {/* Actions */}
+            <div className="flex gap-3">
+              <button
+                type="button"
+                onClick={() => {
+                  setShowPrivacyConfirm(false);
+                  setPrivacyAccepted(false);
+                }}
+                className="flex-1 py-3 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-semibold rounded-2xl transition-all"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                disabled={!privacyAccepted}
+                onClick={() => {
+                  setShowPrivacyConfirm(false);
+                  // Trigger form submit since privacy is accepted now
+                  const submitEvent = new Event('submit', { cancelable: true, bubbles: true });
+                  document.querySelector('form').dispatchEvent(submitEvent);
+                }}
+                className={`flex-1 py-3 text-white text-sm font-semibold rounded-2xl transition-all ${
+                  !privacyAccepted
+                    ? 'bg-gray-400 cursor-not-allowed'
+                    : 'bg-primary-600 hover:bg-blue-700 active:scale-[0.98]'
+                }`}
+              >
+                Agree & Sign In
+              </button>
+            </div>
           </div>
         </div>
       )}
