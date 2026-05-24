@@ -210,16 +210,25 @@ if (fs.existsSync(frontendDistPath)) {
   }
 }
 
-// Serve Admin production assets
-const adminDistPath = path.join(__dirname, '../admin/dist');
-if (fs.existsSync(adminDistPath)) {
-  app.use('/admin', express.static(adminDistPath));
-} else {
-  const localAdminPath = path.join(__dirname, 'admin');
-  if (fs.existsSync(localAdminPath)) {
-    app.use('/admin', express.static(localAdminPath));
+// Serve Admin production assets with smart fallback to frontend assets for mixed deployments
+app.use('/admin', (req, res, next) => {
+  const adminFilePath = path.join(__dirname, '../admin/dist', req.path);
+  if (fs.existsSync(adminFilePath) && fs.statSync(adminFilePath).isFile()) {
+    return res.sendFile(adminFilePath);
   }
-}
+  
+  const localAdminFilePath = path.join(__dirname, 'admin', req.path);
+  if (fs.existsSync(localAdminFilePath) && fs.statSync(localAdminFilePath).isFile()) {
+    return res.sendFile(localAdminFilePath);
+  }
+
+  const frontendFilePath = path.join(__dirname, '../frontend/dist', req.path);
+  if (fs.existsSync(frontendFilePath) && fs.statSync(frontendFilePath).isFile()) {
+    return res.sendFile(frontendFilePath);
+  }
+
+  next();
+});
 
 // api endpoints
 app.use("/api/user", userRouter)
@@ -1243,6 +1252,10 @@ app.get('*', (req, res, next) => {
     const localAdminIndex = path.join(__dirname, 'admin/index.html');
     if (fs.existsSync(localAdminIndex)) {
       return res.sendFile(localAdminIndex);
+    }
+    const fallbackAdminIndex = path.join(__dirname, '../frontend/dist/index.html');
+    if (fs.existsSync(fallbackAdminIndex)) {
+      return res.sendFile(fallbackAdminIndex);
     }
   }
   const distIndex = path.join(__dirname, '../frontend/dist/index.html');
